@@ -1,0 +1,420 @@
+{
+  "generated_with_seed": 20260815,
+  "as_of_date": "2026-08-15",
+  "window": {
+    "start": "2024-09-01",
+    "end": "2026-08-15"
+  },
+  "row_counts": {
+    "gl_accounts": 20,
+    "vendors": 50,
+    "vendors_update": 52,
+    "purchase_orders": 480,
+    "invoices_file_rows": 675,
+    "invoices_distinct": 672,
+    "payments_file_rows": 587,
+    "payments_distinct": 584
+  },
+  "defect_1_duplicate_invoice_pairs": {
+    "count": 14,
+    "pairs": [
+      {
+        "original": "INV200628",
+        "duplicate": "INV200672",
+        "vendor_id": "V0024",
+        "amount": 8928.64,
+        "duplicate_date": "2024-11-27"
+      },
+      {
+        "original": "INV200250",
+        "duplicate": "INV200663",
+        "vendor_id": "V0040",
+        "amount": 1552.99,
+        "duplicate_date": "2025-01-04"
+      },
+      {
+        "original": "INV200081",
+        "duplicate": "INV200669",
+        "vendor_id": "V0009",
+        "amount": 5523.49,
+        "duplicate_date": "2025-01-29"
+      },
+      {
+        "original": "INV200290",
+        "duplicate": "INV200660",
+        "vendor_id": "V0048",
+        "amount": 3873.59,
+        "duplicate_date": "2025-05-13"
+      },
+      {
+        "original": "INV200160",
+        "duplicate": "INV200661",
+        "vendor_id": "V0048",
+        "amount": 3074.08,
+        "duplicate_date": "2025-05-26"
+      },
+      {
+        "original": "INV200259",
+        "duplicate": "INV200671",
+        "vendor_id": "V0016",
+        "amount": 23938.61,
+        "duplicate_date": "2025-08-08"
+      },
+      {
+        "original": "INV200079",
+        "duplicate": "INV200666",
+        "vendor_id": "V0042",
+        "amount": 22823.14,
+        "duplicate_date": "2025-08-12"
+      },
+      {
+        "original": "INV200158",
+        "duplicate": "INV200670",
+        "vendor_id": "V0018",
+        "amount": 1471.28,
+        "duplicate_date": "2025-08-23"
+      },
+      {
+        "original": "INV200217",
+        "duplicate": "INV200664",
+        "vendor_id": "V0009",
+        "amount": 3103.72,
+        "duplicate_date": "2025-09-23"
+      },
+      {
+        "original": "INV200084",
+        "duplicate": "INV200659",
+        "vendor_id": "V0007",
+        "amount": 3831.27,
+        "duplicate_date": "2025-10-20"
+      },
+      {
+        "original": "INV200495",
+        "duplicate": "INV200665",
+        "vendor_id": "V0035",
+        "amount": 2335.37,
+        "duplicate_date": "2026-02-14"
+      },
+      {
+        "original": "INV200053",
+        "duplicate": "INV200668",
+        "vendor_id": "V0040",
+        "amount": 1415.49,
+        "duplicate_date": "2026-02-24"
+      },
+      {
+        "original": "INV200363",
+        "duplicate": "INV200667",
+        "vendor_id": "V0016",
+        "amount": 4914.88,
+        "duplicate_date": "2026-06-03"
+      },
+      {
+        "original": "INV200126",
+        "duplicate": "INV200662",
+        "vendor_id": "V0001",
+        "amount": 7731.38,
+        "duplicate_date": "2026-08-13"
+      }
+    ]
+  },
+  "defect_2_orphan_invoices": {
+    "count": 18,
+    "invoice_ids": [
+      "INV200657",
+      "INV200645",
+      "INV200642",
+      "INV200653",
+      "INV200648",
+      "INV200643",
+      "INV200651",
+      "INV200646",
+      "INV200647",
+      "INV200655",
+      "INV200654",
+      "INV200649",
+      "INV200658",
+      "INV200641",
+      "INV200644",
+      "INV200652",
+      "INV200650",
+      "INV200656"
+    ]
+  },
+  "defect_3_price_mismatch_pos": {
+    "_comment": "count = POs deliberately mis-priced. expected_query_5_5_exceptions also counts POs pushed past tolerance by a defect-1 duplicate invoice sharing the same po_id. Query 5.5 runs over all invoices, so it will return the larger number - that is correct, not over-reporting.",
+    "count": 22,
+    "tolerance_pct": 5.0,
+    "expected_query_5_5_exceptions": 36,
+    "attributable_to_duplicate_invoices": 14,
+    "pos": [
+      {
+        "po_id": "PO100011",
+        "po_amount": 1913.06,
+        "invoiced_amount": 2070.99,
+        "pct_variance": 8.26
+      },
+      {
+        "po_id": "PO100044",
+        "po_amount": 5860.06,
+        "invoiced_amount": 7039.76,
+        "pct_variance": 20.13
+      },
+      {
+        "po_id": "PO100086",
+        "po_amount": 15462.49,
+        "invoiced_amount": 16908.19,
+        "pct_variance": 9.35
+      },
+      {
+        "po_id": "PO100106",
+        "po_amount": 29353.03,
+        "invoiced_amount": 35432.8,
+        "pct_variance": 20.71
+      },
+      {
+        "po_id": "PO100142",
+        "po_amount": 579.29,
+        "invoiced_amount": 649.89,
+        "pct_variance": 12.19
+      },
+      {
+        "po_id": "PO100159",
+        "po_amount": 9255.92,
+        "invoiced_amount": 7032.42,
+        "pct_variance": -24.02
+      },
+      {
+        "po_id": "PO100181",
+        "po_amount": 10035.53,
+        "invoiced_amount": 12417.46,
+        "pct_variance": 23.73
+      },
+      {
+        "po_id": "PO100183",
+        "po_amount": 657.45,
+        "invoiced_amount": 563.78,
+        "pct_variance": -14.25
+      },
+      {
+        "po_id": "PO100247",
+        "po_amount": 57559.41,
+        "invoiced_amount": 68842.95,
+        "pct_variance": 19.6
+      },
+      {
+        "po_id": "PO100253",
+        "po_amount": 5396.83,
+        "invoiced_amount": 6443.23,
+        "pct_variance": 19.39
+      },
+      {
+        "po_id": "PO100278",
+        "po_amount": 913.08,
+        "invoiced_amount": 1084.93,
+        "pct_variance": 18.82
+      },
+      {
+        "po_id": "PO100285",
+        "po_amount": 6785.64,
+        "invoiced_amount": 5026.38,
+        "pct_variance": -25.93
+      },
+      {
+        "po_id": "PO100317",
+        "po_amount": 872.99,
+        "invoiced_amount": 688.56,
+        "pct_variance": -21.13
+      },
+      {
+        "po_id": "PO100337",
+        "po_amount": 23031.87,
+        "invoiced_amount": 26467.76,
+        "pct_variance": 14.92
+      },
+      {
+        "po_id": "PO100361",
+        "po_amount": 2893.37,
+        "invoiced_amount": 2684.13,
+        "pct_variance": -7.23
+      },
+      {
+        "po_id": "PO100371",
+        "po_amount": 39436.46,
+        "invoiced_amount": 43804.32,
+        "pct_variance": 11.08
+      },
+      {
+        "po_id": "PO100379",
+        "po_amount": 1996.5,
+        "invoiced_amount": 2355.03,
+        "pct_variance": 17.96
+      },
+      {
+        "po_id": "PO100383",
+        "po_amount": 7896.96,
+        "invoiced_amount": 9913.0,
+        "pct_variance": 25.53
+      },
+      {
+        "po_id": "PO100408",
+        "po_amount": 50676.22,
+        "invoiced_amount": 63181.03,
+        "pct_variance": 24.68
+      },
+      {
+        "po_id": "PO100438",
+        "po_amount": 54848.24,
+        "invoiced_amount": 47975.25,
+        "pct_variance": -12.53
+      },
+      {
+        "po_id": "PO100459",
+        "po_amount": 2916.24,
+        "invoiced_amount": 2133.52,
+        "pct_variance": -26.84
+      },
+      {
+        "po_id": "PO100475",
+        "po_amount": 3246.37,
+        "invoiced_amount": 3906.78,
+        "pct_variance": 20.34
+      }
+    ]
+  },
+  "defect_4_late_payments": {
+    "count": 157,
+    "count_more_than_10_days_late": 133,
+    "pct_of_payments_late": 26.9,
+    "max_days_late": 107,
+    "avg_days_late": 40.1
+  },
+  "defect_5_missing_fields": {
+    "vendors_missing_payment_terms": [
+      "V0004",
+      "V0012",
+      "V0032",
+      "V0038"
+    ],
+    "vendors_missing_region": [
+      "V0028",
+      "V0039",
+      "V0042"
+    ]
+  },
+  "defect_6_mixed_date_formats": {
+    "formats": [
+      "YYYY-MM-DD",
+      "MM/DD/YYYY",
+      "DD-MON-YYYY"
+    ],
+    "approx_non_iso_share": 0.3
+  },
+  "defect_7_text_noise": {
+    "approx_share": 0.3
+  },
+  "defect_8_exact_duplicate_rows": {
+    "invoices": [
+      "INV200401",
+      "INV200597",
+      "INV200625"
+    ],
+    "payments": [
+      "PAY300143",
+      "PAY300480",
+      "PAY300016"
+    ],
+    "total": 6
+  },
+  "unpaid_aging_profile": {
+    "total_unpaid_invoices": 88,
+    "counts_by_bucket": {
+      "90+ Days": 29,
+      "61-90 Days": 11,
+      "31-60 Days": 13,
+      "0-30 Days": 16,
+      "Not Due": 19
+    },
+    "amounts_by_bucket": {
+      "90+ Days": 264943.79,
+      "61-90 Days": 86643.83,
+      "31-60 Days": 69315.79,
+      "0-30 Days": 181436.17,
+      "Not Due": 234651.19
+    }
+  },
+  "scd2_vendor_changes": {
+    "count": 6,
+    "changes": [
+      {
+        "vendor_id": "V0001",
+        "change_date": "2025-09-10",
+        "category_before": "Raw Materials",
+        "category_after": "IT Services",
+        "terms_before": "NET30",
+        "terms_after": "NET45"
+      },
+      {
+        "vendor_id": "V0002",
+        "change_date": "2025-11-09",
+        "category_before": "Logistics",
+        "category_after": "Logistics",
+        "terms_before": "NET45",
+        "terms_after": "2/10 NET30"
+      },
+      {
+        "vendor_id": "V0008",
+        "change_date": "2025-10-23",
+        "category_before": "Office Supplies",
+        "category_after": "Raw Materials",
+        "terms_before": "NET45",
+        "terms_after": "NET15"
+      },
+      {
+        "vendor_id": "V0024",
+        "change_date": "2025-06-19",
+        "category_before": "Consulting",
+        "category_after": "Logistics",
+        "terms_before": "NET15",
+        "terms_after": "NET45"
+      },
+      {
+        "vendor_id": "V0026",
+        "change_date": "2025-05-10",
+        "category_before": "Consulting",
+        "category_after": "Consulting",
+        "terms_before": "NET45",
+        "terms_after": "NET30"
+      },
+      {
+        "vendor_id": "V0043",
+        "change_date": "2025-09-25",
+        "category_before": "IT Services",
+        "category_after": "IT Services",
+        "terms_before": "NET30",
+        "terms_after": "NET15"
+      }
+    ]
+  },
+  "new_vendors_in_extract_2": [
+    "V0051",
+    "V0052"
+  ],
+  "pos_without_invoice": 60,
+  "fx_rates_to_usd": {
+    "USD": 1.0,
+    "EUR": 1.08,
+    "GBP": 1.27,
+    "CAD": 0.74
+  },
+  "kpi_cross_check": {
+    "_comment": "Phase 5 SQL and Phase 6 DAX must reproduce these figures.",
+    "avg_dpo_days": 41.83,
+    "total_invoiced_usd": 6973028.93,
+    "total_outstanding_usd": 849948.62,
+    "total_overdue_usd": 612596.04,
+    "pct_overdue_of_outstanding": 72.07,
+    "paid_invoice_count": 584,
+    "unpaid_invoice_count": 88
+  }
+}

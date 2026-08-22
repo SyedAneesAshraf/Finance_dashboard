@@ -1,0 +1,116 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "p2DupTable",
+  "position": {
+    "x": 632,
+    "y": 438,
+    "z": 0,
+    "width": 292,
+    "height": 266,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "VW_DUPLICATE_INVOICE_PAIRS"
+                    }
+                  },
+                  "Property": "INVOICE_1"
+                }
+              },
+              "queryRef": "VW_DUPLICATE_INVOICE_PAIRS.INVOICE_1",
+              "nativeQueryRef": "INVOICE_1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "VW_DUPLICATE_INVOICE_PAIRS"
+                    }
+                  },
+                  "Property": "INVOICE_2"
+                }
+              },
+              "queryRef": "VW_DUPLICATE_INVOICE_PAIRS.INVOICE_2",
+              "nativeQueryRef": "INVOICE_2"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "VW_DUPLICATE_INVOICE_PAIRS"
+                    }
+                  },
+                  "Property": "VENDOR_NAME"
+                }
+              },
+              "queryRef": "VW_DUPLICATE_INVOICE_PAIRS.VENDOR_NAME",
+              "nativeQueryRef": "VENDOR_NAME"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "VW_DUPLICATE_INVOICE_PAIRS"
+                    }
+                  },
+                  "Property": "EXPOSURE_USD"
+                }
+              },
+              "queryRef": "VW_DUPLICATE_INVOICE_PAIRS.EXPOSURE_USD",
+              "nativeQueryRef": "EXPOSURE_USD"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Flagged duplicate invoices'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

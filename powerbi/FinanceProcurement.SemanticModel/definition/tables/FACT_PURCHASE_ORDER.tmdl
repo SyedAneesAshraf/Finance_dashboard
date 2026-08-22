@@ -1,0 +1,122 @@
+table FACT_PURCHASE_ORDER
+	lineageTag: f3fa1772-13ff-5cf9-a16e-49d64e756c9b
+
+	column PO_ID
+		dataType: string
+		lineageTag: c2b33917-c689-580c-a4f9-d14658b60093
+		summarizeBy: none
+		sourceColumn: PO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column VENDOR_KEY
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 0aec2553-b3cc-5a12-bb58-5e7d29c83d3d
+		summarizeBy: none
+		sourceColumn: VENDOR_KEY
+
+		annotation SummarizationSetBy = Automatic
+
+	column VENDOR_ID
+		dataType: string
+		lineageTag: 359e9d05-e995-5ff0-82c2-d58c26f908aa
+		summarizeBy: none
+		sourceColumn: VENDOR_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column PO_DATE_KEY
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 281c2e2c-9a0d-554f-a2c4-61a8d2269129
+		summarizeBy: none
+		sourceColumn: PO_DATE_KEY
+
+		annotation SummarizationSetBy = Automatic
+
+	column PO_DATE
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: f74a9465-97b8-55af-9789-b95a8d2525ed
+		summarizeBy: none
+		sourceColumn: PO_DATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column GOODS_RECEIPT_DATE_KEY
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: beafc420-f378-5384-a588-e18a4715d895
+		summarizeBy: none
+		sourceColumn: GOODS_RECEIPT_DATE_KEY
+
+		annotation SummarizationSetBy = Automatic
+
+	column GOODS_RECEIPT_DATE
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: d40d0a39-c655-57e7-823d-26f61d6a4f62
+		summarizeBy: none
+		sourceColumn: GOODS_RECEIPT_DATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column PO_AMOUNT
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: ebffd471-dce0-589a-82af-8519abd91318
+		summarizeBy: none
+		sourceColumn: PO_AMOUNT
+
+		annotation SummarizationSetBy = Automatic
+
+	column CURRENCY
+		dataType: string
+		lineageTag: fb4143a6-9796-5e5a-abc1-860461737e6e
+		summarizeBy: none
+		sourceColumn: CURRENCY
+
+		annotation SummarizationSetBy = Automatic
+
+	column PO_AMOUNT_USD
+		dataType: decimal
+		formatString: "$#,0.00;($#,0.00);$#,0.00"
+		lineageTag: 0651ccc2-cfec-5aac-a504-76b6a57d8fc5
+		summarizeBy: sum
+		sourceColumn: PO_AMOUNT_USD
+
+		annotation SummarizationSetBy = Automatic
+
+	column PO_STATUS
+		dataType: string
+		lineageTag: 6792eb92-32ef-5cfe-8dbd-96897d91cc24
+		summarizeBy: none
+		sourceColumn: PO_STATUS
+
+		annotation SummarizationSetBy = Automatic
+
+	column IS_GOODS_RECEIVED
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: b19376fc-2c94-515f-a8f2-95edc4d83bdc
+		summarizeBy: none
+		sourceColumn: IS_GOODS_RECEIVED
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FACT_PURCHASE_ORDER = m
+		mode: import
+		source =
+				let
+				    Source = Snowflake.Databases("CEMNFKN-TT95210.snowflakecomputing.com", "FIN_PROC_WH"),
+				    Db = Source{[Name="FIN_PROC_DB",Kind="Database"]}[Data],
+				    Sch = Db{[Name="GOLD",Kind="Schema"]}[Data],
+				    Data = Sch{[Name="FACT_PURCHASE_ORDER",Kind="Table"]}[Data]
+				in
+				    Data
+
+	annotation PBI_ResultType = Table

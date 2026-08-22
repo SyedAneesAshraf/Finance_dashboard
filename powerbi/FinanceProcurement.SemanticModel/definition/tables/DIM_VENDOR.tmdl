@@ -1,0 +1,145 @@
+/// Vendor dimension, SCD Type 2. One row per vendor per version. Facts join on VENDOR_KEY, already resolved to the version in effect on each transaction date.
+table DIM_VENDOR
+	lineageTag: 8610d77a-397d-556c-9b0b-93a2c5dd107c
+
+	column VENDOR_KEY
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 26b46c3c-192f-518e-837a-571217806ec3
+		summarizeBy: none
+		sourceColumn: VENDOR_KEY
+
+		annotation SummarizationSetBy = Automatic
+
+	column VENDOR_ID
+		dataType: string
+		lineageTag: 0a171f04-25c7-5dea-9e70-049bff8a9a4a
+		summarizeBy: none
+		sourceColumn: VENDOR_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column VENDOR_NAME
+		dataType: string
+		lineageTag: d71faf47-9efd-5529-ab7c-47c13432a9a0
+		summarizeBy: none
+		sourceColumn: VENDOR_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORY
+		dataType: string
+		lineageTag: 1043607f-275e-51c5-96d8-9dc674187d6c
+		summarizeBy: none
+		sourceColumn: CATEGORY
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION
+		dataType: string
+		lineageTag: f782c72d-9708-53af-8c45-68d10f4a166f
+		summarizeBy: none
+		sourceColumn: REGION
+
+		annotation SummarizationSetBy = Automatic
+
+	column PAYMENT_TERMS
+		dataType: string
+		lineageTag: 9ba25cc4-384c-5278-8dd2-15115fa106f5
+		summarizeBy: none
+		sourceColumn: PAYMENT_TERMS
+
+		annotation SummarizationSetBy = Automatic
+
+	column PAYMENT_TERMS_DAYS
+		dataType: int64
+		formatString: 0
+		lineageTag: fb6c5e1e-4d8f-5ce7-bcb8-86760fd97a8a
+		summarizeBy: none
+		sourceColumn: PAYMENT_TERMS_DAYS
+
+		annotation SummarizationSetBy = Automatic
+
+	column CURRENCY
+		dataType: string
+		lineageTag: 0f609414-6717-5164-805c-31e491b7c74f
+		summarizeBy: none
+		sourceColumn: CURRENCY
+
+		annotation SummarizationSetBy = Automatic
+
+	column EFFECTIVE_START_DATE
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 7902e1f1-d8eb-546d-92b4-65f4859619f6
+		summarizeBy: none
+		sourceColumn: EFFECTIVE_START_DATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column EFFECTIVE_END_DATE
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 060bf736-820f-5107-94dc-937f03f49c90
+		summarizeBy: none
+		sourceColumn: EFFECTIVE_END_DATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column IS_CURRENT
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: f3ebe23a-9732-5011-a8ac-a7990c6b468c
+		summarizeBy: none
+		sourceColumn: IS_CURRENT
+
+		annotation SummarizationSetBy = Automatic
+
+	column VERSION_NUMBER
+		dataType: int64
+		formatString: 0
+		lineageTag: 1677886c-2c3c-5686-83d5-18aac0c1c901
+		summarizeBy: none
+		sourceColumn: VERSION_NUMBER
+
+		annotation SummarizationSetBy = Automatic
+
+	column SOURCE_CREATION_DATE
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: ba7e27bb-711f-56d2-a2d2-17c372161f0c
+		summarizeBy: none
+		sourceColumn: SOURCE_CREATION_DATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column SOURCE_LAST_UPDATE
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 51f05eaa-a739-5277-86be-511c0c2369df
+		summarizeBy: none
+		sourceColumn: SOURCE_LAST_UPDATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column DATA_QUALITY_FLAGS
+		dataType: string
+		lineageTag: 472dd0d5-c8ba-5866-8d12-80869bd84659
+		summarizeBy: none
+		sourceColumn: DATA_QUALITY_FLAGS
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DIM_VENDOR = m
+		mode: import
+		source =
+				let
+				    Source = Snowflake.Databases("CEMNFKN-TT95210.snowflakecomputing.com", "FIN_PROC_WH"),
+				    Db = Source{[Name="FIN_PROC_DB",Kind="Database"]}[Data],
+				    Sch = Db{[Name="GOLD",Kind="Schema"]}[Data],
+				    Data = Sch{[Name="DIM_VENDOR",Kind="Table"]}[Data]
+				in
+				    Data
+
+	annotation PBI_ResultType = Table

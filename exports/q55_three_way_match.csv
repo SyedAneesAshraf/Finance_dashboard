@@ -1,0 +1,421 @@
+PO_ID,VENDOR_ID,VENDOR_NAME,PO_DATE,PO_STATUS,PO_AMOUNT,CURRENCY,INVOICE_COUNT,TOTAL_INVOICED,VARIANCE_AMOUNT,PCT_VARIANCE,INVOICE_IDS,RECEIPT_STATUS,MATCH_STATUS,EXCEPTION_TYPE
+PO100070,V0042,"Woodard, Harrell and Bell",2025-07-27,Cancelled,22337.84,USD,2,45646.28,23308.44,104.35,"INV200079, INV200666",Received,Exception - Review,Over-billed - do not pay difference
+PO100173,V0009,Arias LLC,2025-08-20,Partially Received,3095.54,USD,2,6207.44,3111.90,100.53,"INV200217, INV200664",Received,Exception - Review,Over-billed - do not pay difference
+PO100196,V0040,Martinez-Mcmahon,2024-10-27,Open,1549.86,USD,2,3105.98,1556.12,100.40,"INV200250, INV200663",Received,Exception - Review,Over-billed - do not pay difference
+PO100105,V0001,Johnson Ltd,2026-06-19,Closed,7751.37,USD,2,15462.76,7711.39,99.48,"INV200126, INV200662",Received,Exception - Review,Over-billed - do not pay difference
+PO100204,V0016,Walton-Franklin,2025-06-17,Closed,24120.04,USD,2,47877.22,23757.18,98.50,"INV200259, INV200671",Received,Exception - Review,Over-billed - do not pay difference
+PO100045,V0040,Martinez-Mcmahon,2026-01-16,Closed,1443.03,USD,2,2830.98,1387.95,96.18,"INV200053, INV200668",Received,Exception - Review,Over-billed - do not pay difference
+PO100074,V0007,"Taylor, Johnson And Morgan",2025-09-08,Closed,3917.18,USD,2,7662.54,3745.36,95.61,"INV200084, INV200659",Received,Exception - Review,Over-billed - do not pay difference
+PO100129,V0018,"Brennan, Lewis and Reilly",2025-07-14,Closed,1504.99,USD,2,2942.56,1437.57,95.52,"INV200158, INV200670",Received,Exception - Review,Over-billed - do not pay difference
+PO100376,V0035,Baker Llc,2026-01-09,Closed,2976.62,GBP,3,5294.07,2317.45,77.86,"INV200495, INV200496, INV200665",Received,Exception - Review,Over-billed - do not pay difference
+PO100225,V0048,"Williams, Hodges And Lee",2025-04-17,Closed,5707.09,USD,3,9512.58,3805.49,66.68,"INV200290, INV200291, INV200660",Received,Exception - Review,Over-billed - do not pay difference
+PO100131,V0048,"Williams, Hodges And Lee",2025-04-25,Closed,5923.99,USD,3,9039.07,3115.08,52.58,"INV200160, INV200161, INV200661",Received,Exception - Review,Over-billed - do not pay difference
+PO100474,V0024,Ramos-Hall,2024-10-05,Closed,20122.81,USD,3,29173.61,9050.80,44.98,"INV200628, INV200629, INV200672",Received,Exception - Review,Over-billed - do not pay difference
+PO100072,V0009,Arias LLC,2024-12-22,Partially Received,17413.90,USD,3,22941.10,5527.20,31.74,"INV200081, INV200082, INV200669",Received,Exception - Review,Over-billed - do not pay difference
+PO100279,V0016,Walton-Franklin,2026-04-23,Open,18688.37,USD,3,23855.83,5167.46,27.65,"INV200362, INV200363, INV200667",Received,Exception - Review,Over-billed - do not pay difference
+PO100459,V0040,Martinez-Mcmahon,2025-05-05,Open,2916.24,USD,1,2133.52,-782.72,-26.84,INV200607,NO GOODS RECEIPT,Exception - Review,Under-billed - expect further invoices
+PO100285,V0009,Arias LLC,2026-03-22,Closed,6785.64,USD,1,5026.38,-1759.26,-25.93,INV200371,Received,Exception - Review,Under-billed - expect further invoices
+PO100383,V0002,"Arnold, Mitchell and Jones",2025-08-21,Closed,7896.96,USD,1,9913.00,2016.04,25.53,INV200505,Received,Exception - Review,Over-billed - do not pay difference
+PO100408,V0048,"Williams, Hodges And Lee",2025-08-07,Partially Received,50676.22,USD,1,63181.03,12504.81,24.68,INV200537,Received,Exception - Review,Over-billed - do not pay difference
+PO100159,V0043,"Morrow, Miller And Brooks",2024-12-28,Closed,9255.92,USD,1,7032.42,-2223.50,-24.02,INV200197,Received,Exception - Review,Under-billed - expect further invoices
+PO100181,V0009,Arias LLC,2025-01-19,Closed,10035.53,USD,1,12417.46,2381.93,23.73,INV200227,Received,Exception - Review,Over-billed - do not pay difference
+PO100317,V0012,"Wagner, Willis and Alexander",2025-08-28,Open,872.99,USD,1,688.56,-184.43,-21.13,INV200407,Received,Exception - Review,Under-billed - expect further invoices
+PO100106,V0048,"Williams, Hodges And Lee",2025-11-22,Closed,29353.03,USD,3,35432.80,6079.77,20.71,"INV200127, INV200128, INV200129",Received,Exception - Review,Over-billed - do not pay difference
+PO100475,V0009,Arias LLC,2025-01-04,Closed,3246.37,USD,3,3906.78,660.41,20.34,"INV200630, INV200631, INV200632",Received,Exception - Review,Over-billed - do not pay difference
+PO100044,V0048,"Williams, Hodges And Lee",2026-04-08,Open,5860.06,USD,1,7039.76,1179.70,20.13,INV200052,Received,Exception - Review,Over-billed - do not pay difference
+PO100247,V0050,Sims Ltd,2025-12-16,Closed,57559.41,USD,1,68842.95,11283.54,19.60,INV200322,Received,Exception - Review,Over-billed - do not pay difference
+PO100253,V0042,"Woodard, Harrell and Bell",2025-10-06,Partially Received,5396.83,USD,1,6443.23,1046.40,19.39,INV200328,Received,Exception - Review,Over-billed - do not pay difference
+PO100278,V0012,"Wagner, Willis and Alexander",2026-03-19,Closed,913.08,USD,1,1084.93,171.85,18.82,INV200361,Received,Exception - Review,Over-billed - do not pay difference
+PO100379,V0018,"Brennan, Lewis and Reilly",2025-09-03,Closed,1996.50,USD,1,2355.03,358.53,17.96,INV200501,Received,Exception - Review,Over-billed - do not pay difference
+PO100337,V0001,Johnson Ltd,2025-01-08,Partially Received,23031.87,USD,2,26467.76,3435.89,14.92,"INV200433, INV200434",Received,Exception - Review,Over-billed - do not pay difference
+PO100183,V0008,"Winters, Campbell and Carr",2024-09-18,Open,657.45,EUR,2,563.78,-93.67,-14.25,"INV200228, INV200229",Received,Exception - Review,Under-billed - expect further invoices
+PO100438,V0021,"Esparza, Arnold and Mercer",2026-04-13,Partially Received,54848.24,USD,2,47975.25,-6872.99,-12.53,"INV200581, INV200582",Received,Exception - Review,Under-billed - expect further invoices
+PO100142,V0040,Martinez-Mcmahon,2024-09-03,Closed,579.29,USD,1,649.89,70.60,12.19,INV200175,Received,Exception - Review,Over-billed - do not pay difference
+PO100371,V0001,Johnson Ltd,2025-12-29,Closed,39436.46,USD,1,43804.32,4367.86,11.08,INV200488,Received,Exception - Review,Over-billed - do not pay difference
+PO100086,V0042,"Woodard, Harrell and Bell",2025-07-25,Closed,15462.49,USD,1,16908.19,1445.70,9.35,INV200099,Received,Exception - Review,Over-billed - do not pay difference
+PO100011,V0012,"Wagner, Willis and Alexander",2025-03-10,Closed,1913.06,USD,1,2070.99,157.93,8.26,INV200012,Received,Exception - Review,Over-billed - do not pay difference
+PO100361,V0009,Arias LLC,2025-04-04,Closed,2893.37,USD,2,2684.13,-209.24,-7.23,"INV200471, INV200472",Received,Exception - Review,Under-billed - expect further invoices
+PO100190,V0007,"Taylor, Johnson And Morgan",2025-08-05,Closed,9806.60,USD,3,10051.43,244.83,2.50,"INV200239, INV200240, INV200241",Received,Matched,Within tolerance
+PO100013,V0035,Baker Llc,2025-09-30,Closed,4660.75,GBP,1,4776.18,115.43,2.48,INV200016,Received,Matched,Within tolerance
+PO100100,V0042,"Woodard, Harrell and Bell",2026-05-07,Closed,31552.24,USD,1,32334.08,781.84,2.48,INV200119,Received,Matched,Within tolerance
+PO100269,V0040,Martinez-Mcmahon,2026-01-30,Closed,1836.58,USD,1,1791.11,-45.47,-2.48,INV200352,Received,Matched,Within tolerance
+PO100049,V0032,Klein and Sons,2025-04-01,Open,16843.38,USD,1,17260.00,416.62,2.47,INV200055,Received,Matched,Within tolerance
+PO100116,V0003,"Stevenson, Walsh and Pierce",2026-02-15,Closed,14336.05,USD,1,13982.42,-353.63,-2.47,INV200142,Received,Matched,Within tolerance
+PO100102,V0018,"Brennan, Lewis and Reilly",2025-12-30,Closed,11904.09,USD,1,12196.53,292.44,2.46,INV200123,Received,Matched,Within tolerance
+PO100207,V0020,Wood Inc,2025-10-31,Closed,27767.47,USD,3,28447.46,679.99,2.45,"INV200263, INV200264, INV200265",Received,Matched,Within tolerance
+PO100360,V0009,Arias LLC,2026-01-19,Closed,7245.76,USD,2,7068.30,-177.46,-2.45,"INV200469, INV200470",Received,Matched,Within tolerance
+PO100031,V0038,Ray Inc,2025-10-17,Partially Received,17338.61,USD,3,16915.91,-422.70,-2.44,"INV200037, INV200038, INV200039",Received,Matched,Within tolerance
+PO100050,V0024,Ramos-Hall,2026-03-06,Closed,11988.67,USD,1,11695.72,-292.95,-2.44,INV200056,Received,Matched,Within tolerance
+PO100073,V0009,Arias LLC,2025-08-22,Closed,29772.44,USD,1,30499.24,726.80,2.44,INV200083,Received,Matched,Within tolerance
+PO100306,V0047,"Sutton, Parker and Scott",2026-06-09,Open,3451.75,USD,1,3535.82,84.07,2.44,INV200395,Received,Matched,Within tolerance
+PO100405,V0028,"Ramirez, Lynch and Hogan",2025-07-12,Closed,28700.14,USD,1,28000.84,-699.30,-2.44,INV200533,Received,Matched,Within tolerance
+PO100372,V0038,Ray Inc,2025-11-12,Open,2483.11,USD,3,2543.54,60.43,2.43,"INV200489, INV200490, INV200491",NO GOODS RECEIPT,Matched,Within tolerance
+PO100157,V0030,Wallace-Rodriguez,2026-02-15,Closed,23095.60,USD,1,23654.16,558.56,2.42,INV200193,Received,Matched,Within tolerance
+PO100316,V0024,Ramos-Hall,2026-06-26,Closed,27473.13,USD,1,26808.96,-664.17,-2.42,INV200406,Received,Matched,Within tolerance
+PO100132,V0018,"Brennan, Lewis and Reilly",2026-06-01,Closed,2557.76,USD,1,2496.01,-61.75,-2.41,INV200162,Received,Matched,Within tolerance
+PO100245,V0022,Gallagher-Mason,2024-10-10,Cancelled,5108.40,USD,1,5231.35,122.95,2.41,INV200320,Received,Matched,Within tolerance
+PO100450,V0024,Ramos-Hall,2025-02-28,Open,9716.49,USD,2,9482.48,-234.01,-2.41,"INV200598, INV200599",Received,Matched,Within tolerance
+PO100152,V0021,"Esparza, Arnold and Mercer",2025-04-03,Closed,9366.71,USD,1,9590.18,223.47,2.39,INV200187,Received,Matched,Within tolerance
+PO100392,V0045,Wolfe-Macdonald,2024-12-23,Open,8199.40,USD,2,8003.25,-196.15,-2.39,"INV200515, INV200516",Received,Matched,Within tolerance
+PO100082,V0002,"Arnold, Mitchell and Jones",2025-01-25,Closed,3599.16,USD,1,3684.92,85.76,2.38,INV200093,Received,Matched,Within tolerance
+PO100435,V0050,Sims Ltd,2024-11-23,Open,49235.72,USD,1,48069.88,-1165.84,-2.37,INV200576,Received,Matched,Within tolerance
+PO100187,V0009,Arias LLC,2025-09-29,Partially Received,6846.45,USD,1,6685.02,-161.43,-2.36,INV200236,Received,Matched,Within tolerance
+PO100382,V0004,Arroyo Ltd,2025-09-08,Closed,6765.83,GBP,2,6606.18,-159.65,-2.36,"INV200503, INV200504",Received,Matched,Within tolerance
+PO100118,V0009,Arias LLC,2025-05-22,Open,14890.55,USD,1,15240.41,349.86,2.35,INV200144,NO GOODS RECEIPT,Matched,Within tolerance
+PO100198,V0024,Ramos-Hall,2025-02-05,Open,21082.55,USD,2,20586.19,-496.36,-2.35,"INV200252, INV200253",Received,Matched,Within tolerance
+PO100385,V0001,Johnson Ltd,2025-08-11,Closed,10891.61,USD,2,11146.91,255.30,2.34,"INV200507, INV200508",Received,Matched,Within tolerance
+PO100288,V0047,"Sutton, Parker and Scott",2025-10-14,Open,1093.79,USD,2,1119.28,25.49,2.33,"INV200375, INV200376",NO GOODS RECEIPT,Matched,Within tolerance
+PO100200,V0035,Baker Llc,2025-01-19,Closed,7164.41,GBP,2,7330.36,165.95,2.32,"INV200255, INV200256",Received,Matched,Within tolerance
+PO100332,V0032,Klein and Sons,2026-03-22,Closed,3977.48,USD,1,3885.21,-92.27,-2.32,INV200425,Received,Matched,Within tolerance
+PO100007,V0048,"Williams, Hodges And Lee",2024-12-02,Closed,11163.50,USD,2,11421.16,257.66,2.31,"INV200008, INV200009",Received,Matched,Within tolerance
+PO100462,V0047,"Sutton, Parker and Scott",2024-09-14,Open,1025.88,USD,1,1002.22,-23.66,-2.31,INV200612,NO GOODS RECEIPT,Matched,Within tolerance
+PO100067,V0008,"Winters, Campbell and Carr",2025-07-21,Partially Received,902.40,EUR,2,923.13,20.73,2.30,"INV200075, INV200076",Received,Matched,Within tolerance
+PO100268,V0049,"Gallagher, Taylor and Perry",2025-04-28,Open,4264.83,USD,1,4166.76,-98.07,-2.30,INV200351,Received,Matched,Within tolerance
+PO100130,V0048,"Williams, Hodges And Lee",2026-04-20,Closed,44857.25,USD,1,43838.48,-1018.77,-2.27,INV200159,Received,Matched,Within tolerance
+PO100163,V0002,"Arnold, Mitchell and Jones",2025-01-26,Closed,1401.84,USD,3,1433.60,31.76,2.27,"INV200201, INV200202, INV200203",Received,Matched,Within tolerance
+PO100327,V0040,Martinez-Mcmahon,2025-11-08,Closed,1582.54,USD,2,1618.42,35.88,2.27,"INV200417, INV200418",Received,Matched,Within tolerance
+PO100468,V0009,Arias LLC,2026-04-16,Partially Received,3286.09,USD,3,3211.48,-74.61,-2.27,"INV200620, INV200621, INV200622",Received,Matched,Within tolerance
+PO100286,V0009,Arias LLC,2025-11-21,Open,17345.86,USD,2,17738.39,392.53,2.26,"INV200372, INV200373",Received,Matched,Within tolerance
+PO100346,V0032,Klein and Sons,2024-11-03,Closed,4154.29,USD,1,4247.84,93.55,2.25,INV200448,Received,Matched,Within tolerance
+PO100098,V0043,"Morrow, Miller And Brooks",2025-02-18,Partially Received,4080.90,USD,1,3989.44,-91.46,-2.24,INV200116,Received,Matched,Within tolerance
+PO100065,V0024,Ramos-Hall,2025-12-31,Closed,5259.68,USD,1,5375.96,116.28,2.21,INV200073,Received,Matched,Within tolerance
+PO100426,V0047,"Sutton, Parker and Scott",2026-03-29,Partially Received,809.89,USD,1,827.80,17.91,2.21,INV200560,Received,Matched,Within tolerance
+PO100112,V0020,Wood Inc,2026-02-26,Closed,21732.50,USD,1,22209.77,477.27,2.20,INV200137,Received,Matched,Within tolerance
+PO100185,V0002,"Arnold, Mitchell and Jones",2025-07-07,Partially Received,4805.93,USD,1,4911.73,105.80,2.20,INV200233,Received,Matched,Within tolerance
+PO100476,V0012,"Wagner, Willis and Alexander",2024-12-16,Open,2623.86,USD,1,2681.46,57.60,2.20,INV200633,Received,Matched,Within tolerance
+PO100303,V0009,Arias LLC,2025-03-26,Closed,10309.19,USD,1,10083.30,-225.89,-2.19,INV200394,Received,Matched,Within tolerance
+PO100419,V0047,"Sutton, Parker and Scott",2025-04-24,Open,1106.40,USD,1,1082.20,-24.20,-2.19,INV200552,Received,Matched,Within tolerance
+PO100448,V0042,"Woodard, Harrell and Bell",2026-05-23,Closed,34151.58,USD,1,34898.90,747.32,2.19,INV200596,Received,Matched,Within tolerance
+PO100338,V0030,Wallace-Rodriguez,2026-05-09,Open,66050.33,USD,2,64608.90,-1441.43,-2.18,"INV200435, INV200436",Received,Matched,Within tolerance
+PO100367,V0017,Frost-Yu,2026-06-09,Closed,5511.45,USD,2,5631.45,120.00,2.18,"INV200480, INV200481",Received,Matched,Within tolerance
+PO100137,V0017,Frost-Yu,2025-07-07,Closed,22731.50,USD,1,22240.99,-490.51,-2.16,INV200168,Received,Matched,Within tolerance
+PO100292,V0041,Villarreal-Avila,2025-11-01,Partially Received,5711.74,USD,1,5834.92,123.18,2.16,INV200381,Received,Matched,Within tolerance
+PO100136,V0033,Williams-Kline,2025-06-27,Open,996.11,USD,1,974.71,-21.40,-2.15,INV200167,Received,Matched,Within tolerance
+PO100479,V0040,Martinez-Mcmahon,2025-06-11,Open,1103.58,USD,3,1079.94,-23.64,-2.14,"INV200636, INV200637, INV200638",Received,Matched,Within tolerance
+PO100015,V0009,Arias LLC,2025-09-07,Closed,2447.64,USD,2,2499.67,52.03,2.13,"INV200018, INV200019",Received,Matched,Within tolerance
+PO100345,V0001,Johnson Ltd,2025-03-07,Cancelled,39598.46,USD,1,40441.47,843.01,2.13,INV200447,NO GOODS RECEIPT,Matched,Within tolerance
+PO100108,V0032,Klein and Sons,2025-12-06,Closed,28690.86,USD,3,29295.59,604.73,2.11,"INV200130, INV200131, INV200132",Received,Matched,Within tolerance
+PO100178,V0042,"Woodard, Harrell and Bell",2025-08-13,Closed,24677.46,USD,1,25198.78,521.32,2.11,INV200224,Received,Matched,Within tolerance
+PO100339,V0004,Arroyo Ltd,2025-02-05,Closed,12768.92,GBP,1,12501.33,-267.59,-2.10,INV200437,Received,Matched,Within tolerance
+PO100428,V0027,Smith-Rose,2025-03-07,Closed,7692.05,USD,2,7530.44,-161.61,-2.10,"INV200562, INV200563",Received,Matched,Within tolerance
+PO100396,V0047,"Sutton, Parker and Scott",2025-10-09,Partially Received,522.22,USD,1,533.15,10.93,2.09,INV200520,Received,Matched,Within tolerance
+PO100059,V0016,Walton-Franklin,2026-06-05,Closed,7458.37,USD,1,7613.55,155.18,2.08,INV200067,Received,Matched,Within tolerance
+PO100429,V0050,Sims Ltd,2025-09-15,Partially Received,10552.67,USD,1,10772.46,219.79,2.08,INV200564,Received,Matched,Within tolerance
+PO100032,V0042,"Woodard, Harrell and Bell",2026-01-11,Open,25899.21,USD,1,26434.54,535.33,2.07,INV200040,Received,Matched,Within tolerance
+PO100156,V0038,Ray Inc,2025-04-17,Open,12426.27,USD,1,12683.74,257.47,2.07,INV200192,Received,Matched,Within tolerance
+PO100296,V0009,Arias LLC,2024-12-28,Closed,4369.34,USD,2,4459.74,90.40,2.07,"INV200389, INV200390",Received,Matched,Within tolerance
+PO100351,V0034,"Moran, Cortez and Martin",2026-03-03,Closed,304.41,EUR,2,310.71,6.30,2.07,"INV200456, INV200457",Received,Matched,Within tolerance
+PO100442,V0017,Frost-Yu,2025-09-27,Cancelled,7900.33,USD,2,8063.01,162.68,2.06,"INV200587, INV200588",Received,Matched,Within tolerance
+PO100214,V0042,"Woodard, Harrell and Bell",2024-10-06,Closed,6819.44,USD,1,6959.56,140.12,2.05,INV200273,Received,Matched,Within tolerance
+PO100078,V0033,Williams-Kline,2025-07-11,Closed,850.93,USD,1,868.26,17.33,2.04,INV200088,Received,Matched,Within tolerance
+PO100386,V0009,Arias LLC,2025-08-10,Closed,2670.80,USD,1,2616.39,-54.41,-2.04,INV200509,Received,Matched,Within tolerance
+PO100113,V0048,"Williams, Hodges And Lee",2025-12-27,Closed,14072.56,USD,1,14357.22,284.66,2.02,INV200138,Received,Matched,Within tolerance
+PO100368,V0025,Medina LLC,2025-08-25,Closed,13712.13,GBP,3,13988.93,276.80,2.02,"INV200482, INV200483, INV200484",Received,Matched,Within tolerance
+PO100228,V0041,Villarreal-Avila,2024-11-09,Closed,57059.53,USD,2,55912.33,-1147.20,-2.01,"INV200295, INV200296",Received,Matched,Within tolerance
+PO100144,V0017,Frost-Yu,2025-07-22,Closed,8152.98,USD,1,7991.61,-161.37,-1.98,INV200179,Received,Matched,Within tolerance
+PO100140,V0032,Klein and Sons,2025-07-27,Closed,22839.13,USD,2,23286.20,447.07,1.96,"INV200173, INV200174",Received,Matched,Within tolerance
+PO100342,V0009,Arias LLC,2025-06-28,Partially Received,3596.70,USD,3,3667.12,70.42,1.96,"INV200442, INV200443, INV200444",Received,Matched,Within tolerance
+PO100353,V0024,Ramos-Hall,2025-03-25,Partially Received,17990.36,USD,1,17637.11,-353.25,-1.96,INV200460,Received,Matched,Within tolerance
+PO100432,V0023,Gonzales and Sons,2025-04-02,Cancelled,29568.63,USD,3,28989.58,-579.05,-1.96,"INV200568, INV200569, INV200570",Received,Matched,Within tolerance
+PO100075,V0009,Arias LLC,2025-01-21,Open,7516.15,USD,1,7369.42,-146.73,-1.95,INV200085,Received,Matched,Within tolerance
+PO100241,V0033,Williams-Kline,2026-03-04,Closed,212.11,USD,2,216.24,4.13,1.95,"INV200313, INV200314",Received,Matched,Within tolerance
+PO100287,V0012,"Wagner, Willis and Alexander",2024-11-04,Open,677.71,USD,1,664.51,-13.20,-1.95,INV200374,Received,Matched,Within tolerance
+PO100014,V0043,"Morrow, Miller And Brooks",2025-10-08,Cancelled,20902.92,USD,1,20499.78,-403.14,-1.93,INV200017,Received,Matched,Within tolerance
+PO100020,V0048,"Williams, Hodges And Lee",2025-08-11,Closed,49437.69,USD,2,48485.86,-951.83,-1.93,"INV200025, INV200026",Received,Matched,Within tolerance
+PO100109,V0042,"Woodard, Harrell and Bell",2024-10-21,Closed,6885.33,USD,2,6752.19,-133.14,-1.93,"INV200133, INV200134",Received,Matched,Within tolerance
+PO100127,V0021,"Esparza, Arnold and Mercer",2025-05-21,Closed,38971.69,USD,2,38218.44,-753.25,-1.93,"INV200155, INV200156",Received,Matched,Within tolerance
+PO100399,V0030,Wallace-Rodriguez,2025-06-19,Closed,40228.66,USD,2,39451.51,-777.15,-1.93,"INV200523, INV200524",Received,Matched,Within tolerance
+PO100418,V0049,"Gallagher, Taylor and Perry",2026-05-30,Closed,7320.03,USD,1,7178.72,-141.31,-1.93,INV200551,Received,Matched,Within tolerance
+PO100478,V0009,Arias LLC,2025-12-08,Closed,6062.40,USD,1,5945.67,-116.73,-1.93,INV200635,Received,Matched,Within tolerance
+PO100017,V0032,Klein and Sons,2025-12-09,Closed,4713.39,USD,1,4803.72,90.33,1.92,INV200021,Received,Matched,Within tolerance
+PO100038,V0050,Sims Ltd,2026-04-09,Partially Received,108912.27,USD,1,106825.72,-2086.55,-1.92,INV200049,Received,Matched,Within tolerance
+PO100110,V0022,Gallagher-Mason,2026-06-11,Closed,12917.47,USD,2,12672.38,-245.09,-1.90,"INV200135, INV200136",Received,Matched,Within tolerance
+PO100440,V0040,Martinez-Mcmahon,2026-06-01,Closed,1462.19,USD,2,1490.01,27.82,1.90,"INV200585, INV200586",Received,Matched,Within tolerance
+PO100034,V0008,"Winters, Campbell and Carr",2025-08-12,Closed,384.52,EUR,1,377.27,-7.25,-1.89,INV200042,Received,Matched,Within tolerance
+PO100220,V0004,Arroyo Ltd,2025-02-26,Partially Received,37604.88,GBP,1,36895.22,-709.66,-1.89,INV200283,Received,Matched,Within tolerance
+PO100480,V0017,Frost-Yu,2025-01-11,Closed,23594.27,USD,2,24040.00,445.73,1.89,"INV200639, INV200640",Received,Matched,Within tolerance
+PO100375,V0038,Ray Inc,2025-12-04,Open,6879.28,USD,1,7007.23,127.95,1.86,INV200494,Received,Matched,Within tolerance
+PO100363,V0048,"Williams, Hodges And Lee",2025-03-31,Cancelled,15299.09,USD,2,15015.96,-283.13,-1.85,"INV200474, INV200475",Received,Matched,Within tolerance
+PO100230,V0039,"Jones, Lee and Jefferson",2025-02-03,Closed,6075.78,CAD,2,6186.38,110.60,1.82,"INV200299, INV200300",Received,Matched,Within tolerance
+PO100172,V0004,Arroyo Ltd,2025-08-25,Closed,8261.28,GBP,1,8410.70,149.42,1.81,INV200216,Received,Matched,Within tolerance
+PO100216,V0042,"Woodard, Harrell and Bell",2025-12-18,Closed,7093.80,USD,2,6966.93,-126.87,-1.79,"INV200277, INV200278",Received,Matched,Within tolerance
+PO100388,V0050,Sims Ltd,2026-01-16,Closed,38474.67,USD,1,39163.63,688.96,1.79,INV200511,Received,Matched,Within tolerance
+PO100001,V0025,Medina LLC,2025-03-23,Partially Received,14677.20,GBP,2,14417.31,-259.89,-1.77,"INV200001, INV200002",Received,Matched,Within tolerance
+PO100171,V0043,"Morrow, Miller And Brooks",2025-03-21,Open,3362.50,USD,3,3421.72,59.22,1.76,"INV200213, INV200214, INV200215",Received,Matched,Within tolerance
+PO100436,V0002,"Arnold, Mitchell and Jones",2025-10-14,Closed,3625.31,USD,3,3689.14,63.83,1.76,"INV200577, INV200578, INV200579",Received,Matched,Within tolerance
+PO100265,V0008,"Winters, Campbell and Carr",2025-10-02,Closed,266.11,EUR,2,261.45,-4.66,-1.75,"INV200345, INV200346",Received,Matched,Within tolerance
+PO100447,V0028,"Ramirez, Lynch and Hogan",2025-12-20,Open,20166.09,USD,2,20519.91,353.82,1.75,"INV200594, INV200595",Received,Matched,Within tolerance
+PO100203,V0040,Martinez-Mcmahon,2025-12-03,Closed,2119.33,USD,1,2082.48,-36.85,-1.74,INV200258,Received,Matched,Within tolerance
+PO100248,V0042,"Woodard, Harrell and Bell",2025-08-10,Partially Received,25100.13,USD,1,24664.00,-436.13,-1.74,INV200323,Received,Matched,Within tolerance
+PO100093,V0008,"Winters, Campbell and Carr",2025-11-02,Closed,522.01,EUR,1,513.01,-9.00,-1.72,INV200110,Received,Matched,Within tolerance
+PO100176,V0042,"Woodard, Harrell and Bell",2025-11-13,Closed,7724.73,USD,2,7592.76,-131.97,-1.71,"INV200220, INV200221",Received,Matched,Within tolerance
+PO100251,V0016,Walton-Franklin,2025-10-19,Open,113277.30,USD,1,111343.57,-1933.73,-1.71,INV200326,NO GOODS RECEIPT,Matched,Within tolerance
+PO100114,V0029,Herman LLC,2025-08-15,Partially Received,28063.93,USD,1,27587.68,-476.25,-1.70,INV200139,Received,Matched,Within tolerance
+PO100246,V0018,"Brennan, Lewis and Reilly",2024-11-06,Partially Received,800.65,USD,1,814.29,13.64,1.70,INV200321,Received,Matched,Within tolerance
+PO100378,V0001,Johnson Ltd,2025-10-06,Closed,92387.31,USD,2,90824.13,-1563.18,-1.69,"INV200499, INV200500",Received,Matched,Within tolerance
+PO100259,V0002,"Arnold, Mitchell and Jones",2026-02-13,Closed,1916.69,USD,1,1948.92,32.23,1.68,INV200337,Received,Matched,Within tolerance
+PO100366,V0017,Frost-Yu,2025-07-01,Closed,3218.15,USD,3,3271.91,53.76,1.67,"INV200477, INV200478, INV200479",Received,Matched,Within tolerance
+PO100370,V0031,Phillips-Henry,2024-09-24,Open,30624.72,USD,3,31131.78,507.06,1.66,"INV200485, INV200486, INV200487",Received,Matched,Within tolerance
+PO100349,V0027,Smith-Rose,2025-08-24,Closed,2186.42,USD,2,2222.43,36.01,1.65,"INV200453, INV200454",Received,Matched,Within tolerance
+PO100407,V0001,Johnson Ltd,2025-11-05,Closed,29361.78,USD,2,29846.63,484.85,1.65,"INV200535, INV200536",Received,Matched,Within tolerance
+PO100095,V0004,Arroyo Ltd,2025-08-28,Closed,7893.71,GBP,1,7764.44,-129.27,-1.64,INV200112,Received,Matched,Within tolerance
+PO100180,V0031,Phillips-Henry,2025-06-20,Closed,59790.70,USD,1,58813.08,-977.62,-1.64,INV200226,Received,Matched,Within tolerance
+PO100393,V0031,Phillips-Henry,2025-03-24,Open,6900.45,USD,1,7013.59,113.14,1.64,INV200517,NO GOODS RECEIPT,Matched,Within tolerance
+PO100094,V0049,"Gallagher, Taylor and Perry",2026-01-16,Closed,3033.22,USD,1,2984.12,-49.10,-1.62,INV200111,Received,Matched,Within tolerance
+PO100209,V0037,"Martinez, Wright and Reynolds",2025-04-29,Closed,2610.58,USD,1,2568.32,-42.26,-1.62,INV200266,Received,Matched,Within tolerance
+PO100380,V0048,"Williams, Hodges And Lee",2026-01-03,Closed,108240.69,USD,1,109992.41,1751.72,1.62,INV200502,Received,Matched,Within tolerance
+PO100071,V0021,"Esparza, Arnold and Mercer",2026-04-09,Partially Received,53614.13,USD,1,54476.16,862.03,1.61,INV200080,Received,Matched,Within tolerance
+PO100341,V0048,"Williams, Hodges And Lee",2025-03-03,Closed,30169.99,USD,3,29685.72,-484.27,-1.61,"INV200439, INV200440, INV200441",Received,Matched,Within tolerance
+PO100365,V0022,Gallagher-Mason,2024-12-09,Closed,7021.65,USD,1,7134.65,113.00,1.61,INV200476,Received,Matched,Within tolerance
+PO100264,V0040,Martinez-Mcmahon,2025-12-02,Closed,1046.03,USD,1,1062.79,16.76,1.60,INV200344,Received,Matched,Within tolerance
+PO100012,V0032,Klein and Sons,2026-01-03,Closed,6103.43,USD,3,6006.14,-97.29,-1.59,"INV200013, INV200014, INV200015",Received,Matched,Within tolerance
+PO100164,V0048,"Williams, Hodges And Lee",2025-09-09,Closed,6376.34,USD,2,6477.47,101.13,1.59,"INV200204, INV200205",Received,Matched,Within tolerance
+PO100179,V0042,"Woodard, Harrell and Bell",2024-12-13,Open,10587.54,USD,1,10419.38,-168.16,-1.59,INV200225,Received,Matched,Within tolerance
+PO100191,V0017,Frost-Yu,2026-02-03,Cancelled,6072.30,USD,1,5975.62,-96.68,-1.59,INV200242,Received,Matched,Within tolerance
+PO100217,V0017,Frost-Yu,2025-09-16,Open,9122.99,USD,2,9267.93,144.94,1.59,"INV200279, INV200280",Received,Matched,Within tolerance
+PO100437,V0042,"Woodard, Harrell and Bell",2024-09-30,Closed,44002.89,USD,1,43302.81,-700.08,-1.59,INV200580,Received,Matched,Within tolerance
+PO100051,V0014,Combs-Sanchez,2026-04-07,Partially Received,5820.54,USD,1,5729.28,-91.26,-1.57,INV200057,Received,Matched,Within tolerance
+PO100046,V0017,Frost-Yu,2025-05-15,Partially Received,10231.80,USD,1,10391.67,159.87,1.56,INV200054,Received,Matched,Within tolerance
+PO100194,V0032,Klein and Sons,2025-06-24,Closed,4410.92,USD,1,4479.83,68.91,1.56,INV200248,Received,Matched,Within tolerance
+PO100120,V0033,Williams-Kline,2026-03-10,Open,228.27,USD,1,231.80,3.53,1.55,INV200146,NO GOODS RECEIPT,Matched,Within tolerance
+PO100280,V0025,Medina LLC,2026-01-25,Closed,3517.29,GBP,2,3571.64,54.35,1.55,"INV200364, INV200365",Received,Matched,Within tolerance
+PO100233,V0020,Wood Inc,2025-04-03,Partially Received,6272.26,USD,1,6175.49,-96.77,-1.54,INV200305,Received,Matched,Within tolerance
+PO100449,V0031,Phillips-Henry,2025-02-04,Closed,27717.30,USD,1,28145.48,428.18,1.54,INV200597,Received,Matched,Within tolerance
+PO100236,V0018,"Brennan, Lewis and Reilly",2025-05-03,Cancelled,1280.49,USD,2,1300.08,19.59,1.53,"INV200306, INV200307",Received,Matched,Within tolerance
+PO100158,V0020,Wood Inc,2025-11-29,Open,10275.88,USD,3,10119.73,-156.15,-1.52,"INV200194, INV200195, INV200196",Received,Matched,Within tolerance
+PO100312,V0009,Arias LLC,2025-12-22,Closed,13015.53,USD,1,13210.67,195.14,1.50,INV200399,Received,Matched,Within tolerance
+PO100121,V0023,Gonzales and Sons,2025-06-21,Partially Received,6750.35,USD,2,6850.44,100.09,1.48,"INV200147, INV200148",Received,Matched,Within tolerance
+PO100255,V0010,Reyes Llc,2024-12-17,Closed,10034.13,USD,1,10182.44,148.31,1.48,INV200331,Received,Matched,Within tolerance
+PO100028,V0016,Walton-Franklin,2024-11-07,Cancelled,32089.15,USD,2,32559.58,470.43,1.47,"INV200032, INV200033",NO GOODS RECEIPT,Matched,Within tolerance
+PO100085,V0039,"Jones, Lee and Jefferson",2025-03-31,Open,8495.04,CAD,3,8620.17,125.13,1.47,"INV200096, INV200097, INV200098",NO GOODS RECEIPT,Matched,Within tolerance
+PO100295,V0018,"Brennan, Lewis and Reilly",2024-11-21,Open,1906.06,USD,3,1934.09,28.03,1.47,"INV200386, INV200387, INV200388",Received,Matched,Within tolerance
+PO100087,V0017,Frost-Yu,2025-06-13,Closed,2884.77,USD,2,2926.63,41.86,1.45,"INV200100, INV200101",Received,Matched,Within tolerance
+PO100090,V0004,Arroyo Ltd,2024-12-27,Partially Received,62078.83,GBP,2,61177.40,-901.43,-1.45,"INV200105, INV200106",Received,Matched,Within tolerance
+PO100215,V0038,Ray Inc,2024-12-05,Closed,15372.70,USD,3,15150.04,-222.66,-1.45,"INV200274, INV200275, INV200276",Received,Matched,Within tolerance
+PO100350,V0021,"Esparza, Arnold and Mercer",2025-11-30,Closed,16990.56,USD,1,17237.27,246.71,1.45,INV200455,Received,Matched,Within tolerance
+PO100343,V0035,Baker Llc,2026-06-28,Partially Received,10151.19,GBP,1,10005.14,-146.05,-1.44,INV200445,Received,Matched,Within tolerance
+PO100439,V0038,Ray Inc,2025-11-15,Cancelled,10747.18,USD,2,10592.60,-154.58,-1.44,"INV200583, INV200584",Received,Matched,Within tolerance
+PO100177,V0041,Villarreal-Avila,2026-05-03,Closed,11936.94,USD,2,12105.55,168.61,1.41,"INV200222, INV200223",Received,Matched,Within tolerance
+PO100033,V0042,"Woodard, Harrell and Bell",2026-03-15,Open,81562.10,USD,1,82700.03,1137.93,1.40,INV200041,Received,Matched,Within tolerance
+PO100318,V0017,Frost-Yu,2026-01-30,Closed,3697.49,USD,1,3749.43,51.94,1.40,INV200408,Received,Matched,Within tolerance
+PO100409,V0031,Phillips-Henry,2026-03-16,Closed,64505.89,USD,1,65397.74,891.85,1.38,INV200538,Received,Matched,Within tolerance
+PO100052,V0040,Martinez-Mcmahon,2024-12-09,Closed,547.97,USD,1,555.49,7.52,1.37,INV200058,Received,Matched,Within tolerance
+PO100192,V0031,Phillips-Henry,2025-11-29,Closed,23395.48,USD,3,23716.98,321.50,1.37,"INV200243, INV200244, INV200245",Received,Matched,Within tolerance
+PO100458,V0009,Arias LLC,2025-03-22,Closed,2442.64,USD,1,2409.48,-33.16,-1.36,INV200606,Received,Matched,Within tolerance
+PO100155,V0011,"Woods, Johnson and Malone",2025-03-10,Cancelled,8159.70,GBP,1,8049.16,-110.54,-1.35,INV200191,NO GOODS RECEIPT,Matched,Within tolerance
+PO100258,V0042,"Woodard, Harrell and Bell",2025-09-12,Open,25035.67,USD,2,25374.06,338.39,1.35,"INV200335, INV200336",Received,Matched,Within tolerance
+PO100403,V0022,Gallagher-Mason,2026-04-27,Cancelled,2490.92,USD,1,2524.64,33.72,1.35,INV200531,Received,Matched,Within tolerance
+PO100455,V0048,"Williams, Hodges And Lee",2025-11-10,Partially Received,17048.36,USD,1,17278.07,229.71,1.35,INV200604,Received,Matched,Within tolerance
+PO100039,V0009,Arias LLC,2025-07-01,Closed,24591.42,USD,1,24261.50,-329.92,-1.34,INV200050,Received,Matched,Within tolerance
+PO100434,V0040,Martinez-Mcmahon,2026-04-12,Closed,537.82,USD,3,545.05,7.23,1.34,"INV200573, INV200574, INV200575",Received,Matched,Within tolerance
+PO100025,V0038,Ray Inc,2026-06-17,Closed,13623.08,USD,1,13442.38,-180.70,-1.33,INV200031,Received,Matched,Within tolerance
+PO100330,V0032,Klein and Sons,2025-09-15,Closed,4468.37,USD,2,4527.42,59.05,1.32,"INV200422, INV200423",Received,Matched,Within tolerance
+PO100125,V0025,Medina LLC,2025-10-26,Partially Received,5269.39,GBP,2,5338.40,69.01,1.31,"INV200153, INV200154",Received,Matched,Within tolerance
+PO100022,V0008,"Winters, Campbell and Carr",2026-04-07,Closed,530.28,EUR,2,537.19,6.91,1.30,"INV200027, INV200028",Received,Matched,Within tolerance
+PO100128,V0021,"Esparza, Arnold and Mercer",2026-02-27,Partially Received,23099.36,USD,1,22801.32,-298.04,-1.29,INV200157,Received,Matched,Within tolerance
+PO100184,V0030,Wallace-Rodriguez,2026-04-16,Closed,50897.36,USD,3,50240.82,-656.54,-1.29,"INV200230, INV200231, INV200232",Received,Matched,Within tolerance
+PO100384,V0002,"Arnold, Mitchell and Jones",2025-01-09,Partially Received,664.94,USD,1,673.48,8.54,1.28,INV200506,Received,Matched,Within tolerance
+PO100404,V0030,Wallace-Rodriguez,2025-04-12,Closed,6187.39,USD,1,6266.29,78.90,1.28,INV200532,Received,Matched,Within tolerance
+PO100464,V0022,Gallagher-Mason,2025-10-09,Open,29340.30,USD,1,28963.95,-376.35,-1.28,INV200614,NO GOODS RECEIPT,Matched,Within tolerance
+PO100117,V0012,"Wagner, Willis and Alexander",2026-06-16,Closed,3964.95,USD,1,3914.73,-50.22,-1.27,INV200143,Received,Matched,Within tolerance
+PO100417,V0041,Villarreal-Avila,2025-04-15,Partially Received,71064.99,USD,2,70163.29,-901.70,-1.27,"INV200549, INV200550",Received,Matched,Within tolerance
+PO100451,V0018,"Brennan, Lewis and Reilly",2025-07-26,Closed,3741.61,USD,3,3789.19,47.58,1.27,"INV200600, INV200601, INV200602",Received,Matched,Within tolerance
+PO100433,V0022,Gallagher-Mason,2024-11-25,Closed,3187.76,USD,2,3227.86,40.10,1.26,"INV200571, INV200572",Received,Matched,Within tolerance
+PO100068,V0042,"Woodard, Harrell and Bell",2025-03-08,Closed,29489.50,USD,1,29857.91,368.41,1.25,INV200077,Received,Matched,Within tolerance
+PO100472,V0047,"Sutton, Parker and Scott",2025-10-05,Partially Received,714.73,USD,1,705.82,-8.91,-1.25,INV200627,Received,Matched,Within tolerance
+PO100193,V0027,Smith-Rose,2024-10-29,Closed,28131.59,USD,2,27783.19,-348.40,-1.24,"INV200246, INV200247",Received,Matched,Within tolerance
+PO100314,V0027,Smith-Rose,2025-12-13,Closed,4203.85,USD,3,4255.50,51.65,1.23,"INV200400, INV200401, INV200402",Received,Matched,Within tolerance
+PO100197,V0040,Martinez-Mcmahon,2025-05-05,Closed,829.59,USD,1,839.67,10.08,1.22,INV200251,Received,Matched,Within tolerance
+PO100231,V0004,Arroyo Ltd,2025-07-07,Partially Received,11845.85,GBP,1,11701.58,-144.27,-1.22,INV200301,Received,Matched,Within tolerance
+PO100199,V0048,"Williams, Hodges And Lee",2025-12-01,Closed,16526.02,USD,1,16326.03,-199.99,-1.21,INV200254,Received,Matched,Within tolerance
+PO100275,V0030,Wallace-Rodriguez,2025-09-29,Closed,45060.14,USD,2,45604.01,543.87,1.21,"INV200358, INV200359",Received,Matched,Within tolerance
+PO100411,V0032,Klein and Sons,2024-09-01,Closed,5644.76,USD,1,5576.20,-68.56,-1.21,INV200540,Received,Matched,Within tolerance
+PO100138,V0048,"Williams, Hodges And Lee",2025-01-03,Partially Received,52751.80,USD,2,53386.77,634.97,1.20,"INV200169, INV200170",Received,Matched,Within tolerance
+PO100446,V0042,"Woodard, Harrell and Bell",2026-04-27,Closed,61499.24,USD,1,60763.98,-735.26,-1.20,INV200593,Received,Matched,Within tolerance
+PO100079,V0031,Phillips-Henry,2025-11-22,Closed,112482.74,USD,1,113824.02,1341.28,1.19,INV200089,Received,Matched,Within tolerance
+PO100359,V0038,Ray Inc,2024-12-06,Open,3625.40,USD,1,3582.23,-43.17,-1.19,INV200468,Received,Matched,Within tolerance
+PO100167,V0023,Gonzales and Sons,2025-04-08,Partially Received,5380.77,USD,1,5444.24,63.47,1.18,INV200208,Received,Matched,Within tolerance
+PO100344,V0027,Smith-Rose,2026-02-03,Closed,25973.72,USD,1,26279.06,305.34,1.18,INV200446,Received,Matched,Within tolerance
+PO100443,V0025,Medina LLC,2024-09-12,Closed,4827.60,GBP,2,4770.45,-57.15,-1.18,"INV200589, INV200590",Received,Matched,Within tolerance
+PO100310,V0041,Villarreal-Avila,2026-02-25,Closed,40435.96,USD,1,40907.60,471.64,1.17,INV200398,Received,Matched,Within tolerance
+PO100257,V0027,Smith-Rose,2025-06-18,Partially Received,10374.34,USD,3,10253.59,-120.75,-1.16,"INV200332, INV200333, INV200334",Received,Matched,Within tolerance
+PO100362,V0030,Wallace-Rodriguez,2025-01-31,Open,14350.18,USD,1,14183.64,-166.54,-1.16,INV200473,NO GOODS RECEIPT,Matched,Within tolerance
+PO100145,V0022,Gallagher-Mason,2025-04-10,Partially Received,2062.41,USD,1,2038.65,-23.76,-1.15,INV200180,Received,Matched,Within tolerance
+PO100281,V0040,Martinez-Mcmahon,2025-09-14,Closed,653.49,USD,1,661.00,7.51,1.15,INV200366,Received,Matched,Within tolerance
+PO100377,V0027,Smith-Rose,2024-11-29,Closed,33547.61,USD,2,33160.14,-387.47,-1.15,"INV200497, INV200498",Received,Matched,Within tolerance
+PO100002,V0025,Medina LLC,2026-01-14,Cancelled,5327.57,GBP,1,5267.84,-59.73,-1.12,INV200003,Received,Matched,Within tolerance
+PO100402,V0002,"Arnold, Mitchell and Jones",2025-08-19,Partially Received,4250.65,USD,1,4298.27,47.62,1.12,INV200530,Received,Matched,Within tolerance
+PO100463,V0017,Frost-Yu,2025-11-12,Closed,9265.84,USD,1,9162.51,-103.33,-1.12,INV200613,Received,Matched,Within tolerance
+PO100069,V0044,Munoz PLC,2026-01-05,Open,14140.84,CAD,1,14298.27,157.43,1.11,INV200078,Received,Matched,Within tolerance
+PO100315,V0048,"Williams, Hodges And Lee",2026-02-14,Closed,64584.11,USD,3,65285.14,701.03,1.09,"INV200403, INV200404, INV200405",Received,Matched,Within tolerance
+PO100153,V0009,Arias LLC,2025-08-27,Partially Received,2936.42,USD,1,2904.58,-31.84,-1.08,INV200188,Received,Matched,Within tolerance
+PO100390,V0005,"Bonilla, Jefferson and Brown",2025-01-06,Open,805.02,USD,1,813.72,8.70,1.08,INV200513,Received,Matched,Within tolerance
+PO100276,V0009,Arias LLC,2025-12-13,Partially Received,2767.31,USD,1,2737.64,-29.67,-1.07,INV200360,Received,Matched,Within tolerance
+PO100308,V0021,"Esparza, Arnold and Mercer",2024-09-18,Open,12703.95,USD,1,12839.77,135.82,1.07,INV200397,Received,Matched,Within tolerance
+PO100348,V0048,"Williams, Hodges And Lee",2025-11-02,Open,100560.77,USD,1,99497.59,-1063.18,-1.06,INV200452,Received,Matched,Within tolerance
+PO100421,V0009,Arias LLC,2025-07-05,Closed,11634.67,USD,1,11757.50,122.83,1.06,INV200553,Received,Matched,Within tolerance
+PO100237,V0034,"Moran, Cortez and Martin",2025-12-19,Closed,2312.13,EUR,1,2287.79,-24.34,-1.05,INV200308,Received,Matched,Within tolerance
+PO100461,V0009,Arias LLC,2024-10-23,Closed,4681.68,USD,3,4632.51,-49.17,-1.05,"INV200609, INV200610, INV200611",Received,Matched,Within tolerance
+PO100354,V0004,Arroyo Ltd,2026-05-12,Closed,21628.93,GBP,2,21406.07,-222.86,-1.03,"INV200461, INV200462",Received,Matched,Within tolerance
+PO100460,V0002,"Arnold, Mitchell and Jones",2026-06-27,Closed,2843.09,USD,1,2872.13,29.04,1.02,INV200608,Received,Matched,Within tolerance
+PO100252,V0025,Medina LLC,2025-01-09,Closed,8308.33,GBP,1,8224.55,-83.78,-1.01,INV200327,Received,Matched,Within tolerance
+PO100166,V0027,Smith-Rose,2026-05-02,Partially Received,2208.60,USD,1,2186.43,-22.17,-1.00,INV200207,Received,Matched,Within tolerance
+PO100205,V0029,Herman LLC,2024-10-04,Closed,6353.60,USD,2,6290.79,-62.81,-0.99,"INV200260, INV200261",Received,Matched,Within tolerance
+PO100414,V0021,"Esparza, Arnold and Mercer",2026-04-14,Open,17272.70,USD,2,17102.00,-170.70,-0.99,"INV200544, INV200545",Received,Matched,Within tolerance
+PO100186,V0002,"Arnold, Mitchell and Jones",2024-11-04,Closed,8558.28,USD,2,8642.15,83.87,0.98,"INV200234, INV200235",Received,Matched,Within tolerance
+PO100328,V0017,Frost-Yu,2026-04-05,Open,2028.22,USD,1,2048.17,19.95,0.98,INV200419,NO GOODS RECEIPT,Matched,Within tolerance
+PO100445,V0048,"Williams, Hodges And Lee",2025-03-23,Closed,22544.90,USD,2,22762.78,217.88,0.97,"INV200591, INV200592",Received,Matched,Within tolerance
+PO100466,V0027,Smith-Rose,2025-12-17,Partially Received,3992.02,USD,2,4030.87,38.85,0.97,"INV200618, INV200619",Received,Matched,Within tolerance
+PO100331,V0034,"Moran, Cortez and Martin",2025-02-14,Partially Received,673.33,EUR,1,679.71,6.38,0.95,INV200424,Received,Matched,Within tolerance
+PO100091,V0032,Klein and Sons,2025-11-15,Closed,6023.51,USD,1,5966.94,-56.57,-0.94,INV200107,Received,Matched,Within tolerance
+PO100101,V0045,Wolfe-Macdonald,2025-05-09,Partially Received,20257.55,USD,3,20067.94,-189.61,-0.94,"INV200120, INV200121, INV200122",Received,Matched,Within tolerance
+PO100389,V0007,"Taylor, Johnson And Morgan",2025-12-03,Partially Received,10563.31,USD,1,10660.76,97.45,0.92,INV200512,Received,Matched,Within tolerance
+PO100242,V0038,Ray Inc,2025-08-10,Closed,3221.67,USD,2,3250.90,29.23,0.91,"INV200315, INV200316",Received,Matched,Within tolerance
+PO100320,V0049,"Gallagher, Taylor and Perry",2024-09-04,Open,2157.25,USD,1,2176.92,19.67,0.91,INV200410,Received,Matched,Within tolerance
+PO100336,V0029,Herman LLC,2024-11-23,Closed,7599.55,USD,3,7530.62,-68.93,-0.91,"INV200430, INV200431, INV200432",Received,Matched,Within tolerance
+PO100412,V0009,Arias LLC,2024-10-11,Closed,10501.77,USD,3,10406.01,-95.76,-0.91,"INV200541, INV200542, INV200543",Received,Matched,Within tolerance
+PO100219,V0027,Smith-Rose,2025-02-10,Open,3375.82,USD,1,3406.23,30.41,0.90,INV200282,Received,Matched,Within tolerance
+PO100322,V0012,"Wagner, Willis and Alexander",2024-09-25,Partially Received,1228.66,USD,2,1217.56,-11.10,-0.90,"INV200412, INV200413",Received,Matched,Within tolerance
+PO100149,V0031,Phillips-Henry,2024-12-01,Closed,45090.26,USD,1,44690.67,-399.59,-0.89,INV200183,Received,Matched,Within tolerance
+PO100302,V0017,Frost-Yu,2025-12-09,Closed,3175.61,USD,1,3147.33,-28.28,-0.89,INV200393,Received,Matched,Within tolerance
+PO100326,V0001,Johnson Ltd,2025-08-03,Closed,59317.07,USD,3,59844.95,527.88,0.89,"INV200414, INV200415, INV200416",Received,Matched,Within tolerance
+PO100016,V0038,Ray Inc,2026-06-17,Closed,14000.49,USD,1,14124.11,123.62,0.88,INV200020,Received,Matched,Within tolerance
+PO100175,V0009,Arias LLC,2025-09-11,Closed,3311.67,USD,1,3283.35,-28.32,-0.86,INV200219,Received,Matched,Within tolerance
+PO100019,V0017,Frost-Yu,2026-03-15,Closed,5616.98,USD,1,5570.42,-46.56,-0.83,INV200024,Received,Matched,Within tolerance
+PO100270,V0040,Martinez-Mcmahon,2025-10-06,Closed,3041.98,USD,3,3067.11,25.13,0.83,"INV200353, INV200354, INV200355",Received,Matched,Within tolerance
+PO100055,V0043,"Morrow, Miller And Brooks",2024-11-03,Cancelled,30361.26,USD,1,30610.88,249.62,0.82,INV200062,Received,Matched,Within tolerance
+PO100427,V0042,"Woodard, Harrell and Bell",2024-10-12,Closed,37086.74,USD,1,37390.66,303.92,0.82,INV200561,Received,Matched,Within tolerance
+PO100134,V0031,Phillips-Henry,2025-08-21,Closed,17474.98,USD,1,17617.10,142.12,0.81,INV200164,Received,Matched,Within tolerance
+PO100064,V0009,Arias LLC,2025-05-21,Open,3792.55,USD,1,3822.36,29.81,0.79,INV200072,Received,Matched,Within tolerance
+PO100300,V0046,"Roth, Johnson And Glover",2025-06-14,Closed,3364.86,USD,1,3391.58,26.72,0.79,INV200392,Received,Matched,Within tolerance
+PO100080,V0017,Frost-Yu,2025-03-27,Closed,3108.55,USD,3,3084.80,-23.75,-0.76,"INV200090, INV200091, INV200092",Received,Matched,Within tolerance
+PO100088,V0042,"Woodard, Harrell and Bell",2024-09-28,Closed,18109.80,USD,1,18248.23,138.43,0.76,INV200102,Received,Matched,Within tolerance
+PO100096,V0032,Klein and Sons,2026-06-04,Open,6802.49,USD,1,6751.14,-51.35,-0.75,INV200113,Received,Matched,Within tolerance
+PO100060,V0050,Sims Ltd,2025-08-21,Closed,9721.10,USD,3,9792.91,71.81,0.74,"INV200068, INV200069, INV200070",Received,Matched,Within tolerance
+PO100243,V0040,Martinez-Mcmahon,2026-06-16,Closed,2391.78,USD,2,2409.20,17.42,0.73,"INV200317, INV200318",Received,Matched,Within tolerance
+PO100024,V0038,Ray Inc,2025-02-07,Closed,7057.86,USD,1,7007.98,-49.88,-0.71,INV200030,Received,Matched,Within tolerance
+PO100003,V0021,"Esparza, Arnold and Mercer",2024-12-10,Partially Received,6897.35,USD,1,6849.11,-48.24,-0.70,INV200004,Received,Matched,Within tolerance
+PO100023,V0009,Arias LLC,2025-04-05,Closed,11745.01,USD,1,11662.67,-82.34,-0.70,INV200029,Received,Matched,Within tolerance
+PO100424,V0028,"Ramirez, Lynch and Hogan",2025-06-27,Partially Received,9048.98,USD,1,9111.96,62.98,0.70,INV200556,Received,Matched,Within tolerance
+PO100465,V0027,Smith-Rose,2025-04-17,Closed,8928.00,USD,3,8866.65,-61.35,-0.69,"INV200615, INV200616, INV200617",Received,Matched,Within tolerance
+PO100400,V0029,Herman LLC,2024-12-01,Closed,12841.51,USD,2,12754.59,-86.92,-0.68,"INV200525, INV200526",Received,Matched,Within tolerance
+PO100124,V0024,Ramos-Hall,2025-10-05,Closed,11161.51,USD,2,11236.12,74.61,0.67,"INV200151, INV200152",Received,Matched,Within tolerance
+PO100238,V0049,"Gallagher, Taylor and Perry",2026-03-06,Closed,9349.82,USD,1,9411.69,61.87,0.66,INV200309,Received,Matched,Within tolerance
+PO100329,V0017,Frost-Yu,2025-04-22,Cancelled,12647.80,USD,2,12564.19,-83.61,-0.66,"INV200420, INV200421",Received,Matched,Within tolerance
+PO100009,V0031,Phillips-Henry,2025-08-10,Closed,13538.68,USD,1,13451.28,-87.40,-0.65,INV200010,Received,Matched,Within tolerance
+PO100147,V0042,"Woodard, Harrell and Bell",2024-10-18,Closed,29433.95,USD,2,29244.08,-189.87,-0.65,"INV200181, INV200182",Received,Matched,Within tolerance
+PO100267,V0048,"Williams, Hodges And Lee",2025-10-18,Closed,23084.29,USD,3,23233.60,149.31,0.65,"INV200348, INV200349, INV200350",Received,Matched,Within tolerance
+PO100165,V0040,Martinez-Mcmahon,2025-12-08,Partially Received,2174.38,USD,1,2160.55,-13.83,-0.64,INV200206,Received,Matched,Within tolerance
+PO100221,V0004,Arroyo Ltd,2026-02-09,Closed,38181.29,GBP,3,37937.01,-244.28,-0.64,"INV200284, INV200285, INV200286",Received,Matched,Within tolerance
+PO100374,V0012,"Wagner, Willis and Alexander",2026-01-23,Open,2194.10,USD,1,2180.16,-13.94,-0.64,INV200493,Received,Matched,Within tolerance
+PO100104,V0038,Ray Inc,2025-09-09,Closed,7200.47,USD,1,7155.31,-45.16,-0.63,INV200125,Received,Matched,Within tolerance
+PO100211,V0040,Martinez-Mcmahon,2026-02-13,Closed,1215.09,USD,1,1207.49,-7.60,-0.63,INV200269,Received,Matched,Within tolerance
+PO100289,V0042,"Woodard, Harrell and Bell",2024-12-21,Closed,8896.97,USD,1,8841.21,-55.76,-0.63,INV200377,Received,Matched,Within tolerance
+PO100151,V0009,Arias LLC,2025-03-23,Open,10221.18,USD,2,10158.26,-62.92,-0.62,"INV200185, INV200186",NO GOODS RECEIPT,Matched,Within tolerance
+PO100356,V0031,Phillips-Henry,2024-12-24,Open,48685.04,USD,1,48985.41,300.37,0.62,INV200464,Received,Matched,Within tolerance
+PO100202,V0002,"Arnold, Mitchell and Jones",2025-04-12,Closed,724.90,USD,1,729.31,4.41,0.61,INV200257,Received,Matched,Within tolerance
+PO100319,V0049,"Gallagher, Taylor and Perry",2026-01-15,Open,8316.41,USD,1,8366.77,50.36,0.61,INV200409,Received,Matched,Within tolerance
+PO100053,V0008,"Winters, Campbell and Carr",2025-10-30,Closed,412.99,EUR,1,415.45,2.46,0.60,INV200059,Received,Matched,Within tolerance
+PO100340,V0017,Frost-Yu,2025-07-31,Closed,5353.61,USD,1,5385.63,32.02,0.60,INV200438,Received,Matched,Within tolerance
+PO100406,V0042,"Woodard, Harrell and Bell",2025-07-31,Open,33718.82,USD,1,33922.16,203.34,0.60,INV200534,Received,Matched,Within tolerance
+PO100410,V0029,Herman LLC,2025-06-03,Open,10037.15,USD,1,10097.41,60.26,0.60,INV200539,Received,Matched,Within tolerance
+PO100272,V0040,Martinez-Mcmahon,2024-10-13,Open,1019.49,USD,1,1025.54,6.05,0.59,INV200356,Received,Matched,Within tolerance
+PO100352,V0016,Walton-Franklin,2025-06-21,Closed,12132.06,USD,2,12061.06,-71.00,-0.59,"INV200458, INV200459",Received,Matched,Within tolerance
+PO100135,V0007,"Taylor, Johnson And Morgan",2025-02-07,Open,12368.91,USD,2,12296.57,-72.34,-0.58,"INV200165, INV200166",NO GOODS RECEIPT,Matched,Within tolerance
+PO100244,V0031,Phillips-Henry,2025-06-02,Closed,7508.94,USD,1,7465.58,-43.36,-0.58,INV200319,Received,Matched,Within tolerance
+PO100189,V0048,"Williams, Hodges And Lee",2026-03-08,Closed,7188.70,USD,1,7148.40,-40.30,-0.56,INV200238,Received,Matched,Within tolerance
+PO100232,V0013,"Alvarado, Davis and Gray",2025-04-12,Partially Received,54879.56,USD,3,54571.41,-308.15,-0.56,"INV200302, INV200303, INV200304",Received,Matched,Within tolerance
+PO100057,V0009,Arias LLC,2025-12-03,Cancelled,3996.08,USD,2,3974.03,-22.05,-0.55,"INV200064, INV200065",NO GOODS RECEIPT,Matched,Within tolerance
+PO100373,V0023,Gonzales and Sons,2025-01-23,Closed,38982.18,USD,1,39195.42,213.24,0.55,INV200492,Received,Matched,Within tolerance
+PO100394,V0007,"Taylor, Johnson And Morgan",2026-06-29,Closed,2462.08,USD,1,2448.46,-13.62,-0.55,INV200518,Received,Matched,Within tolerance
+PO100423,V0007,"Taylor, Johnson And Morgan",2025-02-21,Closed,2898.71,USD,1,2914.77,16.06,0.55,INV200555,Received,Matched,Within tolerance
+PO100262,V0009,Arias LLC,2025-10-14,Open,5964.16,USD,2,5932.44,-31.72,-0.53,"INV200341, INV200342",Received,Matched,Within tolerance
+PO100266,V0017,Frost-Yu,2025-04-05,Closed,6808.20,USD,1,6844.47,36.27,0.53,INV200347,Received,Matched,Within tolerance
+PO100042,V0040,Martinez-Mcmahon,2025-11-27,Closed,2586.33,USD,1,2573.29,-13.04,-0.50,INV200051,Received,Matched,Within tolerance
+PO100035,V0032,Klein and Sons,2025-07-28,Closed,2641.79,USD,1,2654.63,12.84,0.49,INV200043,Received,Matched,Within tolerance
+PO100084,V0040,Martinez-Mcmahon,2025-11-15,Open,1369.36,USD,1,1362.63,-6.73,-0.49,INV200095,NO GOODS RECEIPT,Matched,Within tolerance
+PO100307,V0026,Campbell Ltd,2025-01-22,Closed,17001.13,USD,1,16918.12,-83.01,-0.49,INV200396,Received,Matched,Within tolerance
+PO100355,V0018,"Brennan, Lewis and Reilly",2025-10-23,Partially Received,2023.65,USD,1,2013.71,-9.94,-0.49,INV200463,Received,Matched,Within tolerance
+PO100188,V0025,Medina LLC,2024-12-07,Closed,12550.87,GBP,1,12490.10,-60.77,-0.48,INV200237,Received,Matched,Within tolerance
+PO100298,V0031,Phillips-Henry,2025-03-24,Open,24885.94,USD,1,25005.28,119.34,0.48,INV200391,Received,Matched,Within tolerance
+PO100115,V0031,Phillips-Henry,2025-07-13,Closed,41671.97,USD,2,41476.98,-194.99,-0.47,"INV200140, INV200141",Received,Matched,Within tolerance
+PO100133,V0002,"Arnold, Mitchell and Jones",2026-06-02,Open,2501.01,USD,1,2512.55,11.54,0.46,INV200163,NO GOODS RECEIPT,Matched,Within tolerance
+PO100162,V0035,Baker Llc,2025-01-23,Closed,7336.28,GBP,2,7369.49,33.21,0.45,"INV200199, INV200200",Received,Matched,Within tolerance
+PO100174,V0031,Phillips-Henry,2024-10-04,Partially Received,9678.07,USD,1,9634.76,-43.31,-0.45,INV200218,Received,Matched,Within tolerance
+PO100006,V0050,Sims Ltd,2025-05-28,Closed,14076.82,USD,1,14014.38,-62.44,-0.44,INV200007,Received,Matched,Within tolerance
+PO100425,V0016,Walton-Franklin,2025-05-26,Closed,47134.61,USD,3,47341.12,206.51,0.44,"INV200557, INV200558, INV200559",Received,Matched,Within tolerance
+PO100143,V0027,Smith-Rose,2026-01-23,Closed,2311.04,USD,3,2321.04,10.00,0.43,"INV200176, INV200177, INV200178",Received,Matched,Within tolerance
+PO100195,V0008,"Winters, Campbell and Carr",2025-03-25,Closed,265.17,EUR,1,264.03,-1.14,-0.43,INV200249,Received,Matched,Within tolerance
+PO100431,V0020,Wood Inc,2025-06-11,Closed,48295.50,USD,3,48087.91,-207.59,-0.43,"INV200565, INV200566, INV200567",Received,Matched,Within tolerance
+PO100061,V0022,Gallagher-Mason,2025-08-10,Partially Received,5197.09,USD,1,5175.10,-21.99,-0.42,INV200071,Received,Matched,Within tolerance
+PO100077,V0009,Arias LLC,2025-05-02,Closed,10770.95,USD,2,10727.55,-43.40,-0.40,"INV200086, INV200087",Received,Matched,Within tolerance
+PO100391,V0002,"Arnold, Mitchell and Jones",2025-06-10,Closed,3353.34,USD,1,3366.82,13.48,0.40,INV200514,Received,Matched,Within tolerance
+PO100401,V0017,Frost-Yu,2025-05-22,Open,14800.91,USD,3,14741.10,-59.81,-0.40,"INV200527, INV200528, INV200529",Received,Matched,Within tolerance
+PO100169,V0030,Wallace-Rodriguez,2025-08-13,Open,6297.21,USD,2,6321.96,24.75,0.39,"INV200210, INV200211",Received,Matched,Within tolerance
+PO100226,V0030,Wallace-Rodriguez,2024-09-05,Closed,5569.35,USD,2,5547.88,-21.47,-0.39,"INV200292, INV200293",Received,Matched,Within tolerance
+PO100083,V0042,"Woodard, Harrell and Bell",2025-05-28,Partially Received,6096.77,USD,1,6120.10,23.33,0.38,INV200094,Received,Matched,Within tolerance
+PO100240,V0033,Williams-Kline,2025-12-05,Open,1829.65,USD,1,1836.34,6.69,0.37,INV200312,Received,Matched,Within tolerance
+PO100037,V0030,Wallace-Rodriguez,2024-12-03,Open,7205.19,USD,3,7179.35,-25.84,-0.36,"INV200046, INV200047, INV200048",NO GOODS RECEIPT,Matched,Within tolerance
+PO100054,V0008,"Winters, Campbell and Carr",2025-10-14,Closed,553.51,EUR,2,555.51,2.00,0.36,"INV200060, INV200061",Received,Matched,Within tolerance
+PO100058,V0043,"Morrow, Miller And Brooks",2026-01-16,Open,14951.98,USD,1,15006.19,54.21,0.36,INV200066,Received,Matched,Within tolerance
+PO100249,V0001,Johnson Ltd,2026-03-22,Partially Received,67655.55,USD,1,67894.98,239.43,0.35,INV200324,Received,Matched,Within tolerance
+PO100099,V0040,Martinez-Mcmahon,2026-04-17,Closed,3809.40,USD,2,3796.46,-12.94,-0.34,"INV200117, INV200118",Received,Matched,Within tolerance
+PO100161,V0025,Medina LLC,2026-04-24,Closed,11607.45,GBP,1,11567.84,-39.61,-0.34,INV200198,Received,Matched,Within tolerance
+PO100457,V0032,Klein and Sons,2025-06-28,Cancelled,2136.98,USD,1,2130.00,-6.98,-0.33,INV200605,NO GOODS RECEIPT,Matched,Within tolerance
+PO100010,V0049,"Gallagher, Taylor and Perry",2024-10-25,Open,25246.18,USD,1,25324.16,77.98,0.31,INV200011,NO GOODS RECEIPT,Matched,Within tolerance
+PO100089,V0042,"Woodard, Harrell and Bell",2024-11-14,Closed,5996.19,USD,2,5977.66,-18.53,-0.31,"INV200103, INV200104",Received,Matched,Within tolerance
+PO100218,V0023,Gonzales and Sons,2024-10-07,Open,46200.08,USD,1,46343.34,143.26,0.31,INV200281,NO GOODS RECEIPT,Matched,Within tolerance
+PO100347,V0002,"Arnold, Mitchell and Jones",2025-12-11,Closed,634.81,USD,3,632.85,-1.96,-0.31,"INV200449, INV200450, INV200451",Received,Matched,Within tolerance
+PO100103,V0035,Baker Llc,2024-12-14,Open,13149.90,GBP,1,13189.00,39.10,0.30,INV200124,Received,Matched,Within tolerance
+PO100254,V0020,Wood Inc,2024-10-20,Closed,6493.19,USD,2,6473.98,-19.21,-0.30,"INV200329, INV200330",Received,Matched,Within tolerance
+PO100290,V0025,Medina LLC,2025-11-24,Open,6053.99,GBP,2,6035.96,-18.03,-0.30,"INV200378, INV200379",Received,Matched,Within tolerance
+PO100263,V0031,Phillips-Henry,2026-04-17,Closed,9243.07,USD,1,9216.22,-26.85,-0.29,INV200343,Received,Matched,Within tolerance
+PO100454,V0034,"Moran, Cortez and Martin",2025-07-05,Open,564.15,EUR,1,565.76,1.61,0.29,INV200603,Received,Matched,Within tolerance
+PO100092,V0042,"Woodard, Harrell and Bell",2024-12-02,Cancelled,6792.83,USD,2,6773.71,-19.12,-0.28,"INV200108, INV200109",Received,Matched,Within tolerance
+PO100227,V0032,Klein and Sons,2026-06-14,Open,4470.48,USD,1,4457.83,-12.65,-0.28,INV200294,NO GOODS RECEIPT,Matched,Within tolerance
+PO100150,V0009,Arias LLC,2026-03-15,Partially Received,4509.18,USD,1,4520.99,11.81,0.26,INV200184,Received,Matched,Within tolerance
+PO100273,V0009,Arias LLC,2025-10-06,Closed,6277.03,USD,1,6261.47,-15.56,-0.25,INV200357,Received,Matched,Within tolerance
+PO100415,V0023,Gonzales and Sons,2025-01-17,Closed,62432.26,USD,3,62275.32,-156.94,-0.25,"INV200546, INV200547, INV200548",Received,Matched,Within tolerance
+PO100119,V0001,Johnson Ltd,2025-12-07,Closed,89764.02,USD,1,89561.19,-202.83,-0.23,INV200145,Received,Matched,Within tolerance
+PO100224,V0001,Johnson Ltd,2025-08-01,Closed,19486.08,USD,2,19531.27,45.19,0.23,"INV200288, INV200289",Received,Matched,Within tolerance
+PO100398,V0042,"Woodard, Harrell and Bell",2025-08-18,Closed,97621.85,USD,1,97848.78,226.93,0.23,INV200522,Received,Matched,Within tolerance
+PO100097,V0028,"Ramirez, Lynch and Hogan",2026-02-22,Partially Received,19490.34,USD,2,19533.15,42.81,0.22,"INV200114, INV200115",Received,Matched,Within tolerance
+PO100139,V0032,Klein and Sons,2025-07-21,Closed,12484.28,USD,2,12511.61,27.33,0.22,"INV200171, INV200172",Received,Matched,Within tolerance
+PO100387,V0042,"Woodard, Harrell and Bell",2025-09-28,Open,37196.89,USD,1,37278.99,82.10,0.22,INV200510,NO GOODS RECEIPT,Matched,Within tolerance
+PO100170,V0032,Klein and Sons,2026-03-04,Partially Received,2515.52,USD,1,2510.28,-5.24,-0.21,INV200212,Received,Matched,Within tolerance
+PO100284,V0009,Arias LLC,2024-09-14,Closed,11138.32,USD,3,11161.24,22.92,0.21,"INV200368, INV200369, INV200370",Received,Matched,Within tolerance
+PO100357,V0029,Herman LLC,2025-10-11,Open,21007.26,USD,1,21052.09,44.83,0.21,INV200465,NO GOODS RECEIPT,Matched,Within tolerance
+PO100358,V0025,Medina LLC,2025-02-16,Closed,3576.55,GBP,2,3584.17,7.62,0.21,"INV200466, INV200467",Received,Matched,Within tolerance
+PO100123,V0009,Arias LLC,2025-08-06,Closed,5693.57,USD,1,5681.98,-11.59,-0.20,INV200150,Received,Matched,Within tolerance
+PO100222,V0037,"Martinez, Wright and Reynolds",2025-09-06,Partially Received,1830.52,USD,1,1826.77,-3.75,-0.20,INV200287,Received,Matched,Within tolerance
+PO100291,V0032,Klein and Sons,2024-12-21,Closed,2749.82,USD,1,2755.27,5.45,0.20,INV200380,Received,Matched,Within tolerance
+PO100212,V0031,Phillips-Henry,2026-05-27,Closed,11684.64,USD,2,11707.16,22.52,0.19,"INV200270, INV200271",Received,Matched,Within tolerance
+PO100210,V0020,Wood Inc,2026-04-04,Closed,3582.54,USD,2,3576.11,-6.43,-0.18,"INV200267, INV200268",Received,Matched,Within tolerance
+PO100229,V0025,Medina LLC,2024-09-30,Closed,8023.55,GBP,2,8009.08,-14.47,-0.18,"INV200297, INV200298",Received,Matched,Within tolerance
+PO100477,V0028,"Ramirez, Lynch and Hogan",2026-06-16,Closed,40563.65,USD,1,40631.11,67.46,0.17,INV200634,Received,Matched,Within tolerance
+PO100333,V0017,Frost-Yu,2024-09-26,Closed,8905.94,USD,2,8920.21,14.27,0.16,"INV200426, INV200427",Received,Matched,Within tolerance
+PO100395,V0047,"Sutton, Parker and Scott",2024-11-12,Open,457.91,USD,1,457.19,-0.72,-0.16,INV200519,Received,Matched,Within tolerance
+PO100056,V0042,"Woodard, Harrell and Bell",2024-11-30,Closed,37815.64,USD,1,37873.03,57.39,0.15,INV200063,Received,Matched,Within tolerance
+PO100018,V0037,"Martinez, Wright and Reynolds",2025-12-30,Closed,562.61,USD,2,563.32,0.71,0.13,"INV200022, INV200023",Received,Matched,Within tolerance
+PO100206,V0028,"Ramirez, Lynch and Hogan",2025-12-21,Open,96544.41,USD,1,96416.28,-128.13,-0.13,INV200262,NO GOODS RECEIPT,Matched,Within tolerance
+PO100293,V0018,"Brennan, Lewis and Reilly",2025-03-17,Closed,1565.02,USD,3,1563.02,-2.00,-0.13,"INV200382, INV200383, INV200384",Received,Matched,Within tolerance
+PO100334,V0023,Gonzales and Sons,2026-04-19,Open,11594.95,USD,2,11609.83,14.88,0.13,"INV200428, INV200429",NO GOODS RECEIPT,Matched,Within tolerance
+PO100030,V0034,"Moran, Cortez and Martin",2025-02-27,Closed,546.56,EUR,1,545.90,-0.66,-0.12,INV200036,Received,Matched,Within tolerance
+PO100239,V0050,Sims Ltd,2026-03-27,Partially Received,9992.20,USD,2,9980.30,-11.90,-0.12,"INV200310, INV200311",Received,Matched,Within tolerance
+PO100294,V0027,Smith-Rose,2024-11-16,Closed,4506.08,USD,1,4500.68,-5.40,-0.12,INV200385,Received,Matched,Within tolerance
+PO100029,V0042,"Woodard, Harrell and Bell",2026-01-25,Closed,28458.42,USD,2,28490.73,32.31,0.11,"INV200034, INV200035",Received,Matched,Within tolerance
+PO100005,V0031,Phillips-Henry,2025-03-28,Open,9953.47,USD,2,9943.26,-10.21,-0.10,"INV200005, INV200006",Received,Matched,Within tolerance
+PO100321,V0009,Arias LLC,2025-04-13,Open,3780.94,USD,1,3777.82,-3.12,-0.08,INV200411,NO GOODS RECEIPT,Matched,Within tolerance
+PO100471,V0032,Klein and Sons,2025-10-21,Partially Received,12014.11,USD,1,12023.63,9.52,0.08,INV200626,Received,Matched,Within tolerance
+PO100066,V0032,Klein and Sons,2025-01-13,Closed,7809.84,USD,1,7815.07,5.23,0.07,INV200074,Received,Matched,Within tolerance
+PO100283,V0020,Wood Inc,2025-07-18,Open,4992.00,USD,1,4988.40,-3.60,-0.07,INV200367,Received,Matched,Within tolerance
+PO100470,V0039,"Jones, Lee and Jefferson",2025-08-07,Open,68817.08,CAD,3,68765.81,-51.27,-0.07,"INV200623, INV200624, INV200625",NO GOODS RECEIPT,Matched,Within tolerance
+PO100250,V0048,"Williams, Hodges And Lee",2026-06-12,Closed,17853.87,USD,1,17845.75,-8.12,-0.05,INV200325,Received,Matched,Within tolerance
+PO100422,V0049,"Gallagher, Taylor and Perry",2025-03-18,Closed,3543.06,USD,1,3541.44,-1.62,-0.05,INV200554,Received,Matched,Within tolerance
+PO100260,V0009,Arias LLC,2026-03-25,Closed,9704.20,USD,3,9700.47,-3.73,-0.04,"INV200338, INV200339, INV200340",Received,Matched,Within tolerance
+PO100036,V0035,Baker Llc,2025-07-09,Open,8130.10,GBP,2,8127.61,-2.49,-0.03,"INV200044, INV200045",NO GOODS RECEIPT,Matched,Within tolerance
+PO100122,V0034,"Moran, Cortez and Martin",2025-07-27,Closed,1623.95,EUR,1,1623.44,-0.51,-0.03,INV200149,Received,Matched,Within tolerance
+PO100154,V0040,Martinez-Mcmahon,2026-05-14,Closed,3793.81,USD,2,3792.85,-0.96,-0.03,"INV200189, INV200190",Received,Matched,Within tolerance
+PO100168,V0048,"Williams, Hodges And Lee",2026-01-16,Closed,11928.51,USD,1,11931.78,3.27,0.03,INV200209,Received,Matched,Within tolerance
+PO100397,V0004,Arroyo Ltd,2026-03-16,Partially Received,113580.96,GBP,1,113609.56,28.60,0.03,INV200521,Received,Matched,Within tolerance
+PO100213,V0004,Arroyo Ltd,2025-03-06,Closed,19912.72,GBP,1,19913.40,0.68,0.00,INV200272,Received,Matched,Within tolerance

@@ -1,0 +1,25 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Snowflake / credentials — never commit these
+.env
+*.env
+secrets.json
+snowflake_config.json
+~/.snowsql/
+
+# Power BI / Excel lock + temp files
+~$*
+*.tmp
+.~lock.*
+
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Working artifacts that are regenerated, not authored
+docs/_blueprint_extracted.txt

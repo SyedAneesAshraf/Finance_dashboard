@@ -1,0 +1,57 @@
+table DIM_GL_ACCOUNT
+	lineageTag: 98700c72-f92c-54dc-a329-2d3b208d3efd
+
+	column ACCOUNT_KEY
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: d93fdeea-d88d-5562-a8a2-6bb3b66d17e2
+		summarizeBy: none
+		sourceColumn: ACCOUNT_KEY
+
+		annotation SummarizationSetBy = Automatic
+
+	column ACCOUNT_ID
+		dataType: string
+		lineageTag: a258a970-a06b-585b-84aa-0628f825c72e
+		summarizeBy: none
+		sourceColumn: ACCOUNT_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ACCOUNT_NAME
+		dataType: string
+		lineageTag: d9b67034-42c6-5a2e-9abc-b541b4146201
+		summarizeBy: none
+		sourceColumn: ACCOUNT_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column COST_CENTER
+		dataType: string
+		lineageTag: 23f21cb0-05f3-5191-8f79-06822cfed719
+		summarizeBy: none
+		sourceColumn: COST_CENTER
+
+		annotation SummarizationSetBy = Automatic
+
+	column DEPARTMENT
+		dataType: string
+		lineageTag: 5bc6f17d-feea-5c8b-a1e4-2374c0b897e9
+		summarizeBy: none
+		sourceColumn: DEPARTMENT
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DIM_GL_ACCOUNT = m
+		mode: import
+		source =
+				let
+				    Source = Snowflake.Databases("CEMNFKN-TT95210.snowflakecomputing.com", "FIN_PROC_WH"),
+				    Db = Source{[Name="FIN_PROC_DB",Kind="Database"]}[Data],
+				    Sch = Db{[Name="GOLD",Kind="Schema"]}[Data],
+				    Data = Sch{[Name="DIM_GL_ACCOUNT",Kind="Table"]}[Data]
+				in
+				    Data
+
+	annotation PBI_ResultType = Table

@@ -1,0 +1,50 @@
+VENDOR_ID,VENDOR_NAME,CATEGORY,REGION,INVOICE_COUNT,TOTAL_SPEND_USD,SPEND_RANK,PCT_OF_TOTAL,CUMULATIVE_PCT,PARETO_SEGMENT
+V0042,"Woodard, Harrell and Bell",Consulting,Unknown,39,841226.95,1,12.06,12.06,Core 80% of spend
+V0048,"Williams, Hodges And Lee",Raw Materials,North America,42,771580.52,2,11.07,23.13,Core 80% of spend
+V0031,Phillips-Henry,Raw Materials,EMEA,25,567236.37,3,8.13,31.26,Core 80% of spend
+V0001,Johnson Ltd,IT Services,EMEA,20,500106.01,4,7.17,38.44,Core 80% of spend
+V0004,Arroyo Ltd,Raw Materials,North America,16,429162.09,5,6.15,44.59,Core 80% of spend
+V0009,Arias LLC,IT Services,EMEA,66,333251.96,6,4.78,49.37,Core 80% of spend
+V0050,Sims Ltd,Raw Materials,EMEA,11,307462.23,7,4.41,53.78,Core 80% of spend
+V0016,Walton-Franklin,Consulting,EMEA,14,282651.93,8,4.05,57.83,Core 80% of spend
+V0030,Wallace-Rodriguez,Consulting,EMEA,19,263058.52,9,3.77,61.61,Core 80% of spend
+V0021,"Esparza, Arnold and Mercer",Consulting,North America,12,227089.50,10,3.26,64.86,Core 80% of spend
+V0028,"Ramirez, Lynch and Hogan",Consulting,Unknown,9,219661.52,11,3.15,68.01,Core 80% of spend
+V0023,Gonzales and Sons,Raw Materials,North America,13,200708.17,12,2.88,70.89,Core 80% of spend
+V0041,Villarreal-Avila,Raw Materials,LATAM,8,184923.69,13,2.65,73.54,Core 80% of spend
+V0017,Frost-Yu,IT Services,APAC,35,177985.39,14,2.55,76.09,Core 80% of spend
+V0032,Klein and Sons,IT Services,North America,27,162944.55,15,2.34,78.43,Core 80% of spend
+V0027,Smith-Rose,IT Services,EMEA,26,136796.25,16,1.96,80.39,Long tail
+V0024,Ramos-Hall,Logistics,EMEA,13,131996.15,17,1.89,82.29,Long tail
+V0020,Wood Inc,IT Services,North America,16,130078.85,18,1.87,84.15,Long tail
+V0025,Medina LLC,IT Services,APAC,21,123528.18,19,1.77,85.92,Long tail
+V0038,Ray Inc,IT Services,North America,20,113455.97,20,1.63,87.55,Long tail
+V0029,Herman LLC,Consulting,APAC,10,85313.18,21,1.22,88.77,Long tail
+V0043,"Morrow, Miller And Brooks",IT Services,North America,9,82762.32,22,1.19,89.96,Long tail
+V0022,Gallagher-Mason,IT Services,North America,11,79047.61,23,1.13,91.09,Long tail
+V0039,"Jones, Lee and Jefferson",Consulting,Unknown,9,71871.29,24,1.03,92.12,Long tail
+V0035,Baker Llc,IT Services,North America,12,71236.65,25,1.02,93.15,Long tail
+V0049,"Gallagher, Taylor and Perry",IT Services,EMEA,8,63150.58,26,0.91,94.05,Long tail
+V0013,"Alvarado, Davis and Gray",Raw Materials,LATAM,3,54571.41,27,0.78,94.83,Long tail
+V0002,"Arnold, Mitchell and Jones",Logistics,EMEA,21,49308.87,28,0.71,95.54,Long tail
+V0007,"Taylor, Johnson And Morgan",IT Services,APAC,10,46034.53,29,0.66,96.20,Long tail
+V0040,Martinez-Mcmahon,Logistics,APAC,37,42462.12,30,0.61,96.81,Long tail
+V0018,"Brennan, Lewis and Reilly",Logistics,APAC,18,31404.51,31,0.45,97.26,Long tail
+V0045,Wolfe-Macdonald,IT Services,North America,5,28071.19,32,0.40,97.66,Long tail
+V0003,"Stevenson, Walsh and Pierce",Raw Materials,EMEA,2,23995.22,33,0.34,98.01,Long tail
+V0012,"Wagner, Willis and Alexander",Logistics,LATAM,11,17332.78,34,0.25,98.26,Long tail
+V0026,Campbell Ltd,Consulting,EMEA,1,16918.12,35,0.24,98.50,Long tail
+V0011,"Woods, Johnson and Malone",IT Services,North America,2,16301.34,36,0.23,98.73,Long tail
+V0044,Munoz PLC,Raw Materials,APAC,1,10580.72,37,0.15,98.88,Long tail
+V0047,"Sutton, Parker and Scott",Office Supplies,LATAM,10,10206.48,38,0.15,99.03,Long tail
+V0010,Reyes Llc,IT Services,EMEA,1,10182.44,39,0.15,99.18,Long tail
+V0015,Walton Inc,Raw Materials,North America,1,9597.92,40,0.14,99.31,Long tail
+V0019,Cook-Thomas,IT Services,North America,1,9578.25,41,0.14,99.45,Long tail
+V0034,"Moran, Cortez and Martin",Office Supplies,LATAM,8,7067.34,42,0.10,99.55,Long tail
+V0014,Combs-Sanchez,Logistics,APAC,2,6855.84,43,0.10,99.65,Long tail
+V0006,"Ferguson, Sullivan and Leon",IT Services,EMEA,1,6218.67,44,0.09,99.74,Long tail
+V0037,"Martinez, Wright and Reynolds",Logistics,North America,4,4958.41,45,0.07,99.81,Long tail
+V0008,"Winters, Campbell and Carr",Raw Materials,EMEA,14,4763.69,46,0.07,99.88,Long tail
+V0033,Williams-Kline,Office Supplies,North America,6,4127.35,47,0.06,99.94,Long tail
+V0046,"Roth, Johnson And Glover",Logistics,APAC,1,3391.58,48,0.05,99.99,Long tail
+V0005,"Bonilla, Jefferson and Brown",Logistics,North America,1,813.72,49,0.01,100.00,Long tail

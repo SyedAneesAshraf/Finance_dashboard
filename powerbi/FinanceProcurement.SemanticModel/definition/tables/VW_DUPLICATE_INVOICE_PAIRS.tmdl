@@ -1,0 +1,161 @@
+/// Suspected duplicate invoice pairs. Mirrors query 5.4.
+table VW_DUPLICATE_INVOICE_PAIRS
+	lineageTag: 3f956f03-f0aa-52d3-84c2-7c32818391e1
+
+	column INVOICE_1
+		dataType: string
+		lineageTag: a320b7bb-edfa-5b35-a6ce-5a583b726233
+		summarizeBy: none
+		sourceColumn: INVOICE_1
+
+		annotation SummarizationSetBy = Automatic
+
+	column INVOICE_2
+		dataType: string
+		lineageTag: 5dcedcd1-9940-54f1-a1c5-20915b329a79
+		summarizeBy: none
+		sourceColumn: INVOICE_2
+
+		annotation SummarizationSetBy = Automatic
+
+	column VENDOR_ID
+		dataType: string
+		lineageTag: 0461e18c-ad57-57c4-919c-89ee464815ad
+		summarizeBy: none
+		sourceColumn: VENDOR_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column VENDOR_KEY
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: b3b4c346-7b84-5709-a29c-354e6c5fc41c
+		summarizeBy: none
+		sourceColumn: VENDOR_KEY
+
+		annotation SummarizationSetBy = Automatic
+
+	column VENDOR_NAME
+		dataType: string
+		lineageTag: f6662241-8c0b-5d18-a548-d4e9be28f150
+		summarizeBy: none
+		sourceColumn: VENDOR_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORY
+		dataType: string
+		lineageTag: ab8911db-23b9-5a76-bbfe-46bf6feebf07
+		summarizeBy: none
+		sourceColumn: CATEGORY
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION
+		dataType: string
+		lineageTag: 69b85296-ed36-5091-b1e1-0169010e8c90
+		summarizeBy: none
+		sourceColumn: REGION
+
+		annotation SummarizationSetBy = Automatic
+
+	column AMOUNT
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: f25d5e74-f9cf-5e94-a9a8-94a0c83aa03e
+		summarizeBy: none
+		sourceColumn: AMOUNT
+
+		annotation SummarizationSetBy = Automatic
+
+	column CURRENCY
+		dataType: string
+		lineageTag: a22c8a5e-1e3f-5c74-a73c-4d0f5663926b
+		summarizeBy: none
+		sourceColumn: CURRENCY
+
+		annotation SummarizationSetBy = Automatic
+
+	column EXPOSURE_USD
+		dataType: decimal
+		formatString: "$#,0.00;($#,0.00);$#,0.00"
+		lineageTag: c32e3392-48f0-5431-8811-99e49aaf251a
+		summarizeBy: sum
+		sourceColumn: EXPOSURE_USD
+
+		annotation SummarizationSetBy = Automatic
+
+	column INVOICE_1_DATE
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: c48bd9e0-d652-5671-bd20-a0fa4faddac2
+		summarizeBy: none
+		sourceColumn: INVOICE_1_DATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column INVOICE_2_DATE
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 5cb02c90-d339-5c89-a57b-186781f6f1b1
+		summarizeBy: none
+		sourceColumn: INVOICE_2_DATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column INVOICE_DATE_KEY
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 5fbd2bf1-8d19-5e72-9198-237a94c90e69
+		summarizeBy: none
+		sourceColumn: INVOICE_DATE_KEY
+
+		annotation SummarizationSetBy = Automatic
+
+	column DAYS_APART
+		dataType: int64
+		formatString: 0
+		lineageTag: 93b5f4e1-f654-52ce-b7dd-0bb8cf0b9f79
+		summarizeBy: none
+		sourceColumn: DAYS_APART
+
+		annotation SummarizationSetBy = Automatic
+
+	column INVOICE_1_STATUS
+		dataType: string
+		lineageTag: 5e9fdfe5-08db-52e4-8aa9-d16ddc58b3b3
+		summarizeBy: none
+		sourceColumn: INVOICE_1_STATUS
+
+		annotation SummarizationSetBy = Automatic
+
+	column INVOICE_2_STATUS
+		dataType: string
+		lineageTag: d5b35f05-6e57-5918-9824-010f70fb3b6d
+		summarizeBy: none
+		sourceColumn: INVOICE_2_STATUS
+
+		annotation SummarizationSetBy = Automatic
+
+	column RECOMMENDED_ACTION
+		dataType: string
+		lineageTag: b0fcf3b1-e592-57bc-a557-952f35bdb915
+		summarizeBy: none
+		sourceColumn: RECOMMENDED_ACTION
+
+		annotation SummarizationSetBy = Automatic
+
+	partition VW_DUPLICATE_INVOICE_PAIRS = m
+		mode: import
+		source =
+				let
+				    Source = Snowflake.Databases("CEMNFKN-TT95210.snowflakecomputing.com", "FIN_PROC_WH"),
+				    Db = Source{[Name="FIN_PROC_DB",Kind="Database"]}[Data],
+				    Sch = Db{[Name="GOLD",Kind="Schema"]}[Data],
+				    Data = Sch{[Name="VW_DUPLICATE_INVOICE_PAIRS",Kind="View"]}[Data]
+				in
+				    Data
+
+	annotation PBI_ResultType = Table

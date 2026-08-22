@@ -1,0 +1,21 @@
+ACCOUNT_KEY,ACCOUNT_ID,ACCOUNT_NAME,COST_CENTER,DEPARTMENT
+1,60100,Raw Materials Purchases,CC-1010,Manufacturing
+2,60110,Direct Materials - Steel,CC-1010,Manufacturing
+3,60120,Direct Materials - Polymers,CC-1020,Manufacturing
+4,60200,Manufacturing Supplies,CC-1030,Manufacturing
+5,60300,Equipment Maintenance,CC-1040,Manufacturing
+6,61100,Software Licenses,CC-2010,IT
+7,61200,Cloud Infrastructure,CC-2010,IT
+8,61300,IT Consulting Services,CC-2020,IT
+9,61400,Hardware Purchases,CC-2030,IT
+10,62100,Freight - Inbound,CC-3010,Logistics
+11,62200,Freight - Outbound,CC-3020,Logistics
+12,62300,Warehousing Services,CC-3030,Logistics
+13,62400,Customs and Duties,CC-3010,Logistics
+14,63100,Office Supplies,CC-4010,Finance
+15,63200,Printing and Stationery,CC-4010,Finance
+16,63300,Professional Fees - Audit,CC-4020,Finance
+17,64100,Management Consulting,CC-5010,Corporate
+18,64200,Recruitment Fees,CC-6010,HR
+19,64300,Training and Development,CC-6010,HR
+20,65100,Facilities and Utilities,CC-7010,Facilities

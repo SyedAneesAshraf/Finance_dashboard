@@ -1,0 +1,353 @@
+/// Central AP fact. Hosts the model's measures.
+table FACT_INVOICE
+	lineageTag: e436ff15-1e57-5a49-92d3-cf4ec5f5d946
+
+	/// Total invoiced value in USD across the selected context.
+	measure 'Total Invoiced' =
+			SUM(FACT_INVOICE[AMOUNT_USD])
+
+		formatString: "$#,0.00;($#,0.00);$#,0.00"
+		lineageTag: 19277989-db81-5eda-90ab-6a55b28ab98c
+
+	/// Unpaid payables. The AP balance the business owes right now.
+	measure 'Total Outstanding' =
+			CALCULATE(
+			    SUM(FACT_INVOICE[AMOUNT_USD]),
+			    FACT_INVOICE[STATUS] = "Unpaid"
+			)
+
+		formatString: "$#,0.00;($#,0.00);$#,0.00"
+		lineageTag: d6e10141-8a3f-5f50-8edb-39c2e82eb3a9
+
+	/// Unpaid invoices already past their due date.
+	measure 'Total Overdue' =
+			CALCULATE(
+			    SUM(FACT_INVOICE[AMOUNT_USD]),
+			    FACT_INVOICE[STATUS] = "Unpaid",
+			    FACT_INVOICE[DUE_DATE] < TODAY()
+			)
+
+		formatString: "$#,0.00;($#,0.00);$#,0.00"
+		lineageTag: 80c7fa7a-6987-5f35-b986-eac2bfe69d10
+
+	/// DIVIDE rather than the / operator: when nothing is outstanding the denominator is zero, and / would raise an error that renders as Infinity on the card. DIVIDE returns BLANK instead.
+	measure '% Overdue' =
+			DIVIDE(
+			    [Total Overdue],
+			    [Total Outstanding]
+			)
+
+		formatString: "0.0%;-0.0%;0.0%"
+		lineageTag: 8adb3b23-59d1-5589-9dde-a740b80756cf
+
+	/// Average days between invoice and payment. Reads the stored DAYS_TO_PAY column so DAX and SQL cannot drift apart.
+	measure 'Avg DPO' =
+			AVERAGE(FACT_PAYMENT[DAYS_TO_PAY])
+
+		formatString: "#,0.0"
+		lineageTag: 16c398a9-1527-5db8-a2ee-8b83355d19f5
+
+	measure 'Total Paid' =
+			SUM(FACT_PAYMENT[AMOUNT_PAID_USD])
+
+		formatString: "$#,0.00;($#,0.00);$#,0.00"
+		lineageTag: 7cd8288d-4820-569e-be7e-be5aac5c69c0
+
+	measure 'Invoice Count' =
+			COUNTROWS(FACT_INVOICE)
+
+		formatString: #,0
+		lineageTag: 1ec4694f-2918-5162-b2f0-0c24fcd4636a
+
+	measure 'Overdue Invoice Count' =
+			CALCULATE(
+			    COUNTROWS(FACT_INVOICE),
+			    FACT_INVOICE[STATUS] = "Unpaid",
+			    FACT_INVOICE[DUE_DATE] < TODAY()
+			)
+
+		formatString: #,0
+		lineageTag: 768ed512-1dea-5d54-b1af-dd0983e4661e
+
+	/// Same period last year. Requires DIM_DATE to be marked as a date table with a contiguous date column, which is why the dimension spans 2024-2027 rather than only the fact range.
+	measure 'Total Paid LY' =
+			CALCULATE(
+			    [Total Paid],
+			    SAMEPERIODLASTYEAR(DIM_DATE[FULL_DATE])
+			)
+
+		formatString: "$#,0.00;($#,0.00);$#,0.00"
+		lineageTag: e5ff7b33-6648-5ebe-805c-52ed2cd6c1b3
+
+	/// Month-over-month change in payments, via CALCULATE + DATEADD.
+	measure 'Paid MoM %' =
+			VAR current_month = [Total Paid]
+			VAR prior_month =
+			    CALCULATE(
+			        [Total Paid],
+			        DATEADD(DIM_DATE[FULL_DATE], -1, MONTH)
+			    )
+			RETURN
+			    DIVIDE(current_month - prior_month, prior_month)
+
+		formatString: "0.0%;-0.0%;0.0%"
+		lineageTag: ec11713a-cb19-5f52-a533-c74350bd41c5
+
+	/// Running share of total spend for the Pareto line. FILTER over ALLSELECTED sums every vendor spending at least as much as this one, which is what makes the curve cumulative without needing a stored rank column.
+	measure 'Cumulative Spend %' =
+			VAR this_vendor = [Total Invoiced]
+			VAR all_spend =
+			    CALCULATE([Total Invoiced], ALLSELECTED(DIM_VENDOR))
+			VAR spend_at_or_above =
+			    CALCULATE(
+			        [Total Invoiced],
+			        FILTER(
+			            ALLSELECTED(DIM_VENDOR[VENDOR_NAME]),
+			            [Total Invoiced] >= this_vendor
+			        )
+			    )
+			RETURN
+			    DIVIDE(spend_at_or_above, all_spend)
+
+		formatString: "0.0%;-0.0%;0.0%"
+		lineageTag: 6e6b670a-4eb6-5eda-a7b5-59cacbed68d2
+
+	/// Suspected duplicate invoice pairs flagged for AP review.
+	measure 'Duplicate Invoice Pairs' =
+			COUNTROWS(VW_DUPLICATE_INVOICE_PAIRS)
+
+		formatString: #,0
+		lineageTag: 189eedaf-b399-5067-901d-bbbe535b8dfc
+
+	/// Value at risk if every flagged duplicate were paid twice.
+	measure 'Duplicate Exposure' =
+			SUM(VW_DUPLICATE_INVOICE_PAIRS[EXPOSURE_USD])
+
+		formatString: "$#,0.00;($#,0.00);$#,0.00"
+		lineageTag: dad645f1-04a0-54e5-b6f9-8b1252317348
+
+	/// POs where cumulative invoiced value breaches the 5% tolerance.
+	measure 'Match Exceptions' =
+			CALCULATE(
+			    COUNTROWS(VW_THREE_WAY_MATCH),
+			    VW_THREE_WAY_MATCH[MATCH_STATUS] = "Exception - Review"
+			)
+
+		formatString: #,0
+		lineageTag: 890447b8-2d4c-5d57-86f5-a88c8460061b
+
+	column INVOICE_ID
+		dataType: string
+		lineageTag: 042c8995-5b3a-5840-95b1-52b46f8ce944
+		summarizeBy: none
+		sourceColumn: INVOICE_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column VENDOR_KEY
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 19de54e1-9569-54a4-95b2-5b0da36ca4d6
+		summarizeBy: none
+		sourceColumn: VENDOR_KEY
+
+		annotation SummarizationSetBy = Automatic
+
+	column VENDOR_ID
+		dataType: string
+		lineageTag: 1ef29e80-9729-5f63-9ca7-9a96e57f2c80
+		summarizeBy: none
+		sourceColumn: VENDOR_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column ACCOUNT_KEY
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 9d863be2-da6a-5e72-8b96-e79d0e9866ea
+		summarizeBy: none
+		sourceColumn: ACCOUNT_KEY
+
+		annotation SummarizationSetBy = Automatic
+
+	column GL_ACCOUNT_ID
+		dataType: string
+		lineageTag: a3dc5389-3f22-564b-a187-41b066e70f54
+		summarizeBy: none
+		sourceColumn: GL_ACCOUNT_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column PO_ID
+		dataType: string
+		lineageTag: b30fe538-e471-5640-9782-91fecc25bb3c
+		summarizeBy: none
+		sourceColumn: PO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column INVOICE_DATE_KEY
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 255cafd5-a294-592f-b82a-96f0335307ee
+		summarizeBy: none
+		sourceColumn: INVOICE_DATE_KEY
+
+		annotation SummarizationSetBy = Automatic
+
+	column INVOICE_DATE
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 889a93f3-be79-5c99-9734-895acfa6ee1b
+		summarizeBy: none
+		sourceColumn: INVOICE_DATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column DUE_DATE_KEY
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 2a0aa400-7a2c-52a5-ab35-3a1fbdef93f5
+		summarizeBy: none
+		sourceColumn: DUE_DATE_KEY
+
+		annotation SummarizationSetBy = Automatic
+
+	column DUE_DATE
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 8d3f36ca-8f33-5ca7-bffa-67b2f513e101
+		summarizeBy: none
+		sourceColumn: DUE_DATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column AMOUNT
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: dd7fd02c-8415-5f3a-8740-cdd0ff618bd8
+		summarizeBy: none
+		sourceColumn: AMOUNT
+
+		annotation SummarizationSetBy = Automatic
+
+	column CURRENCY
+		dataType: string
+		lineageTag: 951b3fc1-37c8-5d72-bb62-cf22ad2d425b
+		summarizeBy: none
+		sourceColumn: CURRENCY
+
+		annotation SummarizationSetBy = Automatic
+
+	column AMOUNT_USD
+		dataType: decimal
+		formatString: "$#,0.00;($#,0.00);$#,0.00"
+		lineageTag: 11acc9ff-b7d8-5099-bfe4-6193e301bc4d
+		summarizeBy: sum
+		sourceColumn: AMOUNT_USD
+
+		annotation SummarizationSetBy = Automatic
+
+	column STATUS
+		dataType: string
+		lineageTag: e0fab8f9-0b9d-5d8d-ba33-a0cc33c09474
+		summarizeBy: none
+		sourceColumn: STATUS
+
+		annotation SummarizationSetBy = Automatic
+
+	column IS_NON_PO_SPEND
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 7c42d20f-1217-5ac0-90d5-7c92863ce404
+		summarizeBy: none
+		sourceColumn: IS_NON_PO_SPEND
+
+		annotation SummarizationSetBy = Automatic
+
+	column TERM_DAYS
+		dataType: int64
+		formatString: 0
+		lineageTag: e00b0941-cd59-5226-a477-54558a2b6f7e
+		summarizeBy: none
+		sourceColumn: TERM_DAYS
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Days Overdue' =
+			IF(
+			    FACT_INVOICE[STATUS] = "Unpaid",
+			    DATEDIFF(FACT_INVOICE[DUE_DATE], TODAY(), DAY),
+			    BLANK()
+			)
+
+		dataType: int64
+		formatString: 0
+		lineageTag: 24654e43-0252-5c66-90d4-5cb0ea1ab099
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Aging Sort' =
+			VAR d = DATEDIFF(FACT_INVOICE[DUE_DATE], TODAY(), DAY)
+			RETURN
+			IF(
+			    FACT_INVOICE[STATUS] <> "Unpaid",
+			    BLANK(),
+			    SWITCH(
+			        TRUE(),
+			        d <= 0, 1,
+			        d <= 30, 2,
+			        d <= 60, 3,
+			        d <= 90, 4,
+			        5
+			    )
+			)
+
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 2a355c29-4530-5771-aa43-8f35e641ee85
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Aging Bucket' =
+			VAR d = DATEDIFF(FACT_INVOICE[DUE_DATE], TODAY(), DAY)
+			RETURN
+			IF(
+			    FACT_INVOICE[STATUS] <> "Unpaid",
+			    BLANK(),
+			    SWITCH(
+			        TRUE(),
+			        d <= 0, "Not Due",
+			        d <= 30, "0-30 Days",
+			        d <= 60, "31-60 Days",
+			        d <= 90, "61-90 Days",
+			        "90+ Days"
+			    )
+			)
+
+		dataType: string
+		lineageTag: 7b9992fd-a101-55d6-a13f-66298bb4db74
+		summarizeBy: none
+		sortByColumn: 'Aging Sort'
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FACT_INVOICE = m
+		mode: import
+		source =
+				let
+				    Source = Snowflake.Databases("CEMNFKN-TT95210.snowflakecomputing.com", "FIN_PROC_WH"),
+				    Db = Source{[Name="FIN_PROC_DB",Kind="Database"]}[Data],
+				    Sch = Db{[Name="GOLD",Kind="Schema"]}[Data],
+				    Data = Sch{[Name="FACT_INVOICE",Kind="Table"]}[Data]
+				in
+				    Data
+
+	annotation PBI_ResultType = Table

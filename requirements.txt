@@ -1,0 +1,16 @@
+# Data generation (Phase 1)
+faker==40.36.0
+pandas==3.0.5
+numpy==2.5.2
+
+# Snowflake automation (Phases 2-5) — scripts/sf.py
+snowflake-connector-python==4.7.2
+python-dotenv
+
+# Excel companion (Phase 7)
+openpyxl==3.1.5
+XlsxWriter==3.2.9
+
+# Reproduce with:
+#   python -m venv .venv
+#   .venv\Scripts\python.exe -m pip install -r requirements.txt

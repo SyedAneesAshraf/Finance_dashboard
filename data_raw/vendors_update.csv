@@ -1,0 +1,53 @@
+vendor_id,vendor_name,category,region,payment_terms,currency,creation_date,last_update_date
+V0001,johnson ltd,IT Services,EMEA  ,NET45,USD,2022-05-24,2025-09-10
+V0002,"Arnold, Mitchell and Jones",Logistics,EMEA,2/10 NET30,USD,2024-08-09,2025-11-09
+V0003,"Stevenson, Walsh and Pierce",raw materials,EMEA,NET45,USD,2023-05-14,2023-05-14
+V0004,Arroyo Ltd,Raw Materials,North America,,GBP,2024-05-28,2024-05-28
+V0005,"Bonilla, Jefferson and Brown",Logistics  ,north america,NET15,USD,2023-10-02,2023-10-02
+V0006,"Ferguson, Sullivan and Leon",IT Services,emea,NET15,USD,2022-04-19,2022-04-19
+V0007,"TAYLOR, JOHNSON AND MORGAN",IT Services,APAC,NET45,USD,2023-10-14,2023-10-14
+V0008,"Winters, Campbell and Carr",Raw Materials,EMEA  ,NET15,EUR,16-AUG-2024,23-OCT-2025
+V0009,Arias LLC,IT Services,EMEA,NET15,USD,2023-12-07,2023-12-07
+V0010,REYES LLC,IT Services,EMEA,NET15,USD,2022-04-05,2022-04-05
+V0011,"Woods, Johnson and Malone",IT Services,  North America,NET45,GBP,2023-02-06,2023-02-06
+V0012,"  Wagner, Willis and Alexander",Logistics,LATAM,,USD,02/19/2023,02/19/2023
+V0013,"Alvarado, Davis and Gray",Raw Materials,LATAM,NET30,USD,2023-10-02,2023-10-02
+V0014,Combs-Sanchez,logistics,APAC,NET60,USD,2024-08-29,2024-08-29
+V0015,Walton Inc,raw materials,North America,NET30,USD,05/30/2023,05/30/2023
+V0016,  Walton-Franklin,Consulting,emea,NET30,USD,2024-01-17,2024-01-17
+V0017,Frost-Yu,IT Services,APAC,NET45,USD,11/29/2023,11/29/2023
+V0018,"Brennan, Lewis and Reilly",Logistics,APAC,2/10 NET30,USD,2022-12-23,2022-12-23
+V0019,Cook-Thomas,IT Services,North America,NET60,USD,05-JUL-2023,05-JUL-2023
+V0020,  Wood Inc,IT Services,North America,NET15,USD,2024-07-18,2024-07-18
+V0021,"Esparza, Arnold and Mercer",Consulting,North America,NET60,USD,2024-03-22,2024-03-22
+V0022,GALLAGHER-MASON,IT Services,North America,NET30,USD,05-DEC-2023,05-DEC-2023
+V0023,Gonzales and Sons,Raw Materials,North America,NET45,USD,2023-06-01,2023-06-01
+V0024,Ramos-Hall,Logistics,EMEA,NET45,USD,2022-09-30,2025-06-19
+V0025,Medina LLC,IT Services,APAC,NET30,GBP,2023-01-12,2023-01-12
+V0026,Campbell Ltd  ,Consulting  ,EMEA,NET30,USD,2023-10-22,2025-05-10
+V0027,Smith-Rose,IT Services,EMEA,NET30,USD,2024-04-09,2024-04-09
+V0028,"Ramirez, Lynch and Hogan",consulting,,NET60,USD,24-DEC-2023,24-DEC-2023
+V0029,Herman LLC,Consulting,APAC,NET60,USD,2024-05-27,2024-05-27
+V0030,Wallace-Rodriguez,Consulting,EMEA,NET30,USD,2023-09-08,2023-09-08
+V0031,Phillips-Henry,Raw Materials,EMEA,NET30,USD,2022-08-04,2022-08-04
+V0032,  Klein and Sons,IT SERVICES,North America,,USD,04/12/2022,04/12/2022
+V0033,WILLIAMS-KLINE,Office Supplies,North America,NET60,USD,2024-03-25,2024-03-25
+V0034,"Moran, Cortez and Martin",Office Supplies  ,LATAM,NET15,EUR,2023-09-27,2023-09-27
+V0035,baker llc,IT Services,North America,2/10 NET30,GBP,2022-05-21,2022-05-21
+V0036,gilbert-oliver,CONSULTING,  North America,NET45,EUR,09/06/2022,09/06/2022
+V0037,"  Martinez, Wright and Reynolds",Logistics  ,North America  ,NET60,USD,05/02/2022,05/02/2022
+V0038,  Ray Inc,IT SERVICES,North America,,USD,2023-03-12,2023-03-12
+V0039,"Jones, Lee and Jefferson",Consulting,,NET60,CAD,31-DEC-2022,31-DEC-2022
+V0040,  Martinez-Mcmahon,logistics,APAC,NET30,USD,2023-01-08,2023-01-08
+V0041,VILLARREAL-AVILA,Raw Materials,LATAM,NET30,USD,2024-01-17,2024-01-17
+V0042,"Woodard, Harrell and Bell",consulting,,NET45,USD,04/23/2023,04/23/2023
+V0043,"MORROW, MILLER AND BROOKS",it services,North America,NET15,USD,2024-01-16,2025-09-25
+V0044,Munoz PLC,Raw Materials,APAC,NET30,CAD,2023-08-16,2023-08-16
+V0045,Wolfe-Macdonald,IT Services,NORTH AMERICA,NET45,USD,2022-08-15,2022-08-15
+V0046,"ROTH, JOHNSON AND GLOVER",Logistics,apac,NET60,USD,07/09/2023,07/09/2023
+V0047,"Sutton, Parker and Scott",Office Supplies,LATAM,NET30,USD,08/18/2024,08/18/2024
+V0048,"WILLIAMS, HODGES AND LEE",  Raw Materials,north america,NET45,USD,18-FEB-2024,18-FEB-2024
+V0049,"Gallagher, Taylor and Perry",IT Services,EMEA,NET30,USD,2024-01-17,2024-01-17
+V0050,Sims Ltd,Raw Materials,EMEA,NET30,USD,01/18/2024,01/18/2024
+V0051,"clements, bowen and tucker",raw materials,North America,NET30,USD,2026-07-02,2026-07-02
+V0052,Pierce Ltd,Office Supplies,APAC,NET15,EUR,2026-03-10,2026-03-10

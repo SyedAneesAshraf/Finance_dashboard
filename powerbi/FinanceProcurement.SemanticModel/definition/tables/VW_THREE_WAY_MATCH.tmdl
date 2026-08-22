@@ -1,0 +1,205 @@
+/// Cumulative invoiced-vs-PO variance per PO. Mirrors query 5.5.
+table VW_THREE_WAY_MATCH
+	lineageTag: cec1d825-f7f1-50b0-a628-29c6d300144a
+
+	column PO_ID
+		dataType: string
+		lineageTag: c9060bd0-4584-5326-a39d-63e5d8693f7f
+		summarizeBy: none
+		sourceColumn: PO_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column VENDOR_KEY
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 4f717544-7111-554b-b9af-5175fb148b48
+		summarizeBy: none
+		sourceColumn: VENDOR_KEY
+
+		annotation SummarizationSetBy = Automatic
+
+	column VENDOR_ID
+		dataType: string
+		lineageTag: 833d7dff-f387-5703-ba9e-c6ec164bc4dd
+		summarizeBy: none
+		sourceColumn: VENDOR_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column VENDOR_NAME
+		dataType: string
+		lineageTag: 3c02bfeb-1287-596b-a9cc-ec4638b24c01
+		summarizeBy: none
+		sourceColumn: VENDOR_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column CATEGORY
+		dataType: string
+		lineageTag: cbda622d-97d2-54e4-b9f8-70b75c9136a9
+		summarizeBy: none
+		sourceColumn: CATEGORY
+
+		annotation SummarizationSetBy = Automatic
+
+	column REGION
+		dataType: string
+		lineageTag: 643d8aea-50a5-52e2-b850-0bde244f9578
+		summarizeBy: none
+		sourceColumn: REGION
+
+		annotation SummarizationSetBy = Automatic
+
+	column PO_DATE
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 960259f9-24eb-5417-a782-df2873b48f6d
+		summarizeBy: none
+		sourceColumn: PO_DATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column PO_DATE_KEY
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 081cd5f0-36cb-5302-8081-33537220acb0
+		summarizeBy: none
+		sourceColumn: PO_DATE_KEY
+
+		annotation SummarizationSetBy = Automatic
+
+	column PO_STATUS
+		dataType: string
+		lineageTag: 64953176-a2ac-5487-87a5-d70207edd3cc
+		summarizeBy: none
+		sourceColumn: PO_STATUS
+
+		annotation SummarizationSetBy = Automatic
+
+	column PO_AMOUNT
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: fb6eae4d-c0cb-5423-ba97-32b9d1d25c1f
+		summarizeBy: none
+		sourceColumn: PO_AMOUNT
+
+		annotation SummarizationSetBy = Automatic
+
+	column PO_AMOUNT_USD
+		dataType: decimal
+		formatString: "$#,0.00;($#,0.00);$#,0.00"
+		lineageTag: a574fa98-946d-5193-b851-14c348e0f5e4
+		summarizeBy: sum
+		sourceColumn: PO_AMOUNT_USD
+
+		annotation SummarizationSetBy = Automatic
+
+	column CURRENCY
+		dataType: string
+		lineageTag: d339c1a3-50a1-5412-8a0b-67063a1c9cd0
+		summarizeBy: none
+		sourceColumn: CURRENCY
+
+		annotation SummarizationSetBy = Automatic
+
+	column GOODS_RECEIPT_DATE
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 7251e555-5e34-55dd-895b-280a9f429569
+		summarizeBy: none
+		sourceColumn: GOODS_RECEIPT_DATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column INVOICE_COUNT
+		dataType: int64
+		formatString: 0
+		lineageTag: 0154c742-0020-54bf-83b3-048a0598a3f6
+		summarizeBy: none
+		sourceColumn: INVOICE_COUNT
+
+		annotation SummarizationSetBy = Automatic
+
+	column TOTAL_INVOICED
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: 37f0a0d8-a015-50b0-9b0e-e6ef45b35cd2
+		summarizeBy: none
+		sourceColumn: TOTAL_INVOICED
+
+		annotation SummarizationSetBy = Automatic
+
+	column TOTAL_INVOICED_USD
+		dataType: decimal
+		formatString: "$#,0.00;($#,0.00);$#,0.00"
+		lineageTag: d5f789af-d927-5174-a45f-001fcba01cca
+		summarizeBy: sum
+		sourceColumn: TOTAL_INVOICED_USD
+
+		annotation SummarizationSetBy = Automatic
+
+	column INVOICE_IDS
+		dataType: string
+		lineageTag: 5f74b7c4-786f-5edc-863f-471d3dd40679
+		summarizeBy: none
+		sourceColumn: INVOICE_IDS
+
+		annotation SummarizationSetBy = Automatic
+
+	column VARIANCE_AMOUNT
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: 692edd05-8f08-5a8b-8ee0-c932b213eb50
+		summarizeBy: none
+		sourceColumn: VARIANCE_AMOUNT
+
+		annotation SummarizationSetBy = Automatic
+
+	column PCT_VARIANCE
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: a11d5c5b-b4ac-5187-a934-62dd32c27f3d
+		summarizeBy: none
+		sourceColumn: PCT_VARIANCE
+
+		annotation SummarizationSetBy = Automatic
+
+	column RECEIPT_STATUS
+		dataType: string
+		lineageTag: 6f6450a0-d123-57c2-b351-753259b141cc
+		summarizeBy: none
+		sourceColumn: RECEIPT_STATUS
+
+		annotation SummarizationSetBy = Automatic
+
+	column MATCH_STATUS
+		dataType: string
+		lineageTag: 83967665-83b0-52e6-9aee-bcbd92fa4c86
+		summarizeBy: none
+		sourceColumn: MATCH_STATUS
+
+		annotation SummarizationSetBy = Automatic
+
+	column EXCEPTION_TYPE
+		dataType: string
+		lineageTag: 0d82c9e5-a7cd-5a5c-9a9b-b7442935e720
+		summarizeBy: none
+		sourceColumn: EXCEPTION_TYPE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition VW_THREE_WAY_MATCH = m
+		mode: import
+		source =
+				let
+				    Source = Snowflake.Databases("CEMNFKN-TT95210.snowflakecomputing.com", "FIN_PROC_WH"),
+				    Db = Source{[Name="FIN_PROC_DB",Kind="Database"]}[Data],
+				    Sch = Db{[Name="GOLD",Kind="Schema"]}[Data],
+				    Data = Sch{[Name="VW_THREE_WAY_MATCH",Kind="View"]}[Data]
+				in
+				    Data
+
+	annotation PBI_ResultType = Table

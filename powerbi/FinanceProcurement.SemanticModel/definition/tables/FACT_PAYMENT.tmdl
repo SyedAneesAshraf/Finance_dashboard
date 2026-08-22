@@ -1,0 +1,129 @@
+table FACT_PAYMENT
+	lineageTag: 497ca07c-62e9-5b3b-8fa2-ae0ef2294445
+
+	column PAYMENT_ID
+		dataType: string
+		lineageTag: c972713b-de27-547b-8833-b9b4f25c9db1
+		summarizeBy: none
+		sourceColumn: PAYMENT_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column INVOICE_ID
+		dataType: string
+		lineageTag: d55941b2-2209-5a2a-bf55-91ca04205337
+		summarizeBy: none
+		sourceColumn: INVOICE_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column VENDOR_KEY
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: cb33c288-10ea-5dcd-a616-b916424716f1
+		summarizeBy: none
+		sourceColumn: VENDOR_KEY
+
+		annotation SummarizationSetBy = Automatic
+
+	column VENDOR_ID
+		dataType: string
+		lineageTag: 842c55bb-0418-5d0f-aa1a-b74f81117bec
+		summarizeBy: none
+		sourceColumn: VENDOR_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column PAYMENT_DATE_KEY
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: a7fd6b5d-dfbc-54bd-bb91-a89fc92b810f
+		summarizeBy: none
+		sourceColumn: PAYMENT_DATE_KEY
+
+		annotation SummarizationSetBy = Automatic
+
+	column PAYMENT_DATE
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: 448b254d-1d91-5a81-a932-a02c9b7fa113
+		summarizeBy: none
+		sourceColumn: PAYMENT_DATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column AMOUNT_PAID
+		dataType: decimal
+		formatString: #,0.00
+		lineageTag: 8b80a50f-a643-5819-8015-d2a4476eee86
+		summarizeBy: none
+		sourceColumn: AMOUNT_PAID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CURRENCY
+		dataType: string
+		lineageTag: 4512fec5-95a6-5438-b129-c30e7040d40e
+		summarizeBy: none
+		sourceColumn: CURRENCY
+
+		annotation SummarizationSetBy = Automatic
+
+	column AMOUNT_PAID_USD
+		dataType: decimal
+		formatString: "$#,0.00;($#,0.00);$#,0.00"
+		lineageTag: 8f803ae8-bb8c-5686-8a1f-5eea1009fcb2
+		summarizeBy: sum
+		sourceColumn: AMOUNT_PAID_USD
+
+		annotation SummarizationSetBy = Automatic
+
+	column PAYMENT_METHOD
+		dataType: string
+		lineageTag: 1c4d1945-157a-5c36-a1a8-4e31b05412b9
+		summarizeBy: none
+		sourceColumn: PAYMENT_METHOD
+
+		annotation SummarizationSetBy = Automatic
+
+	column DAYS_TO_PAY
+		dataType: int64
+		formatString: 0
+		lineageTag: 13ca0995-e461-52dc-99f7-e4599bdac02a
+		summarizeBy: none
+		sourceColumn: DAYS_TO_PAY
+
+		annotation SummarizationSetBy = Automatic
+
+	column DAYS_LATE
+		dataType: int64
+		formatString: 0
+		lineageTag: 147b264a-f596-5ca5-a0a5-9937500f83f2
+		summarizeBy: none
+		sourceColumn: DAYS_LATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column IS_LATE
+		dataType: boolean
+		formatString: """TRUE"";""TRUE"";""FALSE"""
+		lineageTag: 1ac3cd46-8cfb-50f6-b1bc-59a2394d0477
+		summarizeBy: none
+		sourceColumn: IS_LATE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition FACT_PAYMENT = m
+		mode: import
+		source =
+				let
+				    Source = Snowflake.Databases("CEMNFKN-TT95210.snowflakecomputing.com", "FIN_PROC_WH"),
+				    Db = Source{[Name="FIN_PROC_DB",Kind="Database"]}[Data],
+				    Sch = Db{[Name="GOLD",Kind="Schema"]}[Data],
+				    Data = Sch{[Name="FACT_PAYMENT",Kind="Table"]}[Data]
+				in
+				    Data
+
+	annotation PBI_ResultType = Table

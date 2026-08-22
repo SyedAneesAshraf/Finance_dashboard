@@ -1,0 +1,20 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation PBI_QueryOrder = ["DIM_DATE", "DIM_VENDOR", "DIM_GL_ACCOUNT", "FACT_INVOICE", "FACT_PAYMENT", "FACT_PURCHASE_ORDER", "VW_DUPLICATE_INVOICE_PAIRS", "VW_THREE_WAY_MATCH"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table DIM_DATE
+ref table DIM_VENDOR
+ref table DIM_GL_ACCOUNT
+ref table FACT_INVOICE
+ref table FACT_PAYMENT
+ref table FACT_PURCHASE_ORDER
+ref table VW_DUPLICATE_INVOICE_PAIRS
+ref table VW_THREE_WAY_MATCH

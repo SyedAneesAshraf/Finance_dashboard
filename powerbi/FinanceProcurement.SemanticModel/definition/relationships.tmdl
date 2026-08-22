@@ -1,0 +1,40 @@
+relationship 0a53ce7c-67fc-57d5-a7d8-ba37f2fb50b0
+	fromColumn: FACT_INVOICE.VENDOR_KEY
+	toColumn: DIM_VENDOR.VENDOR_KEY
+
+relationship ecc93cb2-b73f-5f55-94a7-1470f81d9ff6
+	fromColumn: FACT_INVOICE.ACCOUNT_KEY
+	toColumn: DIM_GL_ACCOUNT.ACCOUNT_KEY
+
+relationship d7947537-ba25-5bf8-bc7e-2c4f66035c64
+	fromColumn: FACT_INVOICE.INVOICE_DATE_KEY
+	toColumn: DIM_DATE.DATE_KEY
+
+relationship 041f60b8-7f12-5621-bab7-ac960016bb7e
+	isActive: false
+	fromColumn: FACT_INVOICE.DUE_DATE_KEY
+	toColumn: DIM_DATE.DATE_KEY
+
+relationship cafabc0f-6687-5bfc-a702-afca3c4223ed
+	fromColumn: FACT_PAYMENT.VENDOR_KEY
+	toColumn: DIM_VENDOR.VENDOR_KEY
+
+relationship 75ce149e-fcd5-5b77-9707-4e35d8e9b62c
+	fromColumn: FACT_PAYMENT.PAYMENT_DATE_KEY
+	toColumn: DIM_DATE.DATE_KEY
+
+relationship 9cfe481f-599f-58ac-b2a7-f7df747b360e
+	fromColumn: FACT_PURCHASE_ORDER.VENDOR_KEY
+	toColumn: DIM_VENDOR.VENDOR_KEY
+
+relationship 73e636a7-31d8-5c9a-a55d-4d9655bd8f49
+	fromColumn: FACT_PURCHASE_ORDER.PO_DATE_KEY
+	toColumn: DIM_DATE.DATE_KEY
+
+relationship 57f86da6-0842-58f5-8b42-dff3b22862f7
+	fromColumn: VW_DUPLICATE_INVOICE_PAIRS.VENDOR_KEY
+	toColumn: DIM_VENDOR.VENDOR_KEY
+
+relationship 8c3cc03f-f50b-5ee8-8049-e0563d62ea31
+	fromColumn: VW_THREE_WAY_MATCH.VENDOR_KEY
+	toColumn: DIM_VENDOR.VENDOR_KEY

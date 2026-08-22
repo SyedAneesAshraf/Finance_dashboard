@@ -1,0 +1,124 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.0.0/schema.json",
+  "name": "p2Matrix",
+  "position": {
+    "x": 16,
+    "y": 438,
+    "z": 0,
+    "width": 604,
+    "height": 266,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "VW_THREE_WAY_MATCH"
+                    }
+                  },
+                  "Property": "PO_ID"
+                }
+              },
+              "queryRef": "VW_THREE_WAY_MATCH.PO_ID",
+              "nativeQueryRef": "PO_ID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "VW_THREE_WAY_MATCH"
+                    }
+                  },
+                  "Property": "VENDOR_NAME"
+                }
+              },
+              "queryRef": "VW_THREE_WAY_MATCH.VENDOR_NAME",
+              "nativeQueryRef": "VENDOR_NAME"
+            }
+          ]
+        },
+        "Columns": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "VW_THREE_WAY_MATCH"
+                    }
+                  },
+                  "Property": "EXCEPTION_TYPE"
+                }
+              },
+              "queryRef": "VW_THREE_WAY_MATCH.EXCEPTION_TYPE",
+              "nativeQueryRef": "EXCEPTION_TYPE"
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "VW_THREE_WAY_MATCH"
+                    }
+                  },
+                  "Property": "PCT_VARIANCE"
+                }
+              },
+              "queryRef": "VW_THREE_WAY_MATCH.PCT_VARIANCE",
+              "nativeQueryRef": "PCT_VARIANCE"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'3-way match exceptions by PO'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "11D"
+                }
+              }
+            },
+            "bold": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

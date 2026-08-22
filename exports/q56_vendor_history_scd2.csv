@@ -1,0 +1,79 @@
+INVOICE_ID,INVOICE_DATE,VENDOR_ID,VENDOR_NAME,CATEGORY_AT_INVOICE_DATE,TERMS_AT_INVOICE_DATE,VENDOR_VERSION,EFFECTIVE_START_DATE,EFFECTIVE_END_DATE,CATEGORY_TODAY,TERMS_TODAY,TERMS_CHANGED_SINCE,AMOUNT_USD,DUE_DATE,ACTUAL_TERMS_GRANTED_ON_INVOICE,STANDARD_TERMS_AT_THE_TIME,STATUS
+INV200645,2024-11-28,V0001,Johnson Ltd,Raw Materials,NET30,1,2022-05-24,2025-09-09,IT Services,NET45,YES - a current-only table would report NET45,5279.64,2024-12-28,30,30,Paid
+INV200433,2025-02-28,V0001,Johnson Ltd,Raw Materials,NET30,1,2022-05-24,2025-09-09,IT Services,NET45,YES - a current-only table would report NET45,14984.03,2025-03-30,30,30,Paid
+INV200434,2025-03-16,V0001,Johnson Ltd,Raw Materials,NET30,1,2022-05-24,2025-09-09,IT Services,NET45,YES - a current-only table would report NET45,11483.73,2025-04-15,30,30,Paid
+INV200447,2025-03-23,V0001,Johnson Ltd,Raw Materials,NET30,1,2022-05-24,2025-09-09,IT Services,NET45,YES - a current-only table would report NET45,40441.47,2025-04-22,30,30,Paid
+INV200507,2025-09-04,V0001,Johnson Ltd,Raw Materials,NET30,1,2022-05-24,2025-09-09,IT Services,NET45,YES - a current-only table would report NET45,6687.30,2025-10-04,30,30,Paid
+INV200288,2025-09-16,V0001,Johnson Ltd,IT Services,NET45,2,2025-09-10,9999-12-31,IT Services,NET45,no,8694.21,2025-10-31,45,45,Paid
+INV200508,2025-09-17,V0001,Johnson Ltd,IT Services,NET45,2,2025-09-10,9999-12-31,IT Services,NET45,no,4459.61,2025-11-01,45,45,Paid
+INV200414,2025-09-25,V0001,Johnson Ltd,IT Services,NET45,2,2025-09-10,9999-12-31,IT Services,NET45,no,31198.28,2025-11-09,45,45,Paid
+INV200289,2025-09-28,V0001,Johnson Ltd,IT Services,NET45,2,2025-09-10,9999-12-31,IT Services,NET45,no,10837.06,2025-11-12,45,45,Paid
+INV200415,2025-10-09,V0001,Johnson Ltd,IT Services,NET45,2,2025-09-10,9999-12-31,IT Services,NET45,no,592.64,2025-11-23,45,45,Paid
+INV200499,2025-10-18,V0001,Johnson Ltd,IT Services,NET45,2,2025-09-10,9999-12-31,IT Services,NET45,no,59918.18,2025-12-02,45,45,Paid
+INV200416,2025-10-19,V0001,Johnson Ltd,IT Services,NET45,2,2025-09-10,9999-12-31,IT Services,NET45,no,28054.03,2025-12-03,45,45,Paid
+INV200500,2025-11-11,V0001,Johnson Ltd,IT Services,NET45,2,2025-09-10,9999-12-31,IT Services,NET45,no,30905.95,2025-12-26,45,45,Paid
+INV200535,2025-12-12,V0001,Johnson Ltd,IT Services,NET45,2,2025-09-10,9999-12-31,IT Services,NET45,no,23644.83,2026-01-26,45,45,Paid
+INV200145,2026-01-11,V0001,Johnson Ltd,IT Services,NET45,2,2025-09-10,9999-12-31,IT Services,NET45,no,89561.19,2026-02-25,45,45,Paid
+INV200536,2026-01-16,V0001,Johnson Ltd,IT Services,NET45,2,2025-09-10,9999-12-31,IT Services,NET45,no,6201.80,2026-03-02,45,45,Paid
+INV200488,2026-01-31,V0001,Johnson Ltd,IT Services,NET45,2,2025-09-10,9999-12-31,IT Services,NET45,no,43804.32,2026-03-17,45,45,Paid
+INV200324,2026-04-11,V0001,Johnson Ltd,IT Services,NET45,2,2025-09-10,9999-12-31,IT Services,NET45,no,67894.98,2026-05-26,45,45,Paid
+INV200126,2026-08-12,V0001,Johnson Ltd,IT Services,NET45,2,2025-09-10,9999-12-31,IT Services,NET45,no,7731.38,2026-09-26,45,45,Unpaid
+INV200662,2026-08-13,V0001,Johnson Ltd,IT Services,NET45,2,2025-09-10,9999-12-31,IT Services,NET45,no,7731.38,2026-09-27,45,45,Unpaid
+INV200234,2024-11-26,V0002,"Arnold, Mitchell and Jones",Logistics,NET45,1,2024-08-09,2025-11-08,Logistics,2/10 NET30,YES - a current-only table would report 2/10 NET30,4078.59,2025-01-10,45,45,Paid
+INV200235,2024-12-24,V0002,"Arnold, Mitchell and Jones",Logistics,NET45,1,2024-08-09,2025-11-08,Logistics,2/10 NET30,YES - a current-only table would report 2/10 NET30,4563.56,2025-02-07,45,45,Paid
+INV200506,2025-01-29,V0002,"Arnold, Mitchell and Jones",Logistics,NET45,1,2024-08-09,2025-11-08,Logistics,2/10 NET30,YES - a current-only table would report 2/10 NET30,673.48,2025-03-15,45,45,Paid
+INV200201,2025-03-04,V0002,"Arnold, Mitchell and Jones",Logistics,NET45,1,2024-08-09,2025-11-08,Logistics,2/10 NET30,YES - a current-only table would report 2/10 NET30,302.70,2025-04-18,45,45,Paid
+INV200202,2025-03-06,V0002,"Arnold, Mitchell and Jones",Logistics,NET45,1,2024-08-09,2025-11-08,Logistics,2/10 NET30,YES - a current-only table would report 2/10 NET30,41.46,2025-04-20,45,45,Paid
+INV200093,2025-03-06,V0002,"Arnold, Mitchell and Jones",Logistics,NET45,1,2024-08-09,2025-11-08,Logistics,2/10 NET30,YES - a current-only table would report 2/10 NET30,3684.92,2025-04-20,45,45,Paid
+INV200203,2025-05-15,V0002,"Arnold, Mitchell and Jones",Logistics,NET45,1,2024-08-09,2025-11-08,Logistics,2/10 NET30,YES - a current-only table would report 2/10 NET30,1089.44,2025-06-29,45,45,Paid
+INV200257,2025-05-16,V0002,"Arnold, Mitchell and Jones",Logistics,NET45,1,2024-08-09,2025-11-08,Logistics,2/10 NET30,YES - a current-only table would report 2/10 NET30,729.31,2025-06-30,45,45,Paid
+INV200233,2025-07-25,V0002,"Arnold, Mitchell and Jones",Logistics,NET45,1,2024-08-09,2025-11-08,Logistics,2/10 NET30,YES - a current-only table would report 2/10 NET30,4911.73,2025-09-08,45,45,Paid
+INV200514,2025-07-30,V0002,"Arnold, Mitchell and Jones",Logistics,NET45,1,2024-08-09,2025-11-08,Logistics,2/10 NET30,YES - a current-only table would report 2/10 NET30,3366.82,2025-09-13,45,45,Paid
+INV200505,2025-09-22,V0002,"Arnold, Mitchell and Jones",Logistics,NET45,1,2024-08-09,2025-11-08,Logistics,2/10 NET30,YES - a current-only table would report 2/10 NET30,9913.00,2025-11-06,45,45,Paid
+INV200530,2025-10-07,V0002,"Arnold, Mitchell and Jones",Logistics,NET45,1,2024-08-09,2025-11-08,Logistics,2/10 NET30,YES - a current-only table would report 2/10 NET30,4298.27,2025-11-21,45,45,Paid
+INV200577,2025-11-08,V0002,"Arnold, Mitchell and Jones",Logistics,NET45,1,2024-08-09,2025-11-08,Logistics,2/10 NET30,YES - a current-only table would report 2/10 NET30,1875.55,2025-12-23,45,45,Paid
+INV200578,2025-11-13,V0002,"Arnold, Mitchell and Jones",Logistics,2/10 NET30,2,2025-11-09,9999-12-31,Logistics,2/10 NET30,no,751.49,2025-12-13,30,30,Paid
+INV200579,2025-12-05,V0002,"Arnold, Mitchell and Jones",Logistics,2/10 NET30,2,2025-11-09,9999-12-31,Logistics,2/10 NET30,no,1062.10,2026-01-04,30,30,Paid
+INV200449,2026-01-29,V0002,"Arnold, Mitchell and Jones",Logistics,2/10 NET30,2,2025-11-09,9999-12-31,Logistics,2/10 NET30,no,127.61,2026-02-28,30,30,Paid
+INV200450,2026-02-23,V0002,"Arnold, Mitchell and Jones",Logistics,2/10 NET30,2,2025-11-09,9999-12-31,Logistics,2/10 NET30,no,65.75,2026-03-25,30,30,Paid
+INV200451,2026-03-28,V0002,"Arnold, Mitchell and Jones",Logistics,2/10 NET30,2,2025-11-09,9999-12-31,Logistics,2/10 NET30,no,439.49,2026-04-27,30,30,Paid
+INV200337,2026-04-01,V0002,"Arnold, Mitchell and Jones",Logistics,2/10 NET30,2,2025-11-09,9999-12-31,Logistics,2/10 NET30,no,1948.92,2026-05-01,30,30,Paid
+INV200163,2026-06-18,V0002,"Arnold, Mitchell and Jones",Logistics,2/10 NET30,2,2025-11-09,9999-12-31,Logistics,2/10 NET30,no,2512.55,2026-07-18,30,30,Unpaid
+INV200608,2026-07-28,V0002,"Arnold, Mitchell and Jones",Logistics,2/10 NET30,2,2025-11-09,9999-12-31,Logistics,2/10 NET30,no,2872.13,2026-08-27,30,30,Unpaid
+INV200228,2024-11-07,V0008,"Winters, Campbell and Carr",Office Supplies,NET45,1,2024-08-16,2025-10-22,Raw Materials,NET15,YES - a current-only table would report NET15,448.52,2024-12-22,45,45,Paid
+INV200229,2024-12-10,V0008,"Winters, Campbell and Carr",Office Supplies,NET45,1,2024-08-16,2025-10-22,Raw Materials,NET15,YES - a current-only table would report NET15,160.36,2025-01-24,45,45,Paid
+INV200249,2025-04-26,V0008,"Winters, Campbell and Carr",Office Supplies,NET45,1,2024-08-16,2025-10-22,Raw Materials,NET15,YES - a current-only table would report NET15,285.15,2025-06-10,45,45,Paid
+INV200075,2025-08-30,V0008,"Winters, Campbell and Carr",Office Supplies,NET45,1,2024-08-16,2025-10-22,Raw Materials,NET15,YES - a current-only table would report NET15,686.42,2025-10-14,45,45,Paid
+INV200076,2025-09-06,V0008,"Winters, Campbell and Carr",Office Supplies,NET45,1,2024-08-16,2025-10-22,Raw Materials,NET15,YES - a current-only table would report NET15,310.56,2025-10-21,45,45,Paid
+INV200042,2025-09-13,V0008,"Winters, Campbell and Carr",Office Supplies,NET45,1,2024-08-16,2025-10-22,Raw Materials,NET15,YES - a current-only table would report NET15,407.45,2025-10-28,45,45,Paid
+INV200345,2025-10-11,V0008,"Winters, Campbell and Carr",Office Supplies,NET45,1,2024-08-16,2025-10-22,Raw Materials,NET15,YES - a current-only table would report NET15,62.05,2025-11-25,45,45,Paid
+INV200060,2025-12-08,V0008,"Winters, Campbell and Carr",Raw Materials,NET15,2,2025-10-23,9999-12-31,Raw Materials,NET15,no,420.82,2025-12-23,15,15,Paid
+INV200346,2025-12-10,V0008,"Winters, Campbell and Carr",Raw Materials,NET15,2,2025-10-23,9999-12-31,Raw Materials,NET15,no,220.32,2025-12-25,15,15,Paid
+INV200059,2025-12-29,V0008,"Winters, Campbell and Carr",Raw Materials,NET15,2,2025-10-23,9999-12-31,Raw Materials,NET15,no,448.69,2026-01-13,15,15,Paid
+INV200110,2026-01-09,V0008,"Winters, Campbell and Carr",Raw Materials,NET15,2,2025-10-23,9999-12-31,Raw Materials,NET15,no,554.05,2026-01-24,15,15,Paid
+INV200061,2026-01-09,V0008,"Winters, Campbell and Carr",Raw Materials,NET15,2,2025-10-23,9999-12-31,Raw Materials,NET15,no,179.13,2026-01-24,15,15,Paid
+INV200027,2026-04-24,V0008,"Winters, Campbell and Carr",Raw Materials,NET15,2,2025-10-23,9999-12-31,Raw Materials,NET15,no,439.25,2026-05-09,15,15,Paid
+INV200028,2026-06-06,V0008,"Winters, Campbell and Carr",Raw Materials,NET15,2,2025-10-23,9999-12-31,Raw Materials,NET15,no,140.92,2026-06-21,15,15,Unpaid
+INV200628,2024-11-25,V0024,Ramos-Hall,Consulting,NET15,1,2022-09-30,2025-06-18,Logistics,NET45,YES - a current-only table would report NET45,8928.64,2024-12-10,15,15,Unpaid
+INV200672,2024-11-27,V0024,Ramos-Hall,Consulting,NET15,1,2022-09-30,2025-06-18,Logistics,NET45,YES - a current-only table would report NET45,8928.64,2024-12-12,15,15,Paid
+INV200629,2024-12-01,V0024,Ramos-Hall,Consulting,NET15,1,2022-09-30,2025-06-18,Logistics,NET45,YES - a current-only table would report NET45,11316.33,2024-12-16,15,15,Paid
+INV200252,2025-03-05,V0024,Ramos-Hall,Consulting,NET15,1,2022-09-30,2025-06-18,Logistics,NET45,YES - a current-only table would report NET45,12721.46,2025-03-20,15,15,Paid
+INV200598,2025-03-20,V0024,Ramos-Hall,Consulting,NET15,1,2022-09-30,2025-06-18,Logistics,NET45,YES - a current-only table would report NET45,3500.28,2025-04-04,15,15,Paid
+INV200599,2025-03-23,V0024,Ramos-Hall,Consulting,NET15,1,2022-09-30,2025-06-18,Logistics,NET45,YES - a current-only table would report NET45,5982.20,2025-04-07,15,15,Paid
+INV200253,2025-04-21,V0024,Ramos-Hall,Consulting,NET15,1,2022-09-30,2025-06-18,Logistics,NET45,YES - a current-only table would report NET45,7864.73,2025-05-06,15,15,Paid
+INV200460,2025-05-23,V0024,Ramos-Hall,Consulting,NET15,1,2022-09-30,2025-06-18,Logistics,NET45,YES - a current-only table would report NET45,17637.11,2025-06-07,15,15,Paid
+INV200151,2025-11-03,V0024,Ramos-Hall,Logistics,NET45,2,2025-06-19,9999-12-31,Logistics,NET45,no,6168.05,2025-12-18,45,45,Paid
+INV200152,2025-11-25,V0024,Ramos-Hall,Logistics,NET45,2,2025-06-19,9999-12-31,Logistics,NET45,no,5068.07,2026-01-09,45,45,Paid
+INV200073,2026-03-07,V0024,Ramos-Hall,Logistics,NET45,2,2025-06-19,9999-12-31,Logistics,NET45,no,5375.96,2026-04-21,45,45,Paid
+INV200056,2026-03-30,V0024,Ramos-Hall,Logistics,NET45,2,2025-06-19,9999-12-31,Logistics,NET45,no,11695.72,2026-05-14,45,45,Paid
+INV200406,2026-08-08,V0024,Ramos-Hall,Logistics,NET45,2,2025-06-19,9999-12-31,Logistics,NET45,no,26808.96,2026-09-22,45,45,Unpaid
+INV200396,2025-02-20,V0026,Campbell Ltd,Consulting,NET45,1,2023-10-22,2025-05-09,Consulting,NET30,YES - a current-only table would report NET30,16918.12,2025-04-06,45,45,Paid
+INV200062,2024-11-21,V0043,"Morrow, Miller And Brooks",IT Services,NET30,1,2024-01-16,2025-09-24,IT Services,NET15,YES - a current-only table would report NET15,30610.88,2024-12-21,30,30,Paid
+INV200197,2025-02-28,V0043,"Morrow, Miller And Brooks",IT Services,NET30,1,2024-01-16,2025-09-24,IT Services,NET15,YES - a current-only table would report NET15,7032.42,2025-03-30,30,30,Paid
+INV200116,2025-03-08,V0043,"Morrow, Miller And Brooks",IT Services,NET30,1,2024-01-16,2025-09-24,IT Services,NET15,YES - a current-only table would report NET15,3989.44,2025-04-07,30,30,Paid
+INV200213,2025-04-23,V0043,"Morrow, Miller And Brooks",IT Services,NET30,1,2024-01-16,2025-09-24,IT Services,NET15,YES - a current-only table would report NET15,721.85,2025-05-23,30,30,Paid
+INV200214,2025-05-10,V0043,"Morrow, Miller And Brooks",IT Services,NET30,1,2024-01-16,2025-09-24,IT Services,NET15,YES - a current-only table would report NET15,555.91,2025-06-09,30,30,Paid
+INV200215,2025-06-16,V0043,"Morrow, Miller And Brooks",IT Services,NET30,1,2024-01-16,2025-09-24,IT Services,NET15,YES - a current-only table would report NET15,2143.96,2025-07-16,30,30,Paid
+INV200017,2025-12-05,V0043,"Morrow, Miller And Brooks",IT Services,NET15,2,2025-09-25,9999-12-31,IT Services,NET15,no,20499.78,2025-12-20,15,15,Unpaid
+INV200066,2026-02-20,V0043,"Morrow, Miller And Brooks",IT Services,NET15,2,2025-09-25,9999-12-31,IT Services,NET15,no,15006.19,2026-03-07,15,15,Paid
+INV200652,2026-05-06,V0043,"Morrow, Miller And Brooks",IT Services,NET15,2,2025-09-25,9999-12-31,IT Services,NET15,no,2201.89,2026-05-21,15,15,Unpaid
