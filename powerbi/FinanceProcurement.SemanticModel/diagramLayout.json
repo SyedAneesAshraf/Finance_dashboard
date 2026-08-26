@@ -1,0 +1,126 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 659.22146345434419,
+            "y": 660.62333706915069
+          },
+          "nodeIndex": "DIM_DATE",
+          "nodeLineageTag": "7fe1d7e5-7d6e-5b87-9c35-124f14ed4c40",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 1236.2546841314656,
+            "y": 605.55127597876719
+          },
+          "nodeIndex": "DIM_GL_ACCOUNT",
+          "nodeLineageTag": "98700c72-f92c-54dc-a329-2d3b208d3efd",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 449.484887513273,
+            "y": 307.28455723470779
+          },
+          "nodeIndex": "DIM_VENDOR",
+          "nodeLineageTag": "8610d77a-397d-556c-9b0b-93a2c5dd107c",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 948.03293311899051,
+            "y": 660.61693067555848
+          },
+          "nodeIndex": "FACT_INVOICE",
+          "nodeLineageTag": "e436ff15-1e57-5a49-92d3-cf4ec5f5d946",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 829.80315010777258,
+            "y": 303.34692557783734
+          },
+          "nodeIndex": "FACT_PAYMENT",
+          "nodeLineageTag": "497ca07c-62e9-5b3b-8fa2-ae0ef2294445",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 338.59874442093087,
+            "y": 664.2934711586978
+          },
+          "nodeIndex": "FACT_PURCHASE_ORDER",
+          "nodeLineageTag": "f3fa1772-13ff-5cf9-a16e-49d64e756c9b",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 50,
+            "y": 304.38831574935523
+          },
+          "nodeIndex": "VW_DUPLICATE_INVOICE_PAIRS",
+          "nodeLineageTag": "3f956f03-f0aa-52d3-84c2-7c32818391e1",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 339.88388741530338,
+            "y": -50
+          },
+          "nodeIndex": "VW_THREE_WAY_MATCH",
+          "nodeLineageTag": "cec1d825-f7f1-50b0-a628-29c6d300144a",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 0
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 63.528824378130146,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

@@ -38,3 +38,89 @@ relationship 57f86da6-0842-58f5-8b42-dff3b22862f7
 relationship 8c3cc03f-f50b-5ee8-8049-e0563d62ea31
 	fromColumn: VW_THREE_WAY_MATCH.VENDOR_KEY
 	toColumn: DIM_VENDOR.VENDOR_KEY
+
+relationship 5b763483-94e6-42e8-bcbd-76e1fc521216
+	joinOnDateBehavior: datePartOnly
+	fromColumn: DIM_VENDOR.EFFECTIVE_START_DATE
+	toColumn: LocalDateTable_835d8d00-9d55-43d2-a117-0cac249fcab8.Date
+
+relationship a0084f90-741a-404a-9608-2c865daeff68
+	joinOnDateBehavior: datePartOnly
+	fromColumn: DIM_VENDOR.EFFECTIVE_END_DATE
+	toColumn: LocalDateTable_8ef68251-bb8e-4694-a3a5-d1b3019810b9.Date
+
+relationship 7e42b02a-e949-47d3-8328-32fdce779afd
+	joinOnDateBehavior: datePartOnly
+	fromColumn: DIM_VENDOR.SOURCE_CREATION_DATE
+	toColumn: LocalDateTable_8df0b0fd-3a6b-43e5-8d8d-eeb41a5f77ad.Date
+
+relationship 7c4c24e0-0929-4ce0-81d6-0c2cd6a79d85
+	joinOnDateBehavior: datePartOnly
+	fromColumn: DIM_VENDOR.SOURCE_LAST_UPDATE
+	toColumn: LocalDateTable_676c54c7-8630-42ce-bbb0-147875d35d56.Date
+
+relationship cf24636d-dd67-4346-b30a-ddbb3275f419
+	joinOnDateBehavior: datePartOnly
+	fromColumn: DIM_VENDOR._GOLD_LOAD_TS
+	toColumn: LocalDateTable_c750d341-761c-405e-a2b6-7478b2e2a003.Date
+
+relationship 0f317ec6-f4e8-4af0-9738-8c38c0698daa
+	joinOnDateBehavior: datePartOnly
+	fromColumn: FACT_INVOICE.INVOICE_DATE
+	toColumn: LocalDateTable_e6c68320-9978-4e85-9d64-7d6439b5bad9.Date
+
+relationship 4275bbd9-d57b-4981-8db4-9dda14d52acf
+	joinOnDateBehavior: datePartOnly
+	fromColumn: FACT_INVOICE.DUE_DATE
+	toColumn: LocalDateTable_0b53a205-7159-44d8-9f83-4cf72014e233.Date
+
+relationship 44805fb6-ac5b-49f0-8e1e-ceed7d7102e5
+	joinOnDateBehavior: datePartOnly
+	fromColumn: FACT_PAYMENT.PAYMENT_DATE
+	toColumn: LocalDateTable_5cea6ac7-a2bd-4413-a980-88bef27d9ff5.Date
+
+relationship 86c075f8-df18-42e4-a510-13b4fe7ab53d
+	joinOnDateBehavior: datePartOnly
+	fromColumn: FACT_PURCHASE_ORDER.PO_DATE
+	toColumn: LocalDateTable_be2c7af5-8568-45da-902d-91b1e17122fa.Date
+
+relationship fbe1abba-60e2-4910-a55f-682eee45743c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: FACT_PURCHASE_ORDER.GOODS_RECEIPT_DATE
+	toColumn: LocalDateTable_12f1a857-3e03-47d5-b566-a7428536f858.Date
+
+relationship 9097a068-bd83-47a4-98b6-32aaa8877a0c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: VW_DUPLICATE_INVOICE_PAIRS.INVOICE_1_DATE
+	toColumn: LocalDateTable_20a06da5-075c-4513-a7c4-e1f1fa05c9f4.Date
+
+relationship 4a37455c-d54a-4297-b6d2-aae92556e791
+	joinOnDateBehavior: datePartOnly
+	fromColumn: VW_DUPLICATE_INVOICE_PAIRS.INVOICE_2_DATE
+	toColumn: LocalDateTable_760a1d54-0d16-4c6d-a378-ba2bed2bec9a.Date
+
+relationship 653c52e7-49f5-4a55-8383-cc3390d21739
+	joinOnDateBehavior: datePartOnly
+	fromColumn: VW_THREE_WAY_MATCH.PO_DATE
+	toColumn: LocalDateTable_729c58ca-331f-49d8-a7e2-0afc18037b77.Date
+
+relationship 4d091527-c9b4-4260-89c2-07ba2121de14
+	joinOnDateBehavior: datePartOnly
+	fromColumn: VW_THREE_WAY_MATCH.GOODS_RECEIPT_DATE
+	toColumn: LocalDateTable_e6135cdb-8c01-401c-872a-e9e9faeb049b.Date
+
+relationship 491ddf1d-285a-4e99-a7e9-b85b5cef178c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: FACT_INVOICE._GOLD_LOAD_TS
+	toColumn: LocalDateTable_0036b5a8-7e39-4f54-970d-77adcbe5495a.Date
+
+relationship 94b0723f-cd07-425a-9296-2658aa906d67
+	joinOnDateBehavior: datePartOnly
+	fromColumn: FACT_PAYMENT._GOLD_LOAD_TS
+	toColumn: LocalDateTable_9a496098-50f2-4c75-a7ba-d0a8e0052684.Date
+
+relationship 50a21436-748d-4ec3-9e7d-753fa46faca9
+	joinOnDateBehavior: datePartOnly
+	fromColumn: FACT_PURCHASE_ORDER._GOLD_LOAD_TS
+	toColumn: LocalDateTable_85c5d97e-27f3-4667-b3d2-d524e3f24a2c.Date
+

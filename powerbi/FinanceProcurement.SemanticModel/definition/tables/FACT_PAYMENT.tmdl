@@ -18,7 +18,7 @@ table FACT_PAYMENT
 		annotation SummarizationSetBy = Automatic
 
 	column VENDOR_KEY
-		dataType: int64
+		dataType: double
 		isHidden
 		formatString: 0
 		lineageTag: cb33c288-10ea-5dcd-a616-b916424716f1
@@ -36,7 +36,7 @@ table FACT_PAYMENT
 		annotation SummarizationSetBy = Automatic
 
 	column PAYMENT_DATE_KEY
-		dataType: int64
+		dataType: double
 		isHidden
 		formatString: 0
 		lineageTag: a7fd6b5d-dfbc-54bd-bb91-a89fc92b810f
@@ -52,13 +52,20 @@ table FACT_PAYMENT
 		summarizeBy: none
 		sourceColumn: PAYMENT_DATE
 
+		variation Variation
+			isDefault
+			relationship: 44805fb6-ac5b-49f0-8e1e-ceed7d7102e5
+			defaultHierarchy: LocalDateTable_5cea6ac7-a2bd-4413-a980-88bef27d9ff5.'Date Hierarchy'
+
 		annotation SummarizationSetBy = Automatic
 
+		annotation UnderlyingDateTimeDataType = Date
+
 	column AMOUNT_PAID
-		dataType: decimal
+		dataType: double
 		formatString: #,0.00
 		lineageTag: 8b80a50f-a643-5819-8015-d2a4476eee86
-		summarizeBy: none
+		summarizeBy: count
 		sourceColumn: AMOUNT_PAID
 
 		annotation SummarizationSetBy = Automatic
@@ -72,8 +79,8 @@ table FACT_PAYMENT
 		annotation SummarizationSetBy = Automatic
 
 	column AMOUNT_PAID_USD
-		dataType: decimal
-		formatString: "$#,0.00;($#,0.00);$#,0.00"
+		dataType: double
+		formatString: $#,0.00;($#,0.00);$#,0.00
 		lineageTag: 8f803ae8-bb8c-5686-8a1f-5eea1009fcb2
 		summarizeBy: sum
 		sourceColumn: AMOUNT_PAID_USD
@@ -89,19 +96,19 @@ table FACT_PAYMENT
 		annotation SummarizationSetBy = Automatic
 
 	column DAYS_TO_PAY
-		dataType: int64
+		dataType: double
 		formatString: 0
 		lineageTag: 13ca0995-e461-52dc-99f7-e4599bdac02a
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: DAYS_TO_PAY
 
 		annotation SummarizationSetBy = Automatic
 
 	column DAYS_LATE
-		dataType: int64
+		dataType: double
 		formatString: 0
 		lineageTag: 147b264a-f596-5ca5-a0a5-9937500f83f2
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: DAYS_LATE
 
 		annotation SummarizationSetBy = Automatic
@@ -112,6 +119,20 @@ table FACT_PAYMENT
 		lineageTag: 1ac3cd46-8cfb-50f6-b1bc-59a2394d0477
 		summarizeBy: none
 		sourceColumn: IS_LATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column _GOLD_LOAD_TS
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: a9d5702c-3765-4d43-9190-2c3be59362f0
+		summarizeBy: none
+		sourceColumn: _GOLD_LOAD_TS
+
+		variation Variation
+			isDefault
+			relationship: 94b0723f-cd07-425a-9296-2658aa906d67
+			defaultHierarchy: LocalDateTable_9a496098-50f2-4c75-a7ba-d0a8e0052684.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -127,3 +148,4 @@ table FACT_PAYMENT
 				    Data
 
 	annotation PBI_ResultType = Table
+

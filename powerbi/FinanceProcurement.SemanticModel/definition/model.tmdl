@@ -10,6 +10,8 @@ annotation PBI_QueryOrder = ["DIM_DATE", "DIM_VENDOR", "DIM_GL_ACCOUNT", "FACT_I
 
 annotation PBI_ProTooling = ["DevMode"]
 
+annotation __PBI_TimeIntelligenceEnabled = 1
+
 ref table DIM_DATE
 ref table DIM_VENDOR
 ref table DIM_GL_ACCOUNT
@@ -18,3 +20,22 @@ ref table FACT_PAYMENT
 ref table FACT_PURCHASE_ORDER
 ref table VW_DUPLICATE_INVOICE_PAIRS
 ref table VW_THREE_WAY_MATCH
+ref table DateTableTemplate_5e79d5fa-91bc-4856-a022-e1004c9885cb
+ref table LocalDateTable_835d8d00-9d55-43d2-a117-0cac249fcab8
+ref table LocalDateTable_8ef68251-bb8e-4694-a3a5-d1b3019810b9
+ref table LocalDateTable_8df0b0fd-3a6b-43e5-8d8d-eeb41a5f77ad
+ref table LocalDateTable_676c54c7-8630-42ce-bbb0-147875d35d56
+ref table LocalDateTable_c750d341-761c-405e-a2b6-7478b2e2a003
+ref table LocalDateTable_e6c68320-9978-4e85-9d64-7d6439b5bad9
+ref table LocalDateTable_0b53a205-7159-44d8-9f83-4cf72014e233
+ref table LocalDateTable_5cea6ac7-a2bd-4413-a980-88bef27d9ff5
+ref table LocalDateTable_be2c7af5-8568-45da-902d-91b1e17122fa
+ref table LocalDateTable_12f1a857-3e03-47d5-b566-a7428536f858
+ref table LocalDateTable_20a06da5-075c-4513-a7c4-e1f1fa05c9f4
+ref table LocalDateTable_760a1d54-0d16-4c6d-a378-ba2bed2bec9a
+ref table LocalDateTable_729c58ca-331f-49d8-a7e2-0afc18037b77
+ref table LocalDateTable_e6135cdb-8c01-401c-872a-e9e9faeb049b
+ref table LocalDateTable_0036b5a8-7e39-4f54-970d-77adcbe5495a
+ref table LocalDateTable_9a496098-50f2-4c75-a7ba-d0a8e0052684
+ref table LocalDateTable_85c5d97e-27f3-4667-b3d2-d524e3f24a2c
+
