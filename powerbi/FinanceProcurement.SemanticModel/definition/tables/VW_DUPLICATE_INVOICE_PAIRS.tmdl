@@ -95,8 +95,8 @@ table VW_DUPLICATE_INVOICE_PAIRS
 
 		variation Variation
 			isDefault
-			relationship: 9097a068-bd83-47a4-98b6-32aaa8877a0c
-			defaultHierarchy: LocalDateTable_20a06da5-075c-4513-a7c4-e1f1fa05c9f4.'Date Hierarchy'
+			relationship: a82c8805-28cc-43f4-a2f0-f29834cf925a
+			defaultHierarchy: LocalDateTable_261e90dc-0b8d-4df4-a0db-9d821c417a98.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -111,8 +111,8 @@ table VW_DUPLICATE_INVOICE_PAIRS
 
 		variation Variation
 			isDefault
-			relationship: 4a37455c-d54a-4297-b6d2-aae92556e791
-			defaultHierarchy: LocalDateTable_760a1d54-0d16-4c6d-a378-ba2bed2bec9a.'Date Hierarchy'
+			relationship: 3181b101-ed1d-496f-806f-49a1d2fb2e77
+			defaultHierarchy: LocalDateTable_64eb6fb4-65be-462f-aaf2-7d2abc141315.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 

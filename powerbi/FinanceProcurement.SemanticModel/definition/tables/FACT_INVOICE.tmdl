@@ -187,8 +187,8 @@ table FACT_INVOICE
 
 		variation Variation
 			isDefault
-			relationship: 0f317ec6-f4e8-4af0-9738-8c38c0698daa
-			defaultHierarchy: LocalDateTable_e6c68320-9978-4e85-9d64-7d6439b5bad9.'Date Hierarchy'
+			relationship: af556bd8-126c-420c-a81c-88c57e4596d0
+			defaultHierarchy: LocalDateTable_adb24757-ff89-4bb4-9a89-6f6bf5b7e375.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -213,8 +213,8 @@ table FACT_INVOICE
 
 		variation Variation
 			isDefault
-			relationship: 4275bbd9-d57b-4981-8db4-9dda14d52acf
-			defaultHierarchy: LocalDateTable_0b53a205-7159-44d8-9f83-4cf72014e233.'Date Hierarchy'
+			relationship: f8a2aab9-f6a8-4200-8038-18686d41e8fe
+			defaultHierarchy: LocalDateTable_54427134-ef93-4ed5-b0a2-6e831d5b0424.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -333,14 +333,14 @@ table FACT_INVOICE
 	column _GOLD_LOAD_TS
 		dataType: dateTime
 		formatString: General Date
-		lineageTag: 885bd439-0976-4e00-b213-7d313c552e85
+		lineageTag: 853298b7-6e53-4752-b803-5731f764c171
 		summarizeBy: none
 		sourceColumn: _GOLD_LOAD_TS
 
 		variation Variation
 			isDefault
-			relationship: 491ddf1d-285a-4e99-a7e9-b85b5cef178c
-			defaultHierarchy: LocalDateTable_0036b5a8-7e39-4f54-970d-77adcbe5495a.'Date Hierarchy'
+			relationship: 2c7780a5-5f4c-4cbc-af3e-19b20724fffa
+			defaultHierarchy: LocalDateTable_b8e54724-292f-477f-9890-1fde7f01283b.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 

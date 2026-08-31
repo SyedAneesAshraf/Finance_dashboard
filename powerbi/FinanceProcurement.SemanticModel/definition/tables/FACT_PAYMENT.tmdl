@@ -54,8 +54,8 @@ table FACT_PAYMENT
 
 		variation Variation
 			isDefault
-			relationship: 44805fb6-ac5b-49f0-8e1e-ceed7d7102e5
-			defaultHierarchy: LocalDateTable_5cea6ac7-a2bd-4413-a980-88bef27d9ff5.'Date Hierarchy'
+			relationship: 6884f8b4-90f1-4736-8f76-5eceecac5960
+			defaultHierarchy: LocalDateTable_cd34b7e7-3537-45ae-823e-23deee3470f8.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -125,14 +125,14 @@ table FACT_PAYMENT
 	column _GOLD_LOAD_TS
 		dataType: dateTime
 		formatString: General Date
-		lineageTag: a9d5702c-3765-4d43-9190-2c3be59362f0
+		lineageTag: 764969b7-ed17-4475-a3d1-49e0da5aecb0
 		summarizeBy: none
 		sourceColumn: _GOLD_LOAD_TS
 
 		variation Variation
 			isDefault
-			relationship: 94b0723f-cd07-425a-9296-2658aa906d67
-			defaultHierarchy: LocalDateTable_9a496098-50f2-4c75-a7ba-d0a8e0052684.'Date Hierarchy'
+			relationship: f2e43e89-e7b4-4f41-8b4a-a229a8682d46
+			defaultHierarchy: LocalDateTable_e4b31910-bd14-48bc-9c36-473c46295568.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 

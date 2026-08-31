@@ -16,6 +16,13 @@ snowflake_config.json
 *.tmp
 .~lock.*
 
+# Power BI Desktop local-only PBIP artifacts — machine-specific, not part of the
+# portable project (this is what let a stray Desktop session pollute the repo before)
+**/.pbi/cache.abf
+**/.pbi/localSettings.json
+**/.pbi/editorSettings.json
+*.pbix
+
 # OS
 Thumbs.db
 desktop.ini

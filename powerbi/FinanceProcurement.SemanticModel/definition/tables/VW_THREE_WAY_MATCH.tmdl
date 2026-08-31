@@ -61,8 +61,8 @@ table VW_THREE_WAY_MATCH
 
 		variation Variation
 			isDefault
-			relationship: 653c52e7-49f5-4a55-8383-cc3390d21739
-			defaultHierarchy: LocalDateTable_729c58ca-331f-49d8-a7e2-0afc18037b77.'Date Hierarchy'
+			relationship: d7e6d269-0c90-49cd-a2fa-8eede0aafcb9
+			defaultHierarchy: LocalDateTable_3005a872-2b81-40b9-92ba-74c918ef06ed.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -121,8 +121,8 @@ table VW_THREE_WAY_MATCH
 
 		variation Variation
 			isDefault
-			relationship: 4d091527-c9b4-4260-89c2-07ba2121de14
-			defaultHierarchy: LocalDateTable_e6135cdb-8c01-401c-872a-e9e9faeb049b.'Date Hierarchy'
+			relationship: 2c0f38cc-acac-41c3-8238-cf8e167f37b2
+			defaultHierarchy: LocalDateTable_e0291b71-593e-4af2-a309-b1fbdaeda333.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 

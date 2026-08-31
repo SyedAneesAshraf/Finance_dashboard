@@ -1,0 +1,70 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "name": "292b5be1d72602f0aacd",
+  "position": {
+    "x": 278.31726012373787,
+    "y": 312.49657277051267,
+    "z": 10002,
+    "height": 365.23036942553671,
+    "width": 567.3765899364621,
+    "tabOrder": 10002
+  },
+  "visual": {
+    "visualType": "clusteredColumnChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "DIM_DATE"
+                    }
+                  },
+                  "Property": "MONTH_YEAR"
+                }
+              },
+              "queryRef": "DIM_DATE.MONTH_YEAR",
+              "nativeQueryRef": "MONTH_YEAR",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FACT_INVOICE"
+                    }
+                  },
+                  "Property": "Total Invoiced"
+                }
+              },
+              "queryRef": "FACT_INVOICE.Total Invoiced",
+              "nativeQueryRef": "Total Invoiced"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FACT_INVOICE"
+                    }
+                  },
+                  "Property": "Total Paid"
+                }
+              },
+              "queryRef": "FACT_INVOICE.Total Paid",
+              "nativeQueryRef": "Total Paid"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -46,8 +46,8 @@ table FACT_PURCHASE_ORDER
 
 		variation Variation
 			isDefault
-			relationship: 86c075f8-df18-42e4-a510-13b4fe7ab53d
-			defaultHierarchy: LocalDateTable_be2c7af5-8568-45da-902d-91b1e17122fa.'Date Hierarchy'
+			relationship: 85e98bbb-aea0-42ba-aaf2-7b4261a90733
+			defaultHierarchy: LocalDateTable_46c780ff-f7e7-4319-bbe4-8d91d7e8b0a2.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -72,8 +72,8 @@ table FACT_PURCHASE_ORDER
 
 		variation Variation
 			isDefault
-			relationship: fbe1abba-60e2-4910-a55f-682eee45743c
-			defaultHierarchy: LocalDateTable_12f1a857-3e03-47d5-b566-a7428536f858.'Date Hierarchy'
+			relationship: bd43a856-61e6-433f-a681-06a5762ec95b
+			defaultHierarchy: LocalDateTable_e6ffe18a-af72-45d7-9f37-c6076d02bcaa.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -125,14 +125,14 @@ table FACT_PURCHASE_ORDER
 	column _GOLD_LOAD_TS
 		dataType: dateTime
 		formatString: General Date
-		lineageTag: afcd3bfb-1850-45b7-b0c2-ef6d47bee712
+		lineageTag: 4b9b3925-0a23-4090-923e-43a77709e443
 		summarizeBy: none
 		sourceColumn: _GOLD_LOAD_TS
 
 		variation Variation
 			isDefault
-			relationship: 50a21436-748d-4ec3-9e7d-753fa46faca9
-			defaultHierarchy: LocalDateTable_85c5d97e-27f3-4667-b3d2-d524e3f24a2c.'Date Hierarchy'
+			relationship: f235d004-4137-45f5-aced-132ca6d6e634
+			defaultHierarchy: LocalDateTable_47f40f14-2c5a-4027-b92e-49b785c63a3f.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "name": "d97ad1c6dffe9ffd8eb4",
+  "position": {
+    "x": 0,
+    "y": 101.56138615041662,
+    "z": 2000,
+    "height": 220.70070451917459,
+    "width": 374.01933553470735,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "barChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FACT_INVOICE"
+                    }
+                  },
+                  "Property": "Aging Bucket"
+                }
+              },
+              "queryRef": "FACT_INVOICE.Aging Bucket",
+              "nativeQueryRef": "Aging Bucket",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FACT_INVOICE"
+                    }
+                  },
+                  "Property": "Total Outstanding"
+                }
+              },
+              "queryRef": "FACT_INVOICE.Total Outstanding",
+              "nativeQueryRef": "Total Outstanding"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

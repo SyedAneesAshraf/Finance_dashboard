@@ -1,0 +1,55 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "name": "11fdc8e1751a84535e74",
+  "position": {
+    "x": 571.28279709609353,
+    "y": 101.56138615041662,
+    "z": 6000,
+    "height": 85.936557511890982,
+    "width": 207.02897946046465,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FACT_INVOICE"
+                    }
+                  },
+                  "Property": "Total Overdue"
+                }
+              },
+              "queryRef": "FACT_INVOICE.Total Overdue",
+              "nativeQueryRef": "Total Overdue"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "FACT_INVOICE"
+                  }
+                },
+                "Property": "Total Overdue"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    }
+  }
+}
