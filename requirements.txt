@@ -10,6 +10,7 @@ python-dotenv
 # Excel companion (Phase 7)
 openpyxl==3.1.5
 XlsxWriter==3.2.9
+pywin32==312 ; sys_platform == "win32"  # COM automation, used only to verify the workbook
 
 # Reproduce with:
 #   python -m venv .venv

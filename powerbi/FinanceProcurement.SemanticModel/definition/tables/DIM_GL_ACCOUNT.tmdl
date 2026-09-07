@@ -2,7 +2,7 @@ table DIM_GL_ACCOUNT
 	lineageTag: 98700c72-f92c-54dc-a329-2d3b208d3efd
 
 	column ACCOUNT_KEY
-		dataType: double
+		dataType: int64
 		isHidden
 		formatString: 0
 		lineageTag: d93fdeea-d88d-5562-a8a2-6bb3b66d17e2
@@ -55,4 +55,3 @@ table DIM_GL_ACCOUNT
 				    Data
 
 	annotation PBI_ResultType = Table
-

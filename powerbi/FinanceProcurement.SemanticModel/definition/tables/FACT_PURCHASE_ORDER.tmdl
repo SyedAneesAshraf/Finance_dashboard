@@ -10,7 +10,7 @@ table FACT_PURCHASE_ORDER
 		annotation SummarizationSetBy = Automatic
 
 	column VENDOR_KEY
-		dataType: double
+		dataType: int64
 		isHidden
 		formatString: 0
 		lineageTag: 0aec2553-b3cc-5a12-bb58-5e7d29c83d3d
@@ -28,7 +28,7 @@ table FACT_PURCHASE_ORDER
 		annotation SummarizationSetBy = Automatic
 
 	column PO_DATE_KEY
-		dataType: double
+		dataType: int64
 		isHidden
 		formatString: 0
 		lineageTag: 281c2e2c-9a0d-554f-a2c4-61a8d2269129
@@ -44,21 +44,14 @@ table FACT_PURCHASE_ORDER
 		summarizeBy: none
 		sourceColumn: PO_DATE
 
-		variation Variation
-			isDefault
-			relationship: 85e98bbb-aea0-42ba-aaf2-7b4261a90733
-			defaultHierarchy: LocalDateTable_46c780ff-f7e7-4319-bbe4-8d91d7e8b0a2.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
 
-		annotation UnderlyingDateTimeDataType = Date
-
 	column GOODS_RECEIPT_DATE_KEY
-		dataType: double
+		dataType: int64
 		isHidden
 		formatString: 0
 		lineageTag: beafc420-f378-5384-a588-e18a4715d895
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: GOODS_RECEIPT_DATE_KEY
 
 		annotation SummarizationSetBy = Automatic
@@ -70,20 +63,13 @@ table FACT_PURCHASE_ORDER
 		summarizeBy: none
 		sourceColumn: GOODS_RECEIPT_DATE
 
-		variation Variation
-			isDefault
-			relationship: bd43a856-61e6-433f-a681-06a5762ec95b
-			defaultHierarchy: LocalDateTable_e6ffe18a-af72-45d7-9f37-c6076d02bcaa.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
 
-		annotation UnderlyingDateTimeDataType = Date
-
 	column PO_AMOUNT
-		dataType: double
+		dataType: decimal
 		formatString: #,0.00
 		lineageTag: ebffd471-dce0-589a-82af-8519abd91318
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: PO_AMOUNT
 
 		annotation SummarizationSetBy = Automatic
@@ -97,8 +83,8 @@ table FACT_PURCHASE_ORDER
 		annotation SummarizationSetBy = Automatic
 
 	column PO_AMOUNT_USD
-		dataType: double
-		formatString: $#,0.00;($#,0.00);$#,0.00
+		dataType: decimal
+		formatString: "$#,0.00;($#,0.00);$#,0.00"
 		lineageTag: 0651ccc2-cfec-5aac-a504-76b6a57d8fc5
 		summarizeBy: sum
 		sourceColumn: PO_AMOUNT_USD
@@ -122,20 +108,6 @@ table FACT_PURCHASE_ORDER
 
 		annotation SummarizationSetBy = Automatic
 
-	column _GOLD_LOAD_TS
-		dataType: dateTime
-		formatString: General Date
-		lineageTag: 4b9b3925-0a23-4090-923e-43a77709e443
-		summarizeBy: none
-		sourceColumn: _GOLD_LOAD_TS
-
-		variation Variation
-			isDefault
-			relationship: f235d004-4137-45f5-aced-132ca6d6e634
-			defaultHierarchy: LocalDateTable_47f40f14-2c5a-4027-b92e-49b785c63a3f.'Date Hierarchy'
-
-		annotation SummarizationSetBy = Automatic
-
 	partition FACT_PURCHASE_ORDER = m
 		mode: import
 		source =
@@ -148,4 +120,3 @@ table FACT_PURCHASE_ORDER
 				    Data
 
 	annotation PBI_ResultType = Table
-

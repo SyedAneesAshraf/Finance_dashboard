@@ -3,7 +3,7 @@ table DIM_VENDOR
 	lineageTag: 8610d77a-397d-556c-9b0b-93a2c5dd107c
 
 	column VENDOR_KEY
-		dataType: double
+		dataType: int64
 		isHidden
 		formatString: 0
 		lineageTag: 26b46c3c-192f-518e-837a-571217806ec3
@@ -53,10 +53,10 @@ table DIM_VENDOR
 		annotation SummarizationSetBy = Automatic
 
 	column PAYMENT_TERMS_DAYS
-		dataType: double
+		dataType: int64
 		formatString: 0
 		lineageTag: fb6c5e1e-4d8f-5ce7-bcb8-86760fd97a8a
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: PAYMENT_TERMS_DAYS
 
 		annotation SummarizationSetBy = Automatic
@@ -76,14 +76,7 @@ table DIM_VENDOR
 		summarizeBy: none
 		sourceColumn: EFFECTIVE_START_DATE
 
-		variation Variation
-			isDefault
-			relationship: 00c03663-1a63-4f00-8b67-27870e63233c
-			defaultHierarchy: LocalDateTable_a41f09c2-2c51-4c91-89df-ec0d69f4a3e4.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
-
-		annotation UnderlyingDateTimeDataType = Date
 
 	column EFFECTIVE_END_DATE
 		dataType: dateTime
@@ -92,14 +85,7 @@ table DIM_VENDOR
 		summarizeBy: none
 		sourceColumn: EFFECTIVE_END_DATE
 
-		variation Variation
-			isDefault
-			relationship: 89158365-868d-4e1a-bc90-01f3c6a8fb23
-			defaultHierarchy: LocalDateTable_1650e061-6645-4f8a-9659-041326a8981c.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
-
-		annotation UnderlyingDateTimeDataType = Date
 
 	column IS_CURRENT
 		dataType: boolean
@@ -111,10 +97,10 @@ table DIM_VENDOR
 		annotation SummarizationSetBy = Automatic
 
 	column VERSION_NUMBER
-		dataType: double
+		dataType: int64
 		formatString: 0
 		lineageTag: 1677886c-2c3c-5686-83d5-18aac0c1c901
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: VERSION_NUMBER
 
 		annotation SummarizationSetBy = Automatic
@@ -126,14 +112,7 @@ table DIM_VENDOR
 		summarizeBy: none
 		sourceColumn: SOURCE_CREATION_DATE
 
-		variation Variation
-			isDefault
-			relationship: dcf87ac5-465e-461f-8f36-a959fd0e6608
-			defaultHierarchy: LocalDateTable_4ba1c1d1-9981-4268-91b2-93da0e318920.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
-
-		annotation UnderlyingDateTimeDataType = Date
 
 	column SOURCE_LAST_UPDATE
 		dataType: dateTime
@@ -142,34 +121,13 @@ table DIM_VENDOR
 		summarizeBy: none
 		sourceColumn: SOURCE_LAST_UPDATE
 
-		variation Variation
-			isDefault
-			relationship: 1efea43a-e00e-45f4-998b-1cf1d6222820
-			defaultHierarchy: LocalDateTable_46cdb90c-7c3c-4b26-9eeb-2a5e3b1e735b.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
-
-		annotation UnderlyingDateTimeDataType = Date
 
 	column DATA_QUALITY_FLAGS
 		dataType: string
 		lineageTag: 472dd0d5-c8ba-5866-8d12-80869bd84659
 		summarizeBy: none
 		sourceColumn: DATA_QUALITY_FLAGS
-
-		annotation SummarizationSetBy = Automatic
-
-	column _GOLD_LOAD_TS
-		dataType: dateTime
-		formatString: General Date
-		lineageTag: 2f373769-aee4-4f89-9575-617eaebcf09e
-		summarizeBy: none
-		sourceColumn: _GOLD_LOAD_TS
-
-		variation Variation
-			isDefault
-			relationship: 0932ab45-8e98-4b10-9841-9672ed6558d9
-			defaultHierarchy: LocalDateTable_4745901e-cef6-4cda-a4e9-75e4cda68f2c.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -185,4 +143,3 @@ table DIM_VENDOR
 				    Data
 
 	annotation PBI_ResultType = Table
-

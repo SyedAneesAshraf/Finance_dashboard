@@ -59,7 +59,8 @@ doesn't is scope creep and was deliberately left out.
   └──────────────────────────────────────────────────────────────────────┘
                         │                                │
                         ▼                                ▼
-              6 analytical SQL queries          Power BI (2 pages + DAX)
+              6 analytical SQL queries          Power BI (1 page + DAX;
+                                                  Page 2 planned next)
                                                         │
                                                         ▼
                                           Excel budget-vs-actual companion
@@ -82,7 +83,7 @@ joins nothing and writes no SQL.
 | `sql/02_silver/` | Silver DDL + cleaning / standardization logic |
 | `sql/03_gold/` | Star schema DDL + SCD Type 2 `MERGE` for `DIM_VENDOR` |
 | `sql/04_analytics/` | The 6 analytical queries, each with its business write-up |
-| `powerbi/` | `.pbix` dashboard |
+| `powerbi/` | Power BI project (`.pbip` — TMDL semantic model + PBIR report definition) |
 | `excel/` | Budget-vs-actual companion workbook |
 | `exports/` | Gold-layer CSV extracts feeding Power BI / Excel |
 | `scripts/` | Python data generator and helpers |
@@ -113,9 +114,9 @@ joins nothing and writes no SQL.
 | 3 | Silver layer cleaned | ✅ Complete — 33/33 tests |
 | 4 | Gold star schema + SCD Type 2 | ✅ Complete — 30/30 tests |
 | 5 | 6 validated analytical queries | ✅ Complete — 26/26 tests |
-| 6 | 2-page Power BI dashboard | ⬜ Not started |
-| 7 | Excel budget-vs-actual workbook | ⬜ Not started |
-| 8 | Documentation & GitHub packaging | ⬜ Not started |
+| 6 | Power BI dashboard — Page 1 (AP Aging & Cash Flow) | ✅ Complete — Page 2 (Vendor Spend & Risk) scoped for a follow-up pass |
+| 7 | Excel budget-vs-actual workbook | ✅ Complete — verified via Excel COM automation |
+| 8 | Documentation & GitHub packaging | 🟡 In progress |
 | 9 | Scope verification / interview dry-run | ⬜ Not started |
 
 ---
@@ -134,4 +135,6 @@ joins nothing and writes no SQL.
 - [Phase 4 ER diagram](docs/09_phase4_er_diagram.md) — star schema and the SCD2 history
 - [Phase 4 test report](docs/10_phase4_test_report.md) — 30/30 exit tests
 - [Phase 5 queries and results](docs/11_phase5_queries_and_results.md) — the 6 queries, their reasoning, and what they found
+- [Phase 6 Power BI test report](docs/12_phase6_powerbi_test_report.md) — semantic model, Page 1, and what's still deferred
+- [Phase 7 Excel test report](docs/13_phase7_excel_test_report.md) — 3/3 exit tests, verified via COM automation
 #

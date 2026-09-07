@@ -27,7 +27,7 @@ table VW_DUPLICATE_INVOICE_PAIRS
 		annotation SummarizationSetBy = Automatic
 
 	column VENDOR_KEY
-		dataType: double
+		dataType: int64
 		isHidden
 		formatString: 0
 		lineageTag: b3b4c346-7b84-5709-a29c-354e6c5fc41c
@@ -61,10 +61,10 @@ table VW_DUPLICATE_INVOICE_PAIRS
 		annotation SummarizationSetBy = Automatic
 
 	column AMOUNT
-		dataType: double
+		dataType: decimal
 		formatString: #,0.00
 		lineageTag: f25d5e74-f9cf-5e94-a9a8-94a0c83aa03e
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: AMOUNT
 
 		annotation SummarizationSetBy = Automatic
@@ -78,8 +78,8 @@ table VW_DUPLICATE_INVOICE_PAIRS
 		annotation SummarizationSetBy = Automatic
 
 	column EXPOSURE_USD
-		dataType: double
-		formatString: $#,0.00;($#,0.00);$#,0.00
+		dataType: decimal
+		formatString: "$#,0.00;($#,0.00);$#,0.00"
 		lineageTag: c32e3392-48f0-5431-8811-99e49aaf251a
 		summarizeBy: sum
 		sourceColumn: EXPOSURE_USD
@@ -93,14 +93,7 @@ table VW_DUPLICATE_INVOICE_PAIRS
 		summarizeBy: none
 		sourceColumn: INVOICE_1_DATE
 
-		variation Variation
-			isDefault
-			relationship: a82c8805-28cc-43f4-a2f0-f29834cf925a
-			defaultHierarchy: LocalDateTable_261e90dc-0b8d-4df4-a0db-9d821c417a98.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
-
-		annotation UnderlyingDateTimeDataType = Date
 
 	column INVOICE_2_DATE
 		dataType: dateTime
@@ -109,30 +102,23 @@ table VW_DUPLICATE_INVOICE_PAIRS
 		summarizeBy: none
 		sourceColumn: INVOICE_2_DATE
 
-		variation Variation
-			isDefault
-			relationship: 3181b101-ed1d-496f-806f-49a1d2fb2e77
-			defaultHierarchy: LocalDateTable_64eb6fb4-65be-462f-aaf2-7d2abc141315.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
 
-		annotation UnderlyingDateTimeDataType = Date
-
 	column INVOICE_DATE_KEY
-		dataType: double
+		dataType: int64
 		isHidden
 		formatString: 0
 		lineageTag: 5fbd2bf1-8d19-5e72-9198-237a94c90e69
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: INVOICE_DATE_KEY
 
 		annotation SummarizationSetBy = Automatic
 
 	column DAYS_APART
-		dataType: double
+		dataType: int64
 		formatString: 0
 		lineageTag: 93b5f4e1-f654-52ce-b7dd-0bb8cf0b9f79
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: DAYS_APART
 
 		annotation SummarizationSetBy = Automatic
@@ -173,4 +159,3 @@ table VW_DUPLICATE_INVOICE_PAIRS
 				    Data
 
 	annotation PBI_ResultType = Table
-

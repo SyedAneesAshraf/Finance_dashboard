@@ -252,7 +252,11 @@ def page_two() -> list[dict]:
 
 PAGES = [
     ("page1", "AP Aging & Cash Flow", page_one),
-    ("page2", "Vendor Spend & Risk", page_two),
+    # page_two() (Vendor Spend & Risk -- Pareto, category donut, 3-way match
+    # matrix, duplicate table) is deliberately not wired into PAGES yet.
+    # Scope decision: ship Page 1 now, build Page 2 in a follow-up pass.
+    # The function is left complete and ready to re-enable below when that
+    # happens: ("page2", "Vendor Spend & Risk", page_two),
 ]
 
 

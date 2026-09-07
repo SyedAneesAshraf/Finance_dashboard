@@ -4,7 +4,7 @@ table DIM_DATE
 	dataCategory: Time
 
 	column DATE_KEY
-		dataType: double
+		dataType: int64
 		formatString: 0
 		lineageTag: 69550467-c2b5-514d-940a-f116a332f402
 		summarizeBy: none
@@ -22,22 +22,20 @@ table DIM_DATE
 
 		annotation SummarizationSetBy = Automatic
 
-		annotation UnderlyingDateTimeDataType = Date
-
 	column DAY_OF_MONTH
-		dataType: double
+		dataType: int64
 		formatString: 0
 		lineageTag: 3a5c479d-2052-5517-bef0-ae02f1b3ec3d
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: DAY_OF_MONTH
 
 		annotation SummarizationSetBy = Automatic
 
 	column DAY_OF_WEEK
-		dataType: double
+		dataType: int64
 		formatString: 0
 		lineageTag: 9b77c7fd-9002-5738-a304-d72fbf404b0f
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: DAY_OF_WEEK
 
 		annotation SummarizationSetBy = Automatic
@@ -60,10 +58,10 @@ table DIM_DATE
 		annotation SummarizationSetBy = Automatic
 
 	column MONTH_NUMBER
-		dataType: double
+		dataType: int64
 		formatString: 0
 		lineageTag: 76f48f33-21e0-5959-98b6-17f53426b7c5
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: MONTH_NUMBER
 
 		annotation SummarizationSetBy = Automatic
@@ -87,10 +85,10 @@ table DIM_DATE
 		annotation SummarizationSetBy = Automatic
 
 	column QUARTER_NUMBER
-		dataType: double
+		dataType: int64
 		formatString: 0
 		lineageTag: 1b0b5d29-f6cc-5de3-b916-d29c8debf99d
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: QUARTER_NUMBER
 
 		annotation SummarizationSetBy = Automatic
@@ -104,37 +102,37 @@ table DIM_DATE
 		annotation SummarizationSetBy = Automatic
 
 	column YEAR_NUMBER
-		dataType: double
+		dataType: int64
 		formatString: 0
 		lineageTag: c66349f9-3a6c-5786-a401-bec5f62e7688
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: YEAR_NUMBER
 
 		annotation SummarizationSetBy = Automatic
 
 	column FISCAL_YEAR
-		dataType: double
+		dataType: int64
 		formatString: 0
 		lineageTag: 32aa3041-0b17-5235-8e9f-63a7087ba08a
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: FISCAL_YEAR
 
 		annotation SummarizationSetBy = Automatic
 
 	column FISCAL_QUARTER
-		dataType: double
+		dataType: int64
 		formatString: 0
 		lineageTag: e7127287-f194-539b-ada3-cb127110749f
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: FISCAL_QUARTER
 
 		annotation SummarizationSetBy = Automatic
 
 	column FISCAL_PERIOD
-		dataType: double
+		dataType: int64
 		formatString: 0
 		lineageTag: 9a744657-a1b0-5f86-adca-a603e65e41f5
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: FISCAL_PERIOD
 
 		annotation SummarizationSetBy = Automatic
@@ -146,12 +144,8 @@ table DIM_DATE
 				    Source = Snowflake.Databases("CEMNFKN-TT95210.snowflakecomputing.com", "FIN_PROC_WH"),
 				    Db = Source{[Name="FIN_PROC_DB",Kind="Database"]}[Data],
 				    Sch = Db{[Name="GOLD",Kind="Schema"]}[Data],
-				    Data = Sch{[Name="DIM_DATE",Kind="Table"]}[Data],
-				    #"Changed Type" = Table.TransformColumnTypes(Data,{{"FULL_DATE", type date}})
+				    Data = Sch{[Name="DIM_DATE",Kind="Table"]}[Data]
 				in
-				    #"Changed Type"
+				    Data
 
 	annotation PBI_ResultType = Table
-
-	annotation PBI_NavigationStepName = Navigation
-

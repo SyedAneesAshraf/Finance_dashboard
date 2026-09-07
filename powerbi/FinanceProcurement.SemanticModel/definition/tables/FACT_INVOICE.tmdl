@@ -3,8 +3,10 @@ table FACT_INVOICE
 	lineageTag: e436ff15-1e57-5a49-92d3-cf4ec5f5d946
 
 	/// Total invoiced value in USD across the selected context.
-	measure 'Total Invoiced' = SUM(FACT_INVOICE[AMOUNT_USD])
-		formatString: $#,0.00;($#,0.00);$#,0.00
+	measure 'Total Invoiced' =
+			SUM(FACT_INVOICE[AMOUNT_USD])
+
+		formatString: "$#,0.00;($#,0.00);$#,0.00"
 		lineageTag: 19277989-db81-5eda-90ab-6a55b28ab98c
 
 	/// Unpaid payables. The AP balance the business owes right now.
@@ -13,7 +15,8 @@ table FACT_INVOICE
 			    SUM(FACT_INVOICE[AMOUNT_USD]),
 			    FACT_INVOICE[STATUS] = "Unpaid"
 			)
-		formatString: $#,0.00;($#,0.00);$#,0.00
+
+		formatString: "$#,0.00;($#,0.00);$#,0.00"
 		lineageTag: d6e10141-8a3f-5f50-8edb-39c2e82eb3a9
 
 	/// Unpaid invoices already past their due date.
@@ -23,7 +26,8 @@ table FACT_INVOICE
 			    FACT_INVOICE[STATUS] = "Unpaid",
 			    FACT_INVOICE[DUE_DATE] < TODAY()
 			)
-		formatString: $#,0.00;($#,0.00);$#,0.00
+
+		formatString: "$#,0.00;($#,0.00);$#,0.00"
 		lineageTag: 80c7fa7a-6987-5f35-b986-eac2bfe69d10
 
 	/// DIVIDE rather than the / operator: when nothing is outstanding the denominator is zero, and / would raise an error that renders as Infinity on the card. DIVIDE returns BLANK instead.
@@ -32,19 +36,26 @@ table FACT_INVOICE
 			    [Total Overdue],
 			    [Total Outstanding]
 			)
-		formatString: 0.0%;-0.0%;0.0%
+
+		formatString: "0.0%;-0.0%;0.0%"
 		lineageTag: 8adb3b23-59d1-5589-9dde-a740b80756cf
 
 	/// Average days between invoice and payment. Reads the stored DAYS_TO_PAY column so DAX and SQL cannot drift apart.
-	measure 'Avg DPO' = AVERAGE(FACT_PAYMENT[DAYS_TO_PAY])
-		formatString: #,0.0
+	measure 'Avg DPO' =
+			AVERAGE(FACT_PAYMENT[DAYS_TO_PAY])
+
+		formatString: "#,0.0"
 		lineageTag: 16c398a9-1527-5db8-a2ee-8b83355d19f5
 
-	measure 'Total Paid' = SUM(FACT_PAYMENT[AMOUNT_PAID_USD])
-		formatString: $#,0.00;($#,0.00);$#,0.00
+	measure 'Total Paid' =
+			SUM(FACT_PAYMENT[AMOUNT_PAID_USD])
+
+		formatString: "$#,0.00;($#,0.00);$#,0.00"
 		lineageTag: 7cd8288d-4820-569e-be7e-be5aac5c69c0
 
-	measure 'Invoice Count' = COUNTROWS(FACT_INVOICE)
+	measure 'Invoice Count' =
+			COUNTROWS(FACT_INVOICE)
+
 		formatString: #,0
 		lineageTag: 1ec4694f-2918-5162-b2f0-0c24fcd4636a
 
@@ -54,6 +65,7 @@ table FACT_INVOICE
 			    FACT_INVOICE[STATUS] = "Unpaid",
 			    FACT_INVOICE[DUE_DATE] < TODAY()
 			)
+
 		formatString: #,0
 		lineageTag: 768ed512-1dea-5d54-b1af-dd0983e4661e
 
@@ -63,7 +75,8 @@ table FACT_INVOICE
 			    [Total Paid],
 			    SAMEPERIODLASTYEAR(DIM_DATE[FULL_DATE])
 			)
-		formatString: $#,0.00;($#,0.00);$#,0.00
+
+		formatString: "$#,0.00;($#,0.00);$#,0.00"
 		lineageTag: e5ff7b33-6648-5ebe-805c-52ed2cd6c1b3
 
 	/// Month-over-month change in payments, via CALCULATE + DATEADD.
@@ -76,7 +89,8 @@ table FACT_INVOICE
 			    )
 			RETURN
 			    DIVIDE(current_month - prior_month, prior_month)
-		formatString: 0.0%;-0.0%;0.0%
+
+		formatString: "0.0%;-0.0%;0.0%"
 		lineageTag: ec11713a-cb19-5f52-a533-c74350bd41c5
 
 	/// Running share of total spend for the Pareto line. FILTER over ALLSELECTED sums every vendor spending at least as much as this one, which is what makes the curve cumulative without needing a stored rank column.
@@ -94,17 +108,22 @@ table FACT_INVOICE
 			    )
 			RETURN
 			    DIVIDE(spend_at_or_above, all_spend)
-		formatString: 0.0%;-0.0%;0.0%
+
+		formatString: "0.0%;-0.0%;0.0%"
 		lineageTag: 6e6b670a-4eb6-5eda-a7b5-59cacbed68d2
 
 	/// Suspected duplicate invoice pairs flagged for AP review.
-	measure 'Duplicate Invoice Pairs' = COUNTROWS(VW_DUPLICATE_INVOICE_PAIRS)
+	measure 'Duplicate Invoice Pairs' =
+			COUNTROWS(VW_DUPLICATE_INVOICE_PAIRS)
+
 		formatString: #,0
 		lineageTag: 189eedaf-b399-5067-901d-bbbe535b8dfc
 
 	/// Value at risk if every flagged duplicate were paid twice.
-	measure 'Duplicate Exposure' = SUM(VW_DUPLICATE_INVOICE_PAIRS[EXPOSURE_USD])
-		formatString: $#,0.00;($#,0.00);$#,0.00
+	measure 'Duplicate Exposure' =
+			SUM(VW_DUPLICATE_INVOICE_PAIRS[EXPOSURE_USD])
+
+		formatString: "$#,0.00;($#,0.00);$#,0.00"
 		lineageTag: dad645f1-04a0-54e5-b6f9-8b1252317348
 
 	/// POs where cumulative invoiced value breaches the 5% tolerance.
@@ -113,6 +132,7 @@ table FACT_INVOICE
 			    COUNTROWS(VW_THREE_WAY_MATCH),
 			    VW_THREE_WAY_MATCH[MATCH_STATUS] = "Exception - Review"
 			)
+
 		formatString: #,0
 		lineageTag: 890447b8-2d4c-5d57-86f5-a88c8460061b
 
@@ -125,7 +145,7 @@ table FACT_INVOICE
 		annotation SummarizationSetBy = Automatic
 
 	column VENDOR_KEY
-		dataType: double
+		dataType: int64
 		isHidden
 		formatString: 0
 		lineageTag: 19de54e1-9569-54a4-95b2-5b0da36ca4d6
@@ -143,7 +163,7 @@ table FACT_INVOICE
 		annotation SummarizationSetBy = Automatic
 
 	column ACCOUNT_KEY
-		dataType: double
+		dataType: int64
 		isHidden
 		formatString: 0
 		lineageTag: 9d863be2-da6a-5e72-8b96-e79d0e9866ea
@@ -169,7 +189,7 @@ table FACT_INVOICE
 		annotation SummarizationSetBy = Automatic
 
 	column INVOICE_DATE_KEY
-		dataType: double
+		dataType: int64
 		isHidden
 		formatString: 0
 		lineageTag: 255cafd5-a294-592f-b82a-96f0335307ee
@@ -185,21 +205,14 @@ table FACT_INVOICE
 		summarizeBy: none
 		sourceColumn: INVOICE_DATE
 
-		variation Variation
-			isDefault
-			relationship: af556bd8-126c-420c-a81c-88c57e4596d0
-			defaultHierarchy: LocalDateTable_adb24757-ff89-4bb4-9a89-6f6bf5b7e375.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
 
-		annotation UnderlyingDateTimeDataType = Date
-
 	column DUE_DATE_KEY
-		dataType: double
+		dataType: int64
 		isHidden
 		formatString: 0
 		lineageTag: 2a0aa400-7a2c-52a5-ab35-3a1fbdef93f5
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: DUE_DATE_KEY
 
 		annotation SummarizationSetBy = Automatic
@@ -211,20 +224,13 @@ table FACT_INVOICE
 		summarizeBy: none
 		sourceColumn: DUE_DATE
 
-		variation Variation
-			isDefault
-			relationship: f8a2aab9-f6a8-4200-8038-18686d41e8fe
-			defaultHierarchy: LocalDateTable_54427134-ef93-4ed5-b0a2-6e831d5b0424.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
 
-		annotation UnderlyingDateTimeDataType = Date
-
 	column AMOUNT
-		dataType: double
+		dataType: decimal
 		formatString: #,0.00
 		lineageTag: dd7fd02c-8415-5f3a-8740-cdd0ff618bd8
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: AMOUNT
 
 		annotation SummarizationSetBy = Automatic
@@ -238,8 +244,8 @@ table FACT_INVOICE
 		annotation SummarizationSetBy = Automatic
 
 	column AMOUNT_USD
-		dataType: double
-		formatString: $#,0.00;($#,0.00);$#,0.00
+		dataType: decimal
+		formatString: "$#,0.00;($#,0.00);$#,0.00"
 		lineageTag: 11acc9ff-b7d8-5099-bfe4-6193e301bc4d
 		summarizeBy: sum
 		sourceColumn: AMOUNT_USD
@@ -264,10 +270,10 @@ table FACT_INVOICE
 		annotation SummarizationSetBy = Automatic
 
 	column TERM_DAYS
-		dataType: double
+		dataType: int64
 		formatString: 0
 		lineageTag: e00b0941-cd59-5226-a477-54558a2b6f7e
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: TERM_DAYS
 
 		annotation SummarizationSetBy = Automatic
@@ -278,10 +284,11 @@ table FACT_INVOICE
 			    DATEDIFF(FACT_INVOICE[DUE_DATE], TODAY(), DAY),
 			    BLANK()
 			)
+
 		dataType: int64
 		formatString: 0
 		lineageTag: 24654e43-0252-5c66-90d4-5cb0ea1ab099
-		summarizeBy: sum
+		summarizeBy: none
 
 		annotation SummarizationSetBy = Automatic
 
@@ -300,11 +307,12 @@ table FACT_INVOICE
 			        5
 			    )
 			)
+
 		dataType: int64
 		isHidden
 		formatString: 0
 		lineageTag: 2a355c29-4530-5771-aa43-8f35e641ee85
-		summarizeBy: sum
+		summarizeBy: none
 
 		annotation SummarizationSetBy = Automatic
 
@@ -323,24 +331,11 @@ table FACT_INVOICE
 			        "90+ Days"
 			    )
 			)
+
 		dataType: string
 		lineageTag: 7b9992fd-a101-55d6-a13f-66298bb4db74
 		summarizeBy: none
 		sortByColumn: 'Aging Sort'
-
-		annotation SummarizationSetBy = Automatic
-
-	column _GOLD_LOAD_TS
-		dataType: dateTime
-		formatString: General Date
-		lineageTag: 853298b7-6e53-4752-b803-5731f764c171
-		summarizeBy: none
-		sourceColumn: _GOLD_LOAD_TS
-
-		variation Variation
-			isDefault
-			relationship: 2c7780a5-5f4c-4cbc-af3e-19b20724fffa
-			defaultHierarchy: LocalDateTable_b8e54724-292f-477f-9890-1fde7f01283b.'Date Hierarchy'
 
 		annotation SummarizationSetBy = Automatic
 
@@ -356,4 +351,3 @@ table FACT_INVOICE
 				    Data
 
 	annotation PBI_ResultType = Table
-

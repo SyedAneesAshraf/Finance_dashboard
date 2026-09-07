@@ -11,7 +11,7 @@ table VW_THREE_WAY_MATCH
 		annotation SummarizationSetBy = Automatic
 
 	column VENDOR_KEY
-		dataType: double
+		dataType: int64
 		isHidden
 		formatString: 0
 		lineageTag: 4f717544-7111-554b-b9af-5175fb148b48
@@ -59,21 +59,14 @@ table VW_THREE_WAY_MATCH
 		summarizeBy: none
 		sourceColumn: PO_DATE
 
-		variation Variation
-			isDefault
-			relationship: d7e6d269-0c90-49cd-a2fa-8eede0aafcb9
-			defaultHierarchy: LocalDateTable_3005a872-2b81-40b9-92ba-74c918ef06ed.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
 
-		annotation UnderlyingDateTimeDataType = Date
-
 	column PO_DATE_KEY
-		dataType: double
+		dataType: int64
 		isHidden
 		formatString: 0
 		lineageTag: 081cd5f0-36cb-5302-8081-33537220acb0
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: PO_DATE_KEY
 
 		annotation SummarizationSetBy = Automatic
@@ -87,17 +80,17 @@ table VW_THREE_WAY_MATCH
 		annotation SummarizationSetBy = Automatic
 
 	column PO_AMOUNT
-		dataType: double
+		dataType: decimal
 		formatString: #,0.00
 		lineageTag: fb6eae4d-c0cb-5423-ba97-32b9d1d25c1f
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: PO_AMOUNT
 
 		annotation SummarizationSetBy = Automatic
 
 	column PO_AMOUNT_USD
-		dataType: double
-		formatString: $#,0.00;($#,0.00);$#,0.00
+		dataType: decimal
+		formatString: "$#,0.00;($#,0.00);$#,0.00"
 		lineageTag: a574fa98-946d-5193-b851-14c348e0f5e4
 		summarizeBy: sum
 		sourceColumn: PO_AMOUNT_USD
@@ -119,36 +112,29 @@ table VW_THREE_WAY_MATCH
 		summarizeBy: none
 		sourceColumn: GOODS_RECEIPT_DATE
 
-		variation Variation
-			isDefault
-			relationship: 2c0f38cc-acac-41c3-8238-cf8e167f37b2
-			defaultHierarchy: LocalDateTable_e0291b71-593e-4af2-a309-b1fbdaeda333.'Date Hierarchy'
-
 		annotation SummarizationSetBy = Automatic
 
-		annotation UnderlyingDateTimeDataType = Date
-
 	column INVOICE_COUNT
-		dataType: double
+		dataType: int64
 		formatString: 0
 		lineageTag: 0154c742-0020-54bf-83b3-048a0598a3f6
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: INVOICE_COUNT
 
 		annotation SummarizationSetBy = Automatic
 
 	column TOTAL_INVOICED
-		dataType: double
+		dataType: decimal
 		formatString: #,0.00
 		lineageTag: 37f0a0d8-a015-50b0-9b0e-e6ef45b35cd2
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: TOTAL_INVOICED
 
 		annotation SummarizationSetBy = Automatic
 
 	column TOTAL_INVOICED_USD
-		dataType: double
-		formatString: $#,0.00;($#,0.00);$#,0.00
+		dataType: decimal
+		formatString: "$#,0.00;($#,0.00);$#,0.00"
 		lineageTag: d5f789af-d927-5174-a45f-001fcba01cca
 		summarizeBy: sum
 		sourceColumn: TOTAL_INVOICED_USD
@@ -164,19 +150,19 @@ table VW_THREE_WAY_MATCH
 		annotation SummarizationSetBy = Automatic
 
 	column VARIANCE_AMOUNT
-		dataType: double
+		dataType: decimal
 		formatString: #,0.00
 		lineageTag: 692edd05-8f08-5a8b-8ee0-c932b213eb50
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: VARIANCE_AMOUNT
 
 		annotation SummarizationSetBy = Automatic
 
 	column PCT_VARIANCE
-		dataType: double
+		dataType: decimal
 		formatString: #,0.00
 		lineageTag: a11d5c5b-b4ac-5187-a934-62dd32c27f3d
-		summarizeBy: sum
+		summarizeBy: none
 		sourceColumn: PCT_VARIANCE
 
 		annotation SummarizationSetBy = Automatic
@@ -217,4 +203,3 @@ table VW_THREE_WAY_MATCH
 				    Data
 
 	annotation PBI_ResultType = Table
-

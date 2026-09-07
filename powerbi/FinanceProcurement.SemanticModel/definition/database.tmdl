@@ -1,3 +1,2 @@
-database
-	compatibilityLevel: 1606
-
+database FinanceProcurement
+	compatibilityLevel: 1567
