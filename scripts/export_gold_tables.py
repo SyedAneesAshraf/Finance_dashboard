@@ -24,8 +24,6 @@ OUT_DIR = REPO_ROOT / "exports" / "gold"
 
 TABLES = [
     "DIM_DATE",
-    "DIM_VENDOR",
-    "DIM_GL_ACCOUNT",
     "FACT_INVOICE",
     "FACT_PAYMENT",
     "FACT_PURCHASE_ORDER",
