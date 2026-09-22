@@ -1,0 +1,183 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "name": "500dec4036056564c625",
+  "position": {
+    "x": 812.63157894736844,
+    "y": 452.63157894736844,
+    "z": 9000,
+    "height": 267.36842105263162,
+    "width": 467.36842105263162,
+    "tabOrder": 9000
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Columns": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "VW_THREE_WAY_MATCH"
+                    }
+                  },
+                  "Property": "EXCEPTION_TYPE"
+                }
+              },
+              "queryRef": "VW_THREE_WAY_MATCH.EXCEPTION_TYPE",
+              "nativeQueryRef": "EXCEPTION_TYPE",
+              "active": true
+            }
+          ]
+        },
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "VW_THREE_WAY_MATCH"
+                    }
+                  },
+                  "Property": "VENDOR_NAME"
+                }
+              },
+              "queryRef": "VW_THREE_WAY_MATCH.VENDOR_NAME",
+              "nativeQueryRef": "VENDOR_NAME",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "VW_THREE_WAY_MATCH"
+                    }
+                  },
+                  "Property": "PO_ID"
+                }
+              },
+              "queryRef": "VW_THREE_WAY_MATCH.PO_ID",
+              "nativeQueryRef": "PO_ID",
+              "active": false
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "VW_THREE_WAY_MATCH"
+                        }
+                      },
+                      "Property": "PCT_VARIANCE"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(VW_THREE_WAY_MATCH.PCT_VARIANCE)",
+              "nativeQueryRef": "PCT_VARIANCE"
+            }
+          ]
+        }
+      }
+    },
+    "expansionStates": [
+      {
+        "roles": [
+          "Rows"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "VW_THREE_WAY_MATCH.VENDOR_NAME"
+            ],
+            "isCollapsed": true,
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "VW_THREE_WAY_MATCH.PO_ID"
+            ],
+            "isCollapsed": true
+          }
+        ],
+        "root": {}
+      }
+    ]
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "faa91a8b9b28ab0da38b",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "VW_THREE_WAY_MATCH"
+              }
+            },
+            "Property": "PO_ID"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "214241c5dbc7dcb55055",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "VW_THREE_WAY_MATCH"
+              }
+            },
+            "Property": "VENDOR_NAME"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "0b5aad87395a2894b406",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "VW_THREE_WAY_MATCH"
+              }
+            },
+            "Property": "EXCEPTION_TYPE"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "093131750e57511a019c",
+        "field": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "VW_THREE_WAY_MATCH"
+                  }
+                },
+                "Property": "PCT_VARIANCE"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "type": "Advanced"
+      }
+    ]
+  }
+}

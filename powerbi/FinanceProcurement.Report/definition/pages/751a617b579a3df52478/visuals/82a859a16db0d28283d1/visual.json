@@ -1,0 +1,84 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "name": "82a859a16db0d28283d1",
+  "position": {
+    "x": 0,
+    "y": 444.21052631578948,
+    "z": 10000,
+    "height": 274.73684210526318,
+    "width": 406.31578947368422,
+    "tabOrder": 10000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "VW_DUPLICATE_INVOICE_PAIRS"
+                    }
+                  },
+                  "Property": "INVOICE_1"
+                }
+              },
+              "queryRef": "VW_DUPLICATE_INVOICE_PAIRS.INVOICE_1",
+              "nativeQueryRef": "INVOICE_1"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "VW_DUPLICATE_INVOICE_PAIRS"
+                    }
+                  },
+                  "Property": "INVOICE_2"
+                }
+              },
+              "queryRef": "VW_DUPLICATE_INVOICE_PAIRS.INVOICE_2",
+              "nativeQueryRef": "INVOICE_2"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "VW_DUPLICATE_INVOICE_PAIRS"
+                    }
+                  },
+                  "Property": "VENDOR_NAME"
+                }
+              },
+              "queryRef": "VW_DUPLICATE_INVOICE_PAIRS.VENDOR_NAME",
+              "nativeQueryRef": "VENDOR_NAME"
+            },
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "VW_DUPLICATE_INVOICE_PAIRS"
+                        }
+                      },
+                      "Property": "EXPOSURE_USD"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(VW_DUPLICATE_INVOICE_PAIRS.EXPOSURE_USD)",
+              "nativeQueryRef": "EXPOSURE_USD"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

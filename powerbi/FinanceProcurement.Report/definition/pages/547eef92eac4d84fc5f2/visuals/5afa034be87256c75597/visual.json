@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "5afa034be87256c75597",
   "position": {
-    "x": 0,
-    "y": 0,
+    "x": 0.59124142863142892,
+    "y": 5.8154894619494346,
     "z": 1000,
-    "height": 150,
-    "width": 1271,
+    "height": 221.94912456354385,
+    "width": 1279.4076816288757,
     "tabOrder": 1000
   },
   "visual": {
@@ -19,7 +19,7 @@
               {
                 "textRuns": [
                   {
-                    "value": "FINANCE DASHBOARD",
+                    "value": "AP Aging & Cash Flow",
                     "textStyle": {
                       "fontWeight": "bold",
                       "fontSize": "24pt"

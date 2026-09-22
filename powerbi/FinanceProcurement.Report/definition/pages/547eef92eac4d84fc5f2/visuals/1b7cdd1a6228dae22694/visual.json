@@ -2,8 +2,8 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "1b7cdd1a6228dae22694",
   "position": {
-    "x": 129.88138805774435,
-    "y": 373.04278374479952,
+    "x": 116.30978923898869,
+    "y": 410.9612553110934,
     "z": 9000,
     "height": 139.64690595682285,
     "width": 162.10759712470346,
@@ -81,7 +81,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'EMEA'"
+                                "Value": "'North America'"
                               }
                             }
                           ]

@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "1f3f59e1f3a096bc510a",
   "position": {
-    "x": 845.69385006019991,
-    "y": 305.66071024115774,
-    "z": 10001,
-    "height": 414.05795892092931,
-    "width": 434.5655465089942,
-    "tabOrder": 10001
+    "x": 751.578947368421,
+    "y": 412.63368421052633,
+    "z": 10000,
+    "height": 307.35684210526313,
+    "width": 527.3621052631579,
+    "tabOrder": 10000
   },
   "visual": {
     "visualType": "tableEx",
@@ -142,6 +142,23 @@
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "FACT_INVOICE"
+                  }
+                },
+                "Property": "INVOICE_ID"
+              }
+            },
+            "direction": "Descending"
+          }
+        ]
       }
     }
   }

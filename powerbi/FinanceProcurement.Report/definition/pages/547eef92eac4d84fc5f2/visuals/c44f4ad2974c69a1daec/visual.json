@@ -2,8 +2,8 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
   "name": "c44f4ad2974c69a1daec",
   "position": {
-    "x": 0,
-    "y": 502.92417180254387,
+    "x": 8.7887565711833489,
+    "y": 553.691663984551,
     "z": 8000,
     "height": 137.69380237700716,
     "width": 147.45932027608566,
@@ -81,7 +81,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'Consulting'"
+                                "Value": "'Raw Materials'"
                               }
                             }
                           ]

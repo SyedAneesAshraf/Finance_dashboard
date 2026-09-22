@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
-  "name": "11fdc8e1751a84535e74",
+  "name": "ce695d50bb0b430746b0",
   "position": {
-    "x": 408.42105263157896,
-    "y": 255.78947368421055,
-    "z": 6000,
-    "height": 85.936557511890982,
-    "width": 207.02897946046465,
-    "tabOrder": 6000
+    "x": 566.31578947368428,
+    "y": 70.526315789473685,
+    "z": 3000,
+    "height": 106.31578947368422,
+    "width": 290.5263157894737,
+    "tabOrder": 3000
   },
   "visual": {
     "visualType": "cardVisual",
@@ -23,11 +23,11 @@
                       "Entity": "FACT_INVOICE"
                     }
                   },
-                  "Property": "Total Overdue"
+                  "Property": "Duplicate Exposure"
                 }
               },
-              "queryRef": "FACT_INVOICE.Total Overdue",
-              "nativeQueryRef": "Total Overdue"
+              "queryRef": "FACT_INVOICE.Duplicate Exposure",
+              "nativeQueryRef": "Duplicate Exposure"
             }
           ]
         }
@@ -42,7 +42,7 @@
                     "Entity": "FACT_INVOICE"
                   }
                 },
-                "Property": "Total Overdue"
+                "Property": "Duplicate Exposure"
               }
             },
             "direction": "Descending"

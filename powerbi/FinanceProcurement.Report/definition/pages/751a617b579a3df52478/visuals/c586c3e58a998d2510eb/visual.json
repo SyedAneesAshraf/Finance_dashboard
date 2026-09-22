@@ -1,0 +1,84 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
+  "name": "c586c3e58a998d2510eb",
+  "position": {
+    "x": 725.26315789473688,
+    "y": 197.89473684210526,
+    "z": 10002,
+    "height": 195.78947368421055,
+    "width": 522.1052631578948,
+    "tabOrder": 10002
+  },
+  "visual": {
+    "visualType": "clusteredBarChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "VW_DUPLICATE_INVOICE_PAIRS"
+                    }
+                  },
+                  "Property": "VENDOR_NAME"
+                }
+              },
+              "queryRef": "VW_DUPLICATE_INVOICE_PAIRS.VENDOR_NAME",
+              "nativeQueryRef": "VENDOR_NAME",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "VW_DUPLICATE_INVOICE_PAIRS"
+                        }
+                      },
+                      "Property": "EXPOSURE_USD"
+                    }
+                  },
+                  "Function": 0
+                }
+              },
+              "queryRef": "Sum(VW_DUPLICATE_INVOICE_PAIRS.EXPOSURE_USD)",
+              "nativeQueryRef": "EXPOSURE_USD"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "VW_DUPLICATE_INVOICE_PAIRS"
+                      }
+                    },
+                    "Property": "EXPOSURE_USD"
+                  }
+                },
+                "Function": 0
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    }
+  }
+}

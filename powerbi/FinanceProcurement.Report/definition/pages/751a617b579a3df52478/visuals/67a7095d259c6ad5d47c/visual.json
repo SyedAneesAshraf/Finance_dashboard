@@ -1,16 +1,16 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.11.0/schema.json",
-  "name": "292b5be1d72602f0aacd",
+  "name": "67a7095d259c6ad5d47c",
   "position": {
-    "x": 259.7585293004081,
-    "y": 424.5307307223087,
-    "z": 11000,
-    "height": 251.03529510748393,
-    "width": 491.40885953472724,
-    "tabOrder": 11000
+    "x": 0,
+    "y": 168.42105263157896,
+    "z": 7000,
+    "height": 251.57894736842107,
+    "width": 487.36842105263162,
+    "tabOrder": 7000
   },
   "visual": {
-    "visualType": "clusteredColumnChart",
+    "visualType": "lineClusteredColumnComboChart",
     "query": {
       "queryState": {
         "Category": {
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "DIM_DATE"
+                      "Entity": "DIM_VENDOR"
                     }
                   },
-                  "Property": "MONTH_YEAR"
+                  "Property": "VENDOR_NAME"
                 }
               },
-              "queryRef": "DIM_DATE.MONTH_YEAR",
-              "nativeQueryRef": "MONTH_YEAR",
+              "queryRef": "DIM_VENDOR.VENDOR_NAME",
+              "nativeQueryRef": "VENDOR_NAME",
               "active": true
             }
           ]
@@ -47,7 +47,11 @@
               },
               "queryRef": "FACT_INVOICE.Total Invoiced",
               "nativeQueryRef": "Total Invoiced"
-            },
+            }
+          ]
+        },
+        "Y2": {
+          "projections": [
             {
               "field": {
                 "Measure": {
@@ -56,14 +60,32 @@
                       "Entity": "FACT_INVOICE"
                     }
                   },
-                  "Property": "Total Paid"
+                  "Property": "Cumulative Spend %"
                 }
               },
-              "queryRef": "FACT_INVOICE.Total Paid",
-              "nativeQueryRef": "Total Paid"
+              "queryRef": "FACT_INVOICE.Cumulative Spend %",
+              "nativeQueryRef": "Cumulative Spend %"
             }
           ]
         }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "FACT_INVOICE"
+                  }
+                },
+                "Property": "Total Invoiced"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
       }
     }
   }

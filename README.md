@@ -113,7 +113,7 @@ joins nothing and writes no SQL.
 | 3 | Silver layer cleaned | ✅ Complete — 33/33 tests |
 | 4 | Gold star schema + SCD Type 2 | ✅ Complete — 30/30 tests |
 | 5 | 6 validated analytical queries | ✅ Complete — 26/26 tests |
-| 6 | 2-page Power BI dashboard | 🟡 Page 1 (AP Aging & Cash Flow) built and working; Page 2 (Vendor Spend & Risk) in progress |
+| 6 | 2-page Power BI dashboard | ✅ Complete — both pages built and verified |
 | 7 | Excel budget-vs-actual workbook | ✅ Complete — 3/3 tests |
 | 8 | Documentation & GitHub packaging | 🟡 In progress |
 | 9 | Scope verification / interview dry-run | ⬜ Not started |
