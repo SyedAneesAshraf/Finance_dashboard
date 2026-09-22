@@ -113,25 +113,17 @@ joins nothing and writes no SQL.
 | 3 | Silver layer cleaned | ✅ Complete — 33/33 tests |
 | 4 | Gold star schema + SCD Type 2 | ✅ Complete — 30/30 tests |
 | 5 | 6 validated analytical queries | ✅ Complete — 26/26 tests |
-| 6 | 2-page Power BI dashboard | ⬜ Not started |
-| 7 | Excel budget-vs-actual workbook | ⬜ Not started |
-| 8 | Documentation & GitHub packaging | ⬜ Not started |
+| 6 | 2-page Power BI dashboard | 🟡 Page 1 (AP Aging & Cash Flow) built and working; Page 2 (Vendor Spend & Risk) in progress |
+| 7 | Excel budget-vs-actual workbook | ✅ Complete — 3/3 tests |
+| 8 | Documentation & GitHub packaging | 🟡 In progress |
 | 9 | Scope verification / interview dry-run | ⬜ Not started |
 
 ---
 
 ## Documentation
 
-- [Design decisions](docs/00_design_decisions.md) — project-wide constants every phase honours
-- [Phase 0 setup guide](docs/01_phase0_setup_guide.md) — environment reproduction steps
-- [Phase 0 test report](docs/02_phase0_test_report.md) — 5/5 exit tests
-- [Phase 1 data design](docs/03_phase1_data_design.md) — table specs and three deviations from the blueprint
-- [Phase 1 ground truth](docs/04_phase1_ground_truth.md) — every injected defect, counted
-- [Phase 1 test report](docs/05_phase1_test_report.md) — 33/33 exit tests
-- [Phase 2 test report](docs/06_phase2_test_report.md) — 23/23 exit tests, all 1,864 rows verified verbatim
-- [Phase 3 cleaning rules](docs/07_phase3_cleaning_rules.md) — every Silver rule and its reasoning
-- [Phase 3 test report](docs/08_phase3_test_report.md) — 33/33 exit tests
-- [Phase 4 ER diagram](docs/09_phase4_er_diagram.md) — star schema and the SCD2 history
-- [Phase 4 test report](docs/10_phase4_test_report.md) — 30/30 exit tests
-- [Phase 5 queries and results](docs/11_phase5_queries_and_results.md) — the 6 queries, their reasoning, and what they found
+Design-decision notes, per-phase exit-test reports, the ER diagram, and the query write-ups
+are kept as local Markdown files under `docs/` (and a project roadmap / interview-prep file at
+the repo root) — not published in this repository. They're gitignored (`*.md`, README
+excepted) on purpose, so ask the author directly for them.
 #

@@ -12,6 +12,7 @@ snowflake_config.json
 ~/.snowsql/
 *.pdf
 *.md
+!README.md
 
 # Power BI / Excel lock + temp files
 ~$*
